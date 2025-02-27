@@ -80,7 +80,6 @@ para convertir los números en porcentajes (partes de un total de 100) que se mu
 
 Los resultados deben publicarse en un repositorio de GitHub, para el que se debe activar la GitHub Pages.
 
-
 - - - - - - - 
 
 ###### [SIGUIENTE CLASE →](https://github.com/profesorfaco/opr/tree/main/clase-02)
