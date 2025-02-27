@@ -45,7 +45,7 @@ Cada estudiante en este OPR debe disponer de:
 
 ### Clase a clase
 
-**Miércoles en módulos 3 y 4, esto es entre 11:00 y 13:30 hrs.** 
+**Miércoles en módulos 3 y 4, esto es entre 11:00 y 13:30 hrs. / Sala 203** 
 
 Según [Calendario de Actividades Académicas y Estudiantiles 2025](https://registrosacademicos.uc.cl/wp-content/uploads/2024/11/Calendario-de-Actividades-Academicas-y-Estudiantiles-2025.pdf), las clases del primer semestre comienzan el día miércoles 5 de marzo y finalizan el viernes 27 de junio.
 
