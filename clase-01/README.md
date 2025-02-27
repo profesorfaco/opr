@@ -78,15 +78,15 @@ La lectura de al menos uno de tales artículo servirá de base a cada estudiante
 
 ### Práctica (para la clase)
 
-Conectemos los números de arriba con un *fact* para tener *data*. Los números pueden cambiar (no es necesario que sea 50 y 10).
+Generemos 4 Gráficos de Dónut, donde se comparen la distribución del un 100% entre dos grupos, aprovechando:
 
-Luego aprovechemos: 
+- https://cssgridgenerator.io/
 
-- el código fuente de la página de https://www.guemil.info/meaning/ 
+- https://mozilladevelopers.github.io/playground/css-grid/04-fr-unit/
 
-- las instrucciones en https://heyoka.medium.com/scratch-made-svg-donut-pie-charts-in-html5-2c587e935d72
+- https://heyoka.medium.com/scratch-made-svg-donut-pie-charts-in-html5-2c587e935d72
 
-para convertir los números en porcentajes (partes de un total de 100) que se muestre en un [Gráfico de Dónut](https://datavizcatalogue.com/ES/metodos/grafico_de_donut.html), reconociendo sus ventajas y desventajas.
+Al aprovecharlo, conviene poner atención a las limitaciones del [Gráfico de Dónut](https://datavizcatalogue.com/ES/metodos/grafico_de_donut.html).
 
 Los resultados deben publicarse en un repositorio de GitHub, para el que se debe activar la GitHub Pages.
 
