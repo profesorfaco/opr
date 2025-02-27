@@ -46,7 +46,7 @@ En este optativo es necesario que, en su partida, cada estudiante pueda leer-com
 ```
 Si se lo comprende, podremos dar el primer paso concentrándonos en la variable-constante `data`, a la que se le asigna un arreglo con **dos números enteros que, de momento, no tienen sentido**: No tenemos su origen ni su destino, pero los tenemos a la vista siendo el primero, convencionalmente, cinco veces el segundo.
 
-Examinemos lo del párrafo anterior, partiendo por las primeras acepciones de Data, en inglés:
+Examinemos lo del párrafo anterior, partiendo por las primeras acepciones de *data*, en inglés:
 
 - [plural in form but singular or plural in construction] *factual information (such as measurements or statistics) used as a basis for reasoning, discussion, or calculation* —Merrian-Webster Dictionary.
 
