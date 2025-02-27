@@ -56,7 +56,9 @@ Examinemos lo del párrafo anterior, partiendo por las primeras acepciones de *d
 
 Falta conectar a 50 y 10 con un *fact* para tener *data*. Esa conexión exige un camino, y el camino debería tener un sentido tal como en el tránsito; hay un sentido en el estar dirigido para poder recortar “algo” que siempre está en el medio de algo más, que forma parte de un “campo” (Merleau-Ponty, 2010).
 
-Pero no es tan conveniente profundizar ahora en cuestiones "fenomenológicas". Sí es conveniente revisar la idea del DIKW (Data → Information → Knowledge → Wisdom) con tres artículos:
+Pero no es tan conveniente profundizar ahora en cuestiones "fenomenológicas". Sí es conveniente revisar la idea del DIKW (Data → Information → Knowledge → Wisdom) en cualquiera de los siguientes artículos:
+
+- Baskarada, S. & Koronios, A. (2013). Data, Information, Knowledge, Wisdom (DIKW): A Semiotic Theoretical and Empirical Exploration of the Hierarchy and its Quality Dimension → https://doi.org/10.3127/ajis.v18i1.748
 
 - Frické, M. (2008). *The knowledge pyramid: a critique of the DIKW hierarchy* → https://doi.org/10.1177/01655515080940
 
@@ -64,7 +66,7 @@ Pero no es tan conveniente profundizar ahora en cuestiones "fenomenológicas". S
 
 - van Meter, H. J. (2020). *Revising the DIKW pyramid and the real relationship between data, information, knowledge, and wisdom*. Law, Technology and Humans, 2(2), 69–80. https://search.informit.org/doi/10.3316/agispt.20210112042035
 
-Allí está la base para comenzar a trabajar un concepto propio de información, que es lo que cada estudiante diseñará visualmente con herramientas como las que ya se muestran en el código de más arriba.
+La lectura de al menos uno de tales artículo servirá de base a cada estudiantes para comenzar a trabajar un concepto propio de información, que es lo que luego diseñará visualmente con herramientas como las que ya se muestran en el código de más arriba.
 
 - - - - - - - - - - - - - - 
 
