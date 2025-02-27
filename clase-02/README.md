@@ -154,19 +154,6 @@ Intentemos generar los tres tipos de gráficos referidos arriba, partiendo con e
 </html>
 ```
 
-Después de las 13.30 hrs. seguí trabajando en el código desde el que ustedes pudieron partir, guardando como `index.html`
-
-Hice varios ajustes de "legibilidad" que no alcancé a hacer en la (interrumpida) práctica de hoy. 
-
-Lo ajustado lo pueden ver en: https://profesorfaco.github.io/opr/clase-02
-
-No es necesario que su trabajo a publicar (o ya publicado) en GitHub se base en lo ajustado. 
-
-Bien puede basarse en el mismo código de partida de unas líneas más arriba.
-
-Lo importante es no olvidar dejar constancia, durante el día, de su publicación en GitHub mediante una entrada en este foro de discusión: https://cursos.canvas.uc.cl/courses/73175/discussion_topics/749338
-
-
 - - - - - - - 
 
 ###### [← CLASE PREVIA](https://github.com/profesorfaco/opr/tree/main/clase-01) • [SIGUIENTE CLASE →](https://github.com/profesorfaco/opr/tree/main/clase-03)
