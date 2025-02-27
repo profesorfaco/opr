@@ -11,37 +11,43 @@ El título dice, entre paréntesis, “para la casa”. La razón de lo dicho es
 En este optativo es necesario que, en su partida, cada estudiante pueda leer-comprender lo que sigue: 
 
 ```
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Podríamos usar Bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="container-fluid m-0 p-0">
-      <div class="row row-cols-2 g-0" style="height:100vh">
-        <div class="h-100 bg-danger d-flex align-items-center justify-content-center">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-            <g id="primera"></g>
-          </svg>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Primer ejemplo</title>
+        <!-- Usando CSS Grid Generator - https://cssgridgenerator.io/ -->
+        <style>
+            .parent {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                gap: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="div1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <g id="primera"></g>
+                </svg>
+            </div>
+            <div class="div2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <g id="segunda"></g>
+                </svg>
+            </div>
         </div>
-        <div class="h-100 bg-success d-flex align-items-center justify-content-center">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-            <g id="segunda"></g>
-          </svg>          
-        </div>
-      </div>
-    </div>
-    <script>
-      const data = [50,10];
-      let cero = document.querySelector("#primera");
-      cero.innerHTML = `<circle cx="50" cy="50" r="${data[0]}" />`;
-      let uno = document.querySelector("#segunda");
-      uno.innerHTML = `<circle cx="50" cy="50" r="${data[1]}" />`;
-    </script>
-  </body>
+        <script>
+            const data = [50, 10];
+            let cero = document.querySelector("#primera");
+            cero.innerHTML = `<circle cx="50" cy="50" r="${data[0]}" />`;
+            let uno = document.querySelector("#segunda");
+            uno.innerHTML = `<circle cx="50" cy="50" r="${data[1]}" />`;
+        </script>
+    </body>
 </html>
 ```
 Si se lo comprende, podremos dar el primer paso concentrándonos en la variable-constante `data`, a la que se le asigna un arreglo con **dos números enteros que, de momento, no tienen sentido**: No tenemos su origen ni su destino, pero los tenemos a la vista siendo el primero, convencionalmente, cinco veces el segundo.
