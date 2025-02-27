@@ -1,15 +1,15 @@
 # Optativo de Profundización: Desarrollo Web y Diseño Visual de Información → Primer semestre de 2025 → Pontificia Universidad Católica de Chile
 
 
-Desarrollo web y diseño visual de información (DNO097) es un Optativo de Profundización a cargo del profesor [Felipe Alberto Cortez Orellana (FACO)](https://faco.cl/).
+DNO097 es el código de este OPR, a cargo del profesor [Felipe Alberto Cortez Orellana (FACO)](https://faco.cl/).
 
 ### Descripción:
 
-Partiendo desde el dominio de HTML, CSS y JavaScript, en este curso el estudiantado vinculará gráficos vectoriales escalables (SVG) con formatos ligeros de intercambio de datos (JSON, CSV, XML), para desarrollar, de manera autónoma, tableros de información (*dashboards*) e infografías digitales, interactivas y dinámicas. 
+Partiendo desde el dominio de HTML, CSS y JavaScript, en este optativo el estudiantado vinculará gráficos vectoriales escalables (SVG) con formatos ligeros de intercambio de datos (JSON, CSV, XML), para desarrollar, de manera autónoma, tableros de información (*dashboards*) e infografías digitales, interactivas y dinámicas. 
 
 Para ello, se realizarán [clases invertidas](https://desarrollodocente.uc.cl/servicios/asesorias-personalizadas/metodologias-innovadoras/aprendizaje-invertido/), simulaciones y aprendizaje basado en problemas. 
 
-Los aprendizajes serán evaluados por medio de actividades de aplicación en cada clase, y de manera presencial (**este no es un curso remoto ni híbrido**).
+Los aprendizajes serán evaluados por medio de **actividades de aplicación en cada clase, y de manera presencial** (este no es un curso remoto ni híbrido; podrán hacerse excepciones cuando hayan caídas de servicios básicos o alguna amenaza de desastre).
 
 - - - - - - - - - -
 
