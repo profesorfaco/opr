@@ -9,7 +9,7 @@ Partiendo desde el dominio de HTML, CSS y JavaScript, en este optativo el estudi
 
 Para ello, se realizarán [clases invertidas](https://desarrollodocente.uc.cl/servicios/asesorias-personalizadas/metodologias-innovadoras/aprendizaje-invertido/), simulaciones y aprendizaje basado en problemas. 
 
-Los aprendizajes serán evaluados por medio de **actividades de aplicación en cada clase, y de manera presencial** (este no es un curso remoto ni híbrido; podrían hacerse excepciones cuando hayan caídas de servicios básicos o alguna amenaza de desastre).
+Los aprendizajes serán evaluados por medio de **actividades de aplicación en cada clase, y de manera presencial** (este no es un curso remoto ni híbrido; podrían hacerse excepciones cuando hayan caídas de servicios básicos o alguna [amenaza de desastre](https://www.ubo.cl/wp-content/uploads/ATLAS-DE-AMENAZAS-Y-DESASTRES-EN-CHILE.pdf)).
 
 - - - - - - - - - -
 
