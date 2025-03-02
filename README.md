@@ -5,7 +5,7 @@ DNO097 es el código de este OPR, a cargo del profesor [Felipe Alberto Cortez Or
 
 ### Descripción:
 
-Partiendo desde el dominio de HTML, CSS y JavaScript, en este optativo el estudiantado vinculará gráficos vectoriales escalables (SVG) con formatos ligeros de intercambio de datos (JSON, CSV, XML), para desarrollar, de manera autónoma, tableros de información (*dashboards*) e infografías digitales, interactivas y dinámicas. 
+Partiendo desde el dominio de HTML, CSS y JavaScript, en este optativo el estudiantado vinculará gráficos vectoriales escalables (SVG) con formatos ligeros de intercambio de datos (JSON, CSV, XML) para desarrollar, de manera autónoma, tableros de información (*dashboards*) e infografías digitales, interactivas y dinámicas. 
 
 Para ello, se realizarán [clases invertidas](https://desarrollodocente.uc.cl/servicios/asesorias-personalizadas/metodologias-innovadoras/aprendizaje-invertido/), simulaciones y aprendizaje basado en problemas. 
 
