@@ -15,11 +15,11 @@ Los aprendizajes serán evaluados por medio de **actividades de aplicación en c
 
 **Este curso tiene como requisito la aprobación previa de uno de los siguientes**:
 
-- Diseño y nuevos medios (DNO037)
-- Infografía digital (DNO075)
-- Introducción al desarrollo web desde el diseño (DNO096)
-- Pensamiento computacional (DNO1063)
-- Programación creativa para diseño (DNO069) 
+- DNO037  → Diseño y nuevos medios
+- DNO069  → Programación creativa para diseño
+- DNO075  → Infografía digital
+- DNO096  → Introducción al desarrollo web desde el diseño
+- DNO1063 → Pensamiento computacional
 
 - - - - - - - - - -
 
