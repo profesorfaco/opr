@@ -76,17 +76,31 @@ La lectura de cualquiera de tales artículo le servirá a cada estudiantes para 
 
 ### Práctica (para la clase)
 
-Generemos 4 Gráficos de Dónut, donde se comparen la distribución del un 100% entre dos grupos, aprovechando:
+Generemos 4 Gráficos de Dónut en una página web, donde se comparen la distribución del un 100% entre dos grupos. 
+
+Tomemos números del INE (Instituto Nacional de Estadísticas). Podríamos aprovechar sus [Estadísticas > Demografía y vitales > Estadísticas vitales](https://www.ine.gob.cl/estadisticas/sociales/demografia-y-vitales/nacimientos-matrimonios-y-defunciones) > Cuadros estadísticos > 2024 > Estadísticas vitales cifras coyunturales diciembre 2024.
+
+De allí se pueden tomar 4 pares de datos, donde ambos sumen 100, para luego aprovechar el siguiente código:
+
+```
+<svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+  <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+  <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ce4b99" stroke-width="3" stroke-dasharray="85 15" stroke-dashoffset="0"></circle>
+</svg>
+```
+
+Tal código se encuentra en  se encuentra en el *post*: [Scratch-made SVG Donut & Pie Charts in HTML5](https://heyoka.medium.com/scratch-made-svg-donut-pie-charts-in-html5-2c587e935d72).
+
+A tal referencia, conviene sumar: 
+
+- https://datavizcatalogue.com/ES/metodos/grafico_de_donut.html
 
 - https://cssgridgenerator.io/
 
 - https://mozilladevelopers.github.io/playground/css-grid/04-fr-unit/
 
-- https://heyoka.medium.com/scratch-made-svg-donut-pie-charts-in-html5-2c587e935d72
-
-Al aprovecharlo, conviene poner atención a las limitaciones del [Gráfico de Dónut](https://datavizcatalogue.com/ES/metodos/grafico_de_donut.html).
-
-Los resultados deben publicarse en un repositorio de GitHub, para el que se debe activar la GitHub Pages.
+Los resultados deben publicarse en un repositorio de GitHub, activando GitHub Pages y luego ingresando la URL de su página web operativo en foro de canvas.
 
 - - - - - - - 
 
