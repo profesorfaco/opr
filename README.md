@@ -95,13 +95,13 @@ Clase 09  → 30/04/2025 → Receso de docencia bimestral (Se suspenden las clas
 
 - Bellamy-Royds, A., Cagle, K., & Storey D. (2017). *Using SVG with CSS3 and HTML5: Vector Graphics for Web Design*. O'Reilly Media, Inc.
 - Koponen, J. & Hildén, J. (2019). *Data Visualization Handbook*. Aalto korkeakoulusäätiö.
-- Meirelles, I. (2014). *La información en el diseño*. Parramon.
+- Mijksenaar, P. (2001). *Diseño de la información*. Editorial GG.
 
 **Complementaria**
 
 - Cairo, A. (2008). *Infografía 2.0: Visualización Interactiva de Información en Prensa*. Alamut.
 - Lupton, E. (2019). *El Diseño Como Storytelling*. Editorial GG.
-- Mijksenaar, P. (2001). *Una introducción al Diseño de la información*. Editorial GG.
+- Meirelles, I. (2014). *La información en el diseño*. Parramon.
 
 ### Referencias en línea
 
