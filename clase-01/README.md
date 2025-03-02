@@ -70,7 +70,7 @@ Pero no es tan conveniente profundizar ahora en cuestiones "fenomenológicas". S
 
 - van Meter, H. J. (2020). *Revising the DIKW pyramid and the real relationship between data, information, knowledge, and wisdom*. Law, Technology and Humans, 2(2), 69–80. https://search.informit.org/doi/10.3316/agispt.20210112042035
 
-La lectura de al menos uno de tales artículo servirá de base a cada estudiantes para comenzar a trabajar un concepto propio de información, que es lo que luego diseñará visualmente con herramientas como las que ya se muestran en el código de más arriba.
+La lectura de al menos uno de tales artículo servirá de base a cada estudiantes para comenzar a trabajar un concepto propio de información, que es lo que luego diseñará visualmente, teniendo a la base lenguajes como las que ya se muestran en el código de más arriba.
 
 - - - - - - - - - - - - - - 
 
