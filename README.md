@@ -93,22 +93,20 @@ Clase 09  → 30/04/2025 → Receso de docencia bimestral (Se suspenden las clas
 
 **Mínima**
 
-- Bellamy-Royds, A., Cagle, K., & Storey D. (2017). *Using SVG with CSS3 and HTML5: Vector Graphics for Web Design*
+- Bellamy-Royds, A., Cagle, K., & Storey D. (2017). *Using SVG with CSS3 and HTML5: Vector Graphics for Web Design*. O'Reilly Media, Inc.
 - Koponen, J. & Hildén, J. (2019). *Data Visualization Handbook*. Aalto korkeakoulusäätiö.
-- Meirelles, I. (2014). *La información en el diseño*
-
+- Meirelles, I. (2014). *La información en el diseño*. Parramon.
 
 **Complementaria**
 
-- Cairo, A. (2008). *Infografía 2.0: Visualización Interactiva de Información en Prensa*
-- Lupton, E. (2019). *El Diseño Como Storytelling*
-- Mijksenaar, P. (2001). *Una introducción al Diseño de la información*
+- Cairo, A. (2008). *Infografía 2.0: Visualización Interactiva de Información en Prensa*. Alamut.
+- Lupton, E. (2019). *El Diseño Como Storytelling*. Editorial GG.
+- Mijksenaar, P. (2001). *Una introducción al Diseño de la información*. Editorial GG.
 
 ### Referencias en línea
 
 - A Periodic Table of Visualization Methods - https://www.visual-literacy.org/periodic_table/periodic_table.html
 - Catálogo de Visualización de Datos - https://datavizcatalogue.com/ES/
 - SVG - MDN Web Docs - https://developer.mozilla.org/es/docs/Web/SVG
-- WTF Visualizations - https://viz.wtf/
 
 Se agregarán más referencias en el `README.md` de cada clase.
