@@ -54,7 +54,7 @@ gráficas donde el sistema de coordenadas cartesianas, usado habitualmente en lo
 
 ### Práctica (para la clase)
 
-Intentemos generar los tres tipos de gráficos referidos arriba, partiendo con el siguiente código en un `index.html`:
+Generemos los dos tipos de gráficos referidos arriba, partiendo con el siguiente código en un `index.html`:
 
 ```
 <!DOCTYPE html>
@@ -62,58 +62,47 @@ Intentemos generar los tres tipos de gráficos referidos arriba, partiendo con e
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Sigamos usando Bootstrap</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <title>Práctica (para la clase)</title>
+        <style>
+            *{ margin:0; padding:0; }
+            body{ text-align: center; font-family: Helvetica, Arial, sans-serif; }
+            h1 { padding:1vh 15vw; }
+            h2, p{ padding:.5vh 0; }
+            header, article, footer{ padding:5vh 0; }
+            header, article{ border-bottom:1px dotted black; }
+            div{ padding:2vh 6vw; }
+        </style>
     </head>
     <body>
-        <div class="container-fluid m-0 p-0">
-            <div class="row">
-                <div class="col-12 p-5 pb-1 text-center">
-                    <h5>Comparación de áreas urbanas y rurales en distintas regiones</h5>
-                    <p>Con tres gráficas de tarta, para un promedio y dos extremos en la relación de población por área urbana-rural</p>
-                </div>
-            </div>
-            <div class="row g-0 bg-light" style="height: 75vh;" id="tartas"><!--aquí dentro va crean unas divisiones, cada división contiene un svg--></div>
-            <div class="row">
-                <div class="col-12 p-5 pb-1 text-center">
-                    <h5>Evolución en el tiempo de la población en la Región Metrolitana Chilena</h5>
-                    <p>Con una gráfica de líneas</p>
-                </div>
-                <div class="col-12 p-5 text-center bg-light">
+        <header>
+            <h1>Tufte refers to data-ink as the non-erasable ink used for the presentation of data</h1>
+        </header>
+        <main>
+            <article>
+                <h2>Evolución de la población en la Región Metropolitana Chilena</h2>
+                <p>Con una <a href="https://datavizcatalogue.com/ES/metodos/grafica_de_linea.html" target="_blank">gráfica de línea</a></p>
+                <div>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 210">
                         <g transform="translate(0,195) scale(1,-1)" id="lineas"><!--aquí dentro va la polyline--></g>
                         <g id="years"><!--aquí dentro van los textos con los años--></g>
                     </svg>
                 </div>
-                <div class="col-12 p-5 pb-1 text-center">
-                    <h5>Población en las distintas regiones de Chile</h5>
-                    <p>Con una gráfica de barras</p>
-                </div>
-                <div class="col-12 p-5 text-center bg-light">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 55" id="barras"><!--aquí dentro van los grupos con rectangulo y textos--></svg>
+            </article>
+            <article>
+                <h2>Población en las distintas regiones de Chile</h2>
+                <p>Con una <a href="https://datavizcatalogue.com/ES/metodos/graficos_de_barras.html" target="_blank">gráfica de barras</a></p>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100" id="barras"><!--aquí dentro van los grupos con rectangulo y textos--></svg>
                 </div> 
-            </div>
-        </div>
+            </article>
+        </main>
+        <footer>
+            <p><small>Revisar lo de Data-Ink Ratio en <a href="https://infovis-wiki.net/wiki/Data-Ink_Ratio" target="_blank">infovis</a></small></p>
+        </footer>
         <script>
-            // PRIMERA GRÁFICA
-            // Datos en tarta fueron tomados de la síntesis de resultados censo 2017
-            // Noten que cambie categorías y valores, para acercarme a algo más "perceptible"
+            //PRIMERA GRÁFICA
 
-            const tarta = [
-                {region: "País", urbano: 83.3, rural: 16.7},
-                { region: "Metropolitana", urbano: 96.3, rural: 3.7 },
-                { region: "Ñuble", urbano: 69.4, rural: 30.6 },
-            ];
-
-            const graficaTarta = document.querySelector("#tartas");
-
-            tarta.forEach((d) => {
-                graficaTarta.innerHTML += `<div class="col h-100 d-flex align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="#fff"></circle><circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke="silver" stroke-width="3"></circle><circle class="donut-segment" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke="#777" stroke-width="3" stroke-dasharray="${d.rural} ${100 - d.rural}" stroke-dashoffset="25"></circle><text x="20" y="20" font-size="2" text-anchor="middle">${d.region}</text></svg></div>`;
-            });
-
-            //SEGUNDA GRÁFICA
-
-            // Datos en lineal fueron tomados de https://es.wikipedia.org/wiki/Anexo:Crecimiento_poblacional_de_Santiago_de_Chile
+            // Datos de https://es.wikipedia.org/wiki/Anexo:Crecimiento_poblacional_de_Santiago_de_Chile
 
             const lineal = {
                 censos: [1820, 1854, 1865, 1888, 1920, 1940, 1952, 1960, 1982, 1992, 2002, 2012],
@@ -130,8 +119,8 @@ Intentemos generar los tres tipos de gráficos referidos arriba, partiendo con e
 
             lineal.censados.forEach((d, i) => {
                 coordenadas += ((i*50)+7) + "," + Math.round(d*0.000025) + " ";
-                momentos += `<text x="${i*50}" y="205" font-size="5">${lineal.censos[i]}</text> `;
-    
+                momentos += `<text x="${i*50}" y="205" font-size="6">${lineal.censos[i]}</text> `;
+
             })
 
             console.log(coordenadas);
@@ -143,15 +132,18 @@ Intentemos generar los tres tipos de gráficos referidos arriba, partiendo con e
             document.querySelector("#years").innerHTML += momentos;
 
 
-            // TERCERA GRÁFICA 
+            // SEGUNDA GRÁFICA 
 
-            // Datos para las barras fueron tomados de https://es.wikipedia.org/wiki/Anexo:Regiones_de_Chile_por_poblaci%C3%B3n
+            // Datos de https://es.wikipedia.org/wiki/Anexo:Regiones_de_Chile_por_poblaci%C3%B3n
 
             const barras = [
                     {region:"Metropolitana", numero:8420729},
                     {region:"Valparaíso", numero:2010849},
                     {region:"Biobío", numero:1681225},
-                    {region:"Demás regiones", numero:7848086}
+                    {region:"Maule", numero:1171982 },
+                    {region:"Araucania", numero:1032064 },
+                    {region:"O'Higgins", numero:1025586},
+                    {region:"Demás regiones", numero:4723998}
                 ]
 
             const graficaBarras = document.querySelector("#barras");
@@ -159,8 +151,8 @@ Intentemos generar los tres tipos de gráficos referidos arriba, partiendo con e
             barras.forEach((d, i) => {
                 graficaBarras.innerHTML += `<g transform="translate(0,${i*15})">
                     <rect x="0" y="0" width="${d.numero/20000}" height="10" />
-                    <text x="3" y="7" fill="white" font-size="4">${d.region}</text>
-                    <text x="${(d.numero/20000)+3}" y="7" font-size="4">${new Intl.NumberFormat("es-ES").format(d.numero)} habitantes</text>
+                    <text x="3" y="7" fill="white" font-size="5">${d.region}</text>
+                    <text x="${(d.numero/20000)+3}" y="7" font-size="6">${new Intl.NumberFormat("es-ES").format(d.numero)} habitantes</text>
                 </g>`
             });
         </script>
