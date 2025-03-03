@@ -10,7 +10,7 @@ Así, por ejemplo, cuando conocemos las convenciones de una [gráfica de línea]
 
 Lo convencional de la gráfica que visualiza (*chart* o *diagramm*) puede funcionar como lo convencional de juntar **Á → R → B → O → L** para referir a una *planta de tallo leñoso y elevado, que se ramifica a cierta altura del suelo*; cuando ignoramos la convención, podemos incluso omitir la intención de referir por medio de **Á → R → B → O → L** a tal o cualquiera *planta de tallo leñoso…*. 
 
-Conviene, entonces, aprender convenciones y conocer las aprendidas. Justo aquí está la anécdota ya compartida: *Yo nunca he usado [la gráfica de bala](https://datavizcatalogue.com/ES/metodos/grafico_de_bala.html), pero revisando sus artículos noto que ustedes y sus lectores lo usan siempre. Tendré que aprender a usarla.*
+Conviene, entonces, aprender convenciones y conocer las aprendidas: *Yo nunca he usado [la gráfica de bala](https://datavizcatalogue.com/ES/metodos/grafico_de_bala.html), pero revisando sus artículos noto que ustedes y sus lectores lo usan siempre. Tendré que aprender a usarla.*
 
 Ese *uso* en la anécdota implica aprender la convención para poder escribir y leer tales gráficas que visualizan. Y para aprender las convenciones de varias gráficas es muy recomendable consultar a:
 
@@ -31,7 +31,7 @@ Considérese, esta gráfica de [Guemil](https://www.guemil.info/):
 
 ![guemil](https://private-user-images.githubusercontent.com/7999767/313512919-a5e905c1-0057-4743-9b31-bc36b2e539ab.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA2MjEyNjMsIm5iZiI6MTc0MDYyMDk2MywicGF0aCI6Ii83OTk5NzY3LzMxMzUxMjkxOS1hNWU5MDVjMS0wMDU3LTQ3NDMtOWIzMS1iYzM2YjJlNTM5YWIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDIyNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTAyMjdUMDE0OTIzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MmNiYzM3ZDAwZTZkZDc2ODFlNmU4MTBlZmMzYjgzNWNiOGEzOWJmOTBmODZlMjRjNzBhZjJhODlhYzM1YzM1ZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.cyQEYzmlNz3_kUtTnlmftYs4v_g3gsbLQqBm8q1sGhQ)
 
-Desde Japón se le comentó a Rodrigo Ramirez, el creador de Guemil, que era necesario agregar a su primera representación, llamada *drop and cover*, un *hold*, porque allá se enseña a sujetar (*to hold*) con una mano a la mesa, para evitar que el mismo movimiento telúrico la desplace.
+Desde Japón se le comentó a Rodrigo Ramirez, el creador de Guemil, que era necesario agregar a su primera representación, llamada *drop and cover*, un *hold*, porque allá se enseña a sujetar (*to hold*) una pata de la mesa, para evitar que el mismo movimiento telúrico la desplace y deje de cubrir.
 
 Luego, cuanto ya respresentaba el *drop, hold and cover*, tal como ahora está a la vista de ustedes, desde EE.UU. se pensó que la gráfica refería, por su semejanza, a un *school shooting*.
 
