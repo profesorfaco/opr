@@ -19,7 +19,8 @@ Ese *uso* en la anécdota implica aprender la convención para poder escribir y 
 
 Conviene notar que el segundo vínculo en la lista nos ofrece una búsqueda por *FAMILY*, donde no solo está la opción de *Chart*, también está la de *Diagram* (en inglés y con una *m*; no son dos como en alemán). Nótese que dentro de la familia *Diagram* es posible encontrar, por ejemplo, este *Exploded View Drawing*:
 
-![zapato](https://private-user-images.githubusercontent.com/7999767/313488166-68197b54-95fc-4f0f-b8fe-35cd81f6693d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA2MjEyNjMsIm5iZiI6MTc0MDYyMDk2MywicGF0aCI6Ii83OTk5NzY3LzMxMzQ4ODE2Ni02ODE5N2I1NC05NWZjLTRmMGYtYjhmZS0zNWNkODFmNjY5M2QucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDIyNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTAyMjdUMDE0OTIzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjdkOWY0N2QzNGMzMTEyMzJhZjhmMzQ5NTIyZTg2YjI4YWNkYzk5YWUyN2UzMmJmOWI2YjFiZDY3ZDA1OTJmZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.YLL19Om_9jgDnBqqr7iSfcbSuiqE8j-zEtLhXc8BDpQ)
+![zapato](https://github.com/user-attachments/assets/ff7770bc-d412-4461-ae17-a9d09d44982f)
+
 
 Aunque lo que tenemos a la vista no es, en rigor, un *drawing* y mejor sería llamarle *picture*, convengamos que consiste en la representación de algo que antes pudo estar AHÍ ADELANTE. En este caso, lo que está a la vista refiere a lo que le es semejante (en su aparecer conocido). Veo, por semejanza, una bota como las botas que ya pude haber visto AHÍ ADELANTE (este AHÍ ADELANTE, en mayúscula, se toma de Edmund Husserl escribiendo, en *Ideas I*, sobre un mundo extendido que cada uno encuentra ante sí inmediata e intuitivamente, mediante el ver, el tocar, el oir, etc., en los diversos modos de percepción sensible). 
 
@@ -29,7 +30,7 @@ Mientras la gráfica que visualiza nos exige trabajar con convenciones bien cono
 
 Considérese, esta gráfica de [Guemil](https://www.guemil.info/):
 
-![guemil](https://private-user-images.githubusercontent.com/7999767/313512919-a5e905c1-0057-4743-9b31-bc36b2e539ab.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA2MjEyNjMsIm5iZiI6MTc0MDYyMDk2MywicGF0aCI6Ii83OTk5NzY3LzMxMzUxMjkxOS1hNWU5MDVjMS0wMDU3LTQ3NDMtOWIzMS1iYzM2YjJlNTM5YWIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDIyNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTAyMjdUMDE0OTIzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MmNiYzM3ZDAwZTZkZDc2ODFlNmU4MTBlZmMzYjgzNWNiOGEzOWJmOTBmODZlMjRjNzBhZjJhODlhYzM1YzM1ZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.cyQEYzmlNz3_kUtTnlmftYs4v_g3gsbLQqBm8q1sGhQ)
+![guemil](https://github.com/user-attachments/assets/d22ee002-252a-42ef-85ed-815e937da1cb)
 
 Desde Japón se le comentó a Rodrigo Ramirez, el creador de Guemil, que era necesario agregar a su primera representación, llamada *drop and cover*, un *hold*, porque allá se enseña a sujetar (*to hold*) una pata de la mesa, para evitar que el mismo movimiento telúrico la desplace y deje de cubrir.
 
@@ -37,7 +38,7 @@ Luego, cuanto ya respresentaba el *drop, hold and cover*, tal como ahora está a
 
 Pero incluso la semejanza a lo visto AHÍ ADELANTE, en la propia experiencia, puede ser afectada por el dominio de una convención. Tal es el caso que presenta Jorge Frascara en *El diseño de comunicación visual* (2006, p.75), citando a [Uger Mijksenaar](https://www.theicod.org/storage/app/media/resources/Publications/Icographic/ICO_Publications_Icographic_07_full.pdf)
 
-![mineros](https://private-user-images.githubusercontent.com/7999767/313508089-f4f705a5-79ce-4cdd-8e7a-733c8539f748.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA5NjY5NzEsIm5iZiI6MTc0MDk2NjY3MSwicGF0aCI6Ii83OTk5NzY3LzMxMzUwODA4OS1mNGY3MDVhNS03OWNlLTRjZGQtOGU3YS03MzNjODUzOWY3NDgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDMwMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTAzMDNUMDE1MTExWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTAwZDg5NjE4NTc1N2JjN2QyODk1MmIyNWFhOTQ0Y2ZiYWViZWRjMmI0YzRmNjg2NDk1OGNjZGUxOTA1ODFiMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.YGx527HWOndAD7x4QC8gsZ1TXZSMQFvb4su_Pz70_7c)
+<img width="500" alt="mina" src="https://github.com/user-attachments/assets/1cbf839d-3aa5-4ac2-aed9-9a999d41698d" />
 
 > Dado que muchos mineros sudafricanos no sabían leer, esta historieta fue concebida para persuadirlos de dejar los rieles libres de material caído. Sin embargo, no funcionó: un creciente número de rocas se encontró en los rieles. La causa descubierta, fue que los mineros tendían a leer el mensaje de derecha a izquierda, y obedientemente sacaban rocas de las vagonetas. 
 
