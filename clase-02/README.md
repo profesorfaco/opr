@@ -28,9 +28,10 @@ La sospecha debe ser incluida en la base de la pirámide DIKW (Data → Informat
 
 - Baskarada, S. & Koronios, A. (2013). Data, Information, Knowledge, Wisdom (DIKW): A Semiotic Theoretical and Empirical Exploration of the Hierarchy and its Quality Dimension → https://doi.org/10.3127/ajis.v18i1.748
 
-- Peters, M. A., Jandrić, P., & Green, B. J. (2024). *The DIKW model in the age of artificial intelligence*. Postdigital science and education, 1-10. https://www.researchgate.net/publication/378527476_The_DIKW_Model_in_the_Age_of_Artificial_Intelligence
+- Peters, M. A., Jandrić, P., & Green, B. J. (2024). *The DIKW model in the age of artificial intelligence*. Postdigital science and education, 1-10 → https://www.researchgate.net/publication/378527476_The_DIKW_Model_in_the_Age_of_Artificial_Intelligence
 
-- van Meter, H. J. (2020). *Revising the DIKW pyramid and the real relationship between data, information, knowledge, and wisdom*. Law, Technology and Humans, 2(2), 69–80. https://search.informit.org/doi/10.3316/agispt.20210112042035
+- Weinberger, D. (2010). *The Problem with the Data-Information-Knowledge-Wisdom Hierarchy*. Harvard
+Business Review → https://hbr.org/2010/02/data-is-to-info-as-info-is-not
 
 **Hecha la vinculación con la clase previa, sobre [Datos e información](https://github.com/profesorfaco/opr/tree/main/clase-01#readme), conviene avanzar a las gráficas**.
 
