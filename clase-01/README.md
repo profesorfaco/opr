@@ -64,8 +64,8 @@ Falta conectar a 50 y 10 con un *fact* para tener *data*. Esa conexión exige un
 
 Pero no es tan conveniente profundizar ahora en cuestiones "fenomenológicas". Sí es conveniente revisar la idea del DIKW (Data → Information → Knowledge → Wisdom) en cualquiera de los siguientes artículos:
 
-- Baskarada, S. & Koronios, A. (2013). Data, Information, Knowledge, Wisdom (DIKW): A Semiotic Theoretical and Empirical Exploration of the Hierarchy and its Quality Dimension → https://doi.org/10.3127/ajis.v18i1.748
-
+- Frické, M. H. (2018). Data-information-knowledge-wisdom (DIKW) pyramid, framework, continuum. Encyclopedia of big data, 1-4 → https://link.springer.com/referenceworkentry/10.1007/978-3-319-32001-4_331-1
+  
 - Peters, M. A., Jandrić, P., & Green, B. J. (2024). *The DIKW model in the age of artificial intelligence*. Postdigital science and education, 1-10 → https://www.researchgate.net/publication/378527476_The_DIKW_Model_in_the_Age_of_Artificial_Intelligence
 
 - Weinberger, D. (2010). *The Problem with the Data-Information-Knowledge-Wisdom Hierarchy*. Harvard
