@@ -91,7 +91,7 @@ De allí se pueden tomar 4 pares de datos, donde ambos sumen 100, para luego apr
 </svg>
 ```
 
-Tal código se encuentra en  se encuentra en el *post*: [Scratch-made SVG Donut & Pie Charts in HTML5](https://heyoka.medium.com/scratch-made-svg-donut-pie-charts-in-html5-2c587e935d72).
+Tal código se encuentra en el *post*: [Scratch-made SVG Donut & Pie Charts in HTML5](https://heyoka.medium.com/scratch-made-svg-donut-pie-charts-in-html5-2c587e935d72).
 
 A tal referencia, conviene sumar: 
 
@@ -101,7 +101,7 @@ A tal referencia, conviene sumar:
 
 - https://mozilladevelopers.github.io/playground/css-grid/04-fr-unit/
 
-Los resultados deben publicarse en un repositorio de GitHub, activando GitHub Pages y luego ingresando la URL de su página web operativo en foro de canvas.
+Los resultados deben publicarse en un repositorio de GitHub, activando GitHub Pages y luego ingresando la URL de su página web operativa en un foro de canvas por crearse.
 
 - - - - - - - 
 
