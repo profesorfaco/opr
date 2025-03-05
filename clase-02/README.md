@@ -4,9 +4,9 @@
 
 ### Teoría (para la casa)
 
-**Retomemos las ideas compartidas la clase recién pasada, mediante tres citas**.
+**Para conectar con la clase recién pasada:**.
 
-Partamos por *The DIKW model in the age of artificial intelligence*, de Peters, Jandrić & Green:
+Partamos con una cita a *The DIKW model in the age of artificial intelligence*, de Peters, Jandrić & Green (2024):
 
 > Recognizing the limitations of the DIKW model […] encourages humility in our pursuit of understanding, acknowledging that the path to wisdom is nuanced and multifaceted.
 
