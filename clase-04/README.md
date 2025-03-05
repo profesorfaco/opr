@@ -205,15 +205,13 @@ Estamos partiendo con esto:
             const veintiuno = document.querySelector("#veintiuno");
             const veintidos = document.querySelector("#veintidos");
 
-            // buena idea!!
-
+            // marca
             const picto = "◾";
 
             // los raw data
             var datos;
 
             //esto es nuevo, no se asusten:
-
             var profes = [];
             var profesOK = [];
             const olimpo = document.querySelector("address");
