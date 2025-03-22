@@ -88,96 +88,72 @@ Estamos partiendo con esto:
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet" />
         <style>
-            body {
-                font-family: "Sofia Sans Extra Condensed", sans-serif;
-                text-align: center;
-            }
-            div {
-                margin: 2vh 25vw 5vh 25vw;
-            }
-
+            body { font-family: "Sofia Sans Extra Condensed", sans-serif; text-align: center; }
+            
+            div { margin: 2vh 25vw 5vh 25vw; }
+            
             @media (orientation: portrait) {
-                div {
-                    margin: 2vh 2vw 3vh 2vw;
-                }
+                div { margin: 2vh 2vw 3vh 2vw; }
             }
-
-            svg#cabecera {
-                width: 70%;
-                margin: 0 auto;
-            }
+            
+            svg#cabecera { width: 70%; margin: 0 auto;}
 
             @keyframes flota {
-                0% {
-                    transform: translateY(0);
-                }
-                100% {
-                    transform: translateY(10px);
-                }
+                0% {transform: translateY(0);}
+                100% {transform: translateY(10px);}
             }
 
-            polygon#iceberg {
-                animation: flota 3s ease infinite alternate;
-            }
+            polygon#iceberg { animation: flota 3s ease infinite alternate; }
 
-            line#mar {
-                animation: flota 2s ease infinite alternate;
-            }
+            line#mar { animation: flota 2s ease infinite alternate; }
 
-            div > h1 {
-                font-size: calc(2rem + 2vw);
-                letter-spacing: 0.1rem;
-            }
+            h1 { font-size: calc(2rem + 2vw); letter-spacing: 0.1rem;}
 
-            div > h1 > span {
-                font-size: 80%;
-                color: #0288d1;
-                margin-left: 0.5rem;
-                margin-right: 0.5rem;
-                display: inline-block;
-            }
+            h1 > span { font-size: 80%; color: #0288d1; margin-left: 0.5rem; margin-right: 0.5rem; display: inline-block;}
 
-            div > p {
-                text-align: left;
-                font-size:1.25rem;
-            }
+            p {text-align: left; font-size:1.25rem;}
         </style>
     </head>
     <body>
         <div>
+            
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" id="cabecera" fill="none" stroke="#29B6F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                 <polygon points="200,20 250,100 300,150 250,350 200,380 125,275 90,200 100,125 180,25" id="iceberg" />
                 <line x1="10" y1="150" x2="390" y2="150" id="mar" />
             </svg>
-
+            
             <h1>TITANIC <span><sup>v</sup>/<small>s</small></span> ICEBERG</h1>
-
-            <p>Usaremos datos del Titanic, los que podrían verse sin más en columnas de números. Columnas que hacen sentido gracias a las convenciones en <a href="https://github.com/datasciencedojo/datasets/blob/master/titanic.csv" target="_blank">una tabla</a>.</p>
-
-            <p>Los datos nos permiten comparar la cantidad de pasajeros en cada clase.</p>
+            
+            <p>Usaremos datos disponibles en línea, en <a href="https://github.com/datasciencedojo/datasets/blob/master/titanic.csv" target="_blank">esta tabla</a>. Con tales datos podremos visualizar el destino de las <span id="dato"></span> personas que iban a bordo del Titanic, divididas en tres clases:</p>
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 892 150">
                 <g id="segmentos"></g>
             </svg>
 
+            <p>Apelando a la ficción hollywoodense y algunas condiciones (lógicas): Partamos calculando el número de personas como <a href="https://es.wikipedia.org/wiki/Rose_DeWitt_Bukater" target="_blank">Rose DeWitt Bukater</a> y <a href="https://es.wikipedia.org/wiki/Jack_Dawson" target="_blank">Jack Dawson</a>.</p>
+
         </div>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"
-            integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
         <script>
             var primera = 0;
             var segunda = 0;
             var tercera = 0;
+            const total = document.querySelector("#dato");
             const clases = document.querySelector("#segmentos");
+
             Papa.parse("https://raw.githubusercontent.com/datasciencedojo/datasets/refs/heads/master/titanic.csv", {
                 download: true,
                 header: true,
                 dynamicTyping: true,
+                
                 complete: function (results) {
                     console.log(results);
+                    total.innerHTML = results.data.length;
+                    
+                    //reviso los datos
+
                     results.data.forEach(d => {
                         if(d.Pclass == 1){
                             primera = primera+1;
@@ -187,22 +163,25 @@ Estamos partiendo con esto:
                             tercera = tercera+1;
                         }
                     })
-                    console.log("Iban " + results.data.length + " a bordo.");
-                    
-                    clases.innerHTML += `<rect x="0" y="0" width="${primera}" height="100" fill="#B3E5FC"></rect>
-                    <text x="${primera/2}" y="50" font-size="36" dominant-baseline="middle" text-anchor="middle" fill="#01579B">${primera}</text>
-                    <text x="${primera/2}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#01579B">PRIMERA</text>`
+
+                    //trabajo con el resultado de la revisión
+
+                    clases.innerHTML = `<rect x="0" y="0" width="${primera}" height="100" fill="#B3E5FC"></rect>
+                    <text x="${primera/2}" y="50" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#01579B">${primera}</text>
+                    <text x="${primera/2}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#01579B">PRIMERA CLASE</text>`
 
                     clases.innerHTML += `<rect x="${primera}" y="0" width="${segunda}" height="100" fill="#4FC3F7"></rect>
-                    <text x="${primera+(segunda/2)}" y="50" font-size="36" dominant-baseline="middle" text-anchor="middle" fill="#01579B">${segunda}</text>
-                    <text x="${primera+(segunda/2)}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#01579B">SEGUNDA</text>`
+                    <text x="${primera+(segunda/2)}" y="50" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#01579B">${segunda}</text>
+                    <text x="${primera+(segunda/2)}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#01579B">SEGUNDA CLASE</text>`
 
                    clases.innerHTML += `<rect x="${primera+segunda}" y="0" width="${tercera}" height="100" fill="#03A9F4"></rect>
-                    <text x="${primera+segunda+(tercera/2)}" y="50" font-size="36" dominant-baseline="middle" text-anchor="middle" fill="#01579B">${tercera}</text>
-                    <text x="${primera+segunda+(tercera/2)}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#01579B">TERCERA</text>`
+                    <text x="${primera+segunda+(tercera/2)}" y="50" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#01579B">${tercera}</text>
+                    <text x="${primera+segunda+(tercera/2)}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#01579B">TERCERA CLASE</text>`
 
-                }
-            });
+                } // cierra lo abierto después de complete: function…
+
+            }); // cierra lo abierto después de Papa.parse("https…
+
         </script>
     </body>
 </html>
