@@ -75,7 +75,7 @@ Con ello ya tenemos datos con los que comenzar a trabajar, desde el examen de la
 
 ### Práctica (para la clase)
 
-Estamos partiendo con esto: 
+Partamos copiando lo que sigue en un documento nuevo, para luego guardarlo como `index.html`: 
 
 ```
 <!DOCTYPE html>
@@ -84,17 +84,21 @@ Estamos partiendo con esto:
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>TITANIC v/s ICEBERG</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <style>
-            body { font-family: "Sofia Sans Extra Condensed", sans-serif; text-align: center; }
+            body {   font-family: "Barlow Condensed", sans-serif; text-align: center; color:#222; background:#fcfeff}
             
             div { margin: 2vh 25vw 5vh 25vw; }
             
             @media (orientation: portrait) {
-                div { margin: 2vh 2vw 3vh 2vw; }
+                div { margin: 2vh 4vw 3vh 4vw; }
             }
+
+            a{color:#01579B;}
+
+            a:hover{color:#1976D2}
             
             svg#cabecera { width: 70%; margin: 0 auto;}
 
@@ -112,26 +116,47 @@ Estamos partiendo con esto:
             h1 > span { font-size: 80%; color: #0288d1; margin-left: 0.5rem; margin-right: 0.5rem; display: inline-block;}
 
             p {text-align: left; font-size:1.25rem;}
+
+            footer{
+                border-top:1px solid silver;
+                margin-top:3rem;
+                padding-bottom:3rem;
+            }
+            footer > p{
+                font-size: 1rem;
+                display:flex;
+                justify-content: space-between;
+            }
         </style>
     </head>
     <body>
         <div>
+            <header>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" id="cabecera" fill="none" stroke="#29B6F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="200,20 250,100 300,150 250,350 200,380 125,275 90,200 100,125 180,25" id="iceberg" />
+                    <line x1="10" y1="100" x2="390" y2="100" id="mar" />
+                </svg> 
+                
+                <h1>TITANIC <span><sup>v</sup>/<small>s</small></span> ICEBERG</h1>
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" id="cabecera" fill="none" stroke="#29B6F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="200,20 250,100 300,150 250,350 200,380 125,275 90,200 100,125 180,25" id="iceberg" />
-                <line x1="10" y1="150" x2="390" y2="150" id="mar" />
-            </svg>
-            
-            <h1>TITANIC <span><sup>v</sup>/<small>s</small></span> ICEBERG</h1>
-            
-            <p>Usaremos datos disponibles en línea, en <a href="https://github.com/datasciencedojo/datasets/blob/master/titanic.csv" target="_blank">esta tabla</a>. Con tales datos podremos visualizar el destino de las <span id="dato"></span> personas que iban a bordo del Titanic, divididas en tres clases:</p>
+            </header>
+            <main>
+                
+                <p>Usaremos datos disponibles en línea, en <a href="https://github.com/datasciencedojo/datasets/blob/master/titanic.csv" target="_blank">esta tabla</a>. Con tales datos podremos visualizar el destino de las <span id="dato"></span> personas que iban a bordo del Titanic, divididas en tres clases:</p>
 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 892 150">
-                <g id="segmentos"></g>
-            </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 892 150">
+                    <g id="segmentos"></g>
+                </svg>
+                
+                <p>Aprovechando la ficción y algunas condiciones lógicas: Calculemos el número de personas como <a href="https://es.wikipedia.org/wiki/Rose_DeWitt_Bukater" target="_blank">Rose DeWitt Bukater</a> y <a href="https://es.wikipedia.org/wiki/Jack_Dawson" target="_blank">Jack Dawson</a>.</p>
 
-            <p>Apelando a la ficción hollywoodense y algunas condiciones (lógicas): Partamos calculando el número de personas como <a href="https://es.wikipedia.org/wiki/Rose_DeWitt_Bukater" target="_blank">Rose DeWitt Bukater</a> y <a href="https://es.wikipedia.org/wiki/Jack_Dawson" target="_blank">Jack Dawson</a>.</p>
-
+            </main>
+            <footer>
+                
+                <p><a href="https://github.com/profesorfaco/opr/tree/main/clase-04">DNO097</a> <a href="#">Nombre Apellido</a></p>
+                
+            </footer>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -166,17 +191,17 @@ Estamos partiendo con esto:
 
                     //trabajo con el resultado de la revisión
 
-                    clases.innerHTML = `<rect x="0" y="0" width="${primera}" height="100" fill="#B3E5FC"></rect>
-                    <text x="${primera/2}" y="50" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#01579B">${primera}</text>
-                    <text x="${primera/2}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#01579B">PRIMERA CLASE</text>`
+                    clases.innerHTML = `<rect x="0" y="0" width="${primera}" height="100" fill="#42A5F5"></rect>
+                    <text x="${primera/2}" y="50" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${primera}</text>
+                    <text x="${primera/2}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#012d4f">PRIMERA CLASE</text>`
 
-                    clases.innerHTML += `<rect x="${primera}" y="0" width="${segunda}" height="100" fill="#4FC3F7"></rect>
-                    <text x="${primera+(segunda/2)}" y="50" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#01579B">${segunda}</text>
-                    <text x="${primera+(segunda/2)}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#01579B">SEGUNDA CLASE</text>`
+                    clases.innerHTML += `<rect x="${primera}" y="0" width="${segunda}" height="100" fill="#1E88E5"></rect>
+                    <text x="${primera+(segunda/2)}" y="50" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${segunda}</text>
+                    <text x="${primera+(segunda/2)}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#012d4f">SEGUNDA CLASE</text>`
 
-                   clases.innerHTML += `<rect x="${primera+segunda}" y="0" width="${tercera}" height="100" fill="#03A9F4"></rect>
-                    <text x="${primera+segunda+(tercera/2)}" y="50" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#01579B">${tercera}</text>
-                    <text x="${primera+segunda+(tercera/2)}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#01579B">TERCERA CLASE</text>`
+                   clases.innerHTML += `<rect x="${primera+segunda}" y="0" width="${tercera}" height="100" fill="#0277BD"></rect>
+                    <text x="${primera+segunda+(tercera/2)}" y="50" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${tercera}</text>
+                    <text x="${primera+segunda+(tercera/2)}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#012d4f">TERCERA CLASE</text>`
 
                 } // cierra lo abierto después de complete: function…
 
@@ -186,7 +211,6 @@ Estamos partiendo con esto:
     </body>
 </html>
 ```
-
 
 - - - - - - - 
 
