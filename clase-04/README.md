@@ -31,26 +31,24 @@ Si nos quedamos con la primera fila (de arriba hacia abajo) podemos notar su fun
 
 Así mismo podríamos leer un CSV con más datos: 
 
-https://raw.githubusercontent.com/profesorfaco/opr/main/clase-04/sietes.csv
+https://raw.githubusercontent.com/datasciencedojo/datasets/refs/heads/master/titanic.csv
 
-Siendo tantos datos, conviene aprovecharnos de una manera en que GitHub muestra los CSV dentro de los repositorios:
+Por legibilidad, conviene aprovecharnos de una manera en que GitHub muestra los CSV dentro de los repositorios:
 
-https://github.com/profesorfaco/opr/blob/main/clase-04/sietes.csv
+https://github.com/datasciencedojo/datasets/blob/master/titanic.csv
 
-Lo que tenemos entre los datos es una consulta parcial de https://diseno.uc.cl/memorias/all.php
+Podríamos buscar en tales datos por el total de pasajeros por clase, cuántos sobrevivieron en total, la distribución sexogenérica, etc. 
 
-La pregunta que le podemos hacer al CSV es: ¿Cuántos sietes hay registrados entre los años 2010 y 2022? 
+¡Pero no los busquemos a mano! Hagámoslo con JavaScript, y mostremos el resultado con SVG.
 
-¡Pero no los contemos a mano! Contémoslos con JavaScript, y mostremos el resultado con SVG.
-
-Primero necesitamos hacer un *fetch* y un *parser* de los datos en [sietes.csv](https://raw.githubusercontent.com/profesorfaco/opr/main/clase-04/sietes.csv). Para hacer lo que necesitamos muy rápido y [sin dolores de cabeza](https://youtu.be/RfMkdvN-23o?feature=shared), podríamos usar un atajo: [Papa Parse –The powerful, in-browser CSV parser for big boys and girls](https://www.papaparse.com/).
+Primero necesitamos hacer un *fetch* y un *parser* de los datos en [titanic.csv](https://raw.githubusercontent.com/datasciencedojo/datasets/refs/heads/master/titanic.csv). Para hacer lo que necesitamos muy rápido y [sin dolores de cabeza](https://youtu.be/RfMkdvN-23o?feature=shared), podríamos usar un atajo: [Papa Parse –The powerful, in-browser CSV parser for big boys and girls](https://www.papaparse.com/).
 
 Para usar el atajo, podríamos partir con algo como lo que sigue:
 
 ```
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-Papa.parse("https://raw.githubusercontent.com/profesorfaco/opr/main/clase-04/sietes.csv", {
+Papa.parse("https://raw.githubusercontent.com/datasciencedojo/datasets/refs/heads/master/titanic.csv", {
 	download: true,
 	header: true,
 	dynamicTyping: true,
