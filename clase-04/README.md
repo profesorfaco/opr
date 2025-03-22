@@ -83,104 +83,84 @@ Estamos partiendo con esto:
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>¡Clase 4!</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+        <title>TITANIC v/s ICEBERG</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet" />
+        <style>
+            body {
+                font-family: "Sofia Sans Extra Condensed", sans-serif;
+                text-align: center;
+            }
+            div {
+                margin: 2vh 25vw 5vh 25vw;
+            }
+
+            @media (orientation: portrait) {
+                div {
+                    margin: 2vh 2vw 3vh 2vw;
+                }
+            }
+
+            svg#cabecera {
+                width: 70%;
+                margin: 0 auto;
+            }
+
+            @keyframes flota {
+                0% {
+                    transform: translateY(0);
+                }
+                100% {
+                    transform: translateY(10px);
+                }
+            }
+
+            polygon#iceberg {
+                animation: flota 3s ease infinite alternate;
+            }
+
+            line#mar {
+                animation: flota 2s ease infinite alternate;
+            }
+
+            div > h1 {
+                font-size: calc(2rem + 2vw);
+                letter-spacing: 0.1rem;
+            }
+
+            div > h1 > span {
+                font-size: 80%;
+                color: #0288d1;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+                display: inline-block;
+            }
+
+            div > p {
+                text-align: left;
+                font-size:1.25rem;
+            }
+        </style>
     </head>
     <body>
-        <div class="container">
-            <div div="row">
-                <div div="col">
-                    <h1 class="mt-5 mb-4">Sietes por años:</h1>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" id="cabecera" fill="none" stroke="#29B6F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="200,20 250,100 300,150 250,350 200,380 125,275 90,200 100,125 180,25" id="iceberg" />
+                <line x1="10" y1="150" x2="390" y2="150" id="mar" />
+            </svg>
 
-                    <h2>Total por año</h2>
+            <h1>TITANIC <span><sup>v</sup>/<small>s</small></span> ICEBERG</h1>
 
-                    <table class="table table-striped">
-                        <tr>
-                            <td>2010</td>
-                            <td id="diez"></td>
-                            <td></td>
-                        </tr>
+            <p>Usaremos datos del Titanic, los que podrían verse sin más en columnas de números. Columnas que hacen sentido gracias a las convenciones en <a href="https://github.com/datasciencedojo/datasets/blob/master/titanic.csv" target="_blank">una tabla</a>.</p>
 
-                        <tr>
-                            <td>2011</td>
-                            <td id="once"></td>
-                            <td></td>
-                        </tr>
+            <p>Los datos nos permiten comparar la cantidad de pasajeros en cada clase.</p>
 
-                        <tr>
-                            <td>2012</td>
-                            <td id="doce"></td>
-                            <td></td>
-                        </tr>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 892 150">
+                <g id="segmentos"></g>
+            </svg>
 
-                        <tr>
-                            <td>2013</td>
-                            <td id="trece"></td>
-                            <td></td>
-                        </tr>
-
-                        <tr>
-                            <td>2014</td>
-                            <td id="catorce"></td>
-                            <td></td>
-                        </tr>
-
-                        <tr>
-                            <td>2015</td>
-                            <td id="quince"></td>
-                            <td></td>
-                        </tr>
-
-                        <tr>
-                            <td>2016</td>
-                            <td id="dieciseis"></td>
-                            <td></td>
-                        </tr>
-
-                        <tr>
-                            <td>2017</td>
-                            <td id="diecisiete"></td>
-                            <td></td>
-                        </tr>
-
-                        <tr>
-                            <td>2018</td>
-                            <td id="dieciocho"></td>
-                            <td></td>
-                        </tr>
-
-                        <tr>
-                            <td>2019</td>
-                            <td id="diecinueve"></td>
-                            <td></td>
-                        </tr>
-
-                        <tr>
-                            <td>2020</td>
-                            <td id="veinte"></td>
-                            <td></td>
-                        </tr>
-
-                        <tr>
-                            <td>2021</td>
-                            <td id="veintiuno"></td>
-                            <td></td>
-                        </tr>
-
-                        <tr>
-                            <td>2022</td>
-                            <td id="veintidos"></td>
-                            <td></td>
-                        </tr>
-                    </table>
-
-                    <h2 class="my-5">Total por Profes</h2>
-
-                    <address></address>
-                </div>
-            </div>
         </div>
-
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"
             integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ=="
@@ -188,86 +168,40 @@ Estamos partiendo con esto:
             referrerpolicy="no-referrer"
         ></script>
         <script>
-            // todas las celdas
-            const diez = document.querySelector("#diez");
-            const once = document.querySelector("#once");
-            const doce = document.querySelector("#doce");
-            const trece = document.querySelector("#trece");
-            const catorce = document.querySelector("#catorce");
-            const quince = document.querySelector("#quince");
-            const dieciseis = document.querySelector("#dieciseis");
-            const diecisiete = document.querySelector("#diecisiete");
-            const dieciocho = document.querySelector("#dieciocho");
-            const diecinueve = document.querySelector("#diecinueve");
-            const veinte = document.querySelector("#veinte");
-            const veintiuno = document.querySelector("#veintiuno");
-            const veintidos = document.querySelector("#veintidos");
-
-            // marca
-            const picto = "◾";
-
-            // los raw data
-            var datos;
-
-            //esto es nuevo, no se asusten:
-            var profes = [];
-            var profesOK = [];
-            const olimpo = document.querySelector("address");
-
-            Papa.parse("https://raw.githubusercontent.com/profesorfaco/opr/main/clase-04/sietes.csv", {
+            var primera = 0;
+            var segunda = 0;
+            var tercera = 0;
+            const clases = document.querySelector("#segmentos");
+            Papa.parse("https://raw.githubusercontent.com/datasciencedojo/datasets/refs/heads/master/titanic.csv", {
                 download: true,
                 header: true,
                 dynamicTyping: true,
                 complete: function (results) {
                     console.log(results);
-                    datos = results.data;
-                    console.log(datos);
-                    datos.forEach((x) => {
-                        if (x.year == 2010) {
-                            diez.innerHTML += picto;
-                        } else if (x.year == 2011) {
-                            once.innerHTML += picto;
-                        } else if (x.year == 2012) {
-                            doce.innerHTML += picto;
-                        } else if (x.year == 2013) {
-                            trece.innerHTML += picto;
-                        } else if (x.year == 2014) {
-                            catorce.innerHTML += picto;
-                        } else if (x.year == 2015) {
-                            quince.innerHTML += picto;
-                        } else if (x.year == 2016) {
-                            dieciseis.innerHTML += picto;
-                        } else if (x.year == 2017) {
-                            diecisiete.innerHTML += picto;
-                        } else if (x.year == 2018) {
-                            dieciocho.innerHTML += picto;
-                        } else if (x.year == 2019) {
-                            diecinueve.innerHTML += picto;
-                        } else if (x.year == 2020) {
-                            veinte.innerHTML += picto;
-                        } else if (x.year == 2021) {
-                            veintiuno.innerHTML += picto;
-                        } else {
-                            veintidos.innerHTML += picto;
+                    results.data.forEach(d => {
+                        if(d.Pclass == 1){
+                            primera = primera+1;
+                        } else if(d.Pclass == 2){
+                            segunda = segunda+1;
+                        }else{
+                            tercera = tercera+1;
                         }
+                    })
+                    console.log("Iban " + results.data.length + " a bordo.");
+                    
+                    clases.innerHTML += `<rect x="0" y="0" width="${primera}" height="100" fill="#B3E5FC"></rect>
+                    <text x="${primera/2}" y="50" font-size="36" dominant-baseline="middle" text-anchor="middle" fill="#01579B">${primera}</text>
+                    <text x="${primera/2}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#01579B">PRIMERA</text>`
 
-                        //puedo aprovecharme del mismo ciclo
+                    clases.innerHTML += `<rect x="${primera}" y="0" width="${segunda}" height="100" fill="#4FC3F7"></rect>
+                    <text x="${primera+(segunda/2)}" y="50" font-size="36" dominant-baseline="middle" text-anchor="middle" fill="#01579B">${segunda}</text>
+                    <text x="${primera+(segunda/2)}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#01579B">SEGUNDA</text>`
 
-                        profes.push(x.tutor);
-                    });
+                   clases.innerHTML += `<rect x="${primera+segunda}" y="0" width="${tercera}" height="100" fill="#03A9F4"></rect>
+                    <text x="${primera+segunda+(tercera/2)}" y="50" font-size="36" dominant-baseline="middle" text-anchor="middle" fill="#01579B">${tercera}</text>
+                    <text x="${primera+segunda+(tercera/2)}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#01579B">TERCERA</text>`
 
-                    //y agrego algunas cosas
-
-                    console.log(profes);
-
-                    profesOK = [...new Set(profes)];
-
-                    profesOK.sort();
-
-                    console.log(profesOK);
-
-                    olimpo.innerHTML = "Acá irían los profes… ";
-                },
+                }
             });
         </script>
     </body>
