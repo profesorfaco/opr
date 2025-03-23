@@ -64,120 +64,74 @@ Partamos con el siguiente código en un `index.html`:
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>TITANIC v/s ICEBERG</title>
+        <title>Datos e información en gráficas</title>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
-            body{ font-family: "Roboto Condensed", sans-serif; font-weight:300; color:#333; background:#fcfeff; }
-            
-            div{ width:min(95%,700px); margin:0 auto;}
-            
-            a{color:#000;}
-
-            a:hover{color:#333;}
-            
-            header{text-align: center; }
-
-            header svg{ width: 75%; margin: 0 auto;}
-
-            @keyframes flota {
-                0% {transform: translateY(0);}
-                100% {transform: translateY(10px);}
+            body {
+                font-family: Helvetica, Arial, sans-serif;
+                text-align: center;
+            }
+            div {
+                margin: 2vh 25vw 5vh 25vw;
             }
 
-            polygon#iceberg { animation: flota 3s ease infinite alternate; }
+            @media (orientation: portrait) {
+                div {
+                    margin: 2vh 2vw 3vh 2vw;
+                }
+            }
 
-            line#mar { animation: flota 2s ease infinite alternate; }
+            div > svg {
+                margin: 1rem;
+            }
 
-            h1 { font-size: calc(1rem + 4vw); line-height: 1; font-weight: 200;}
-
-            h1 > span {font-size: 90%; color: #111; font-weight: 200; display: inline-block; margin:0 0.5rem}
-
-            p {margin:0.9rem 0.3rem;}
-
-            footer{ border-top:1px solid #eee; margin-top:3rem; padding-bottom:3rem; }
-            
-            footer > p{ display:flex; justify-content: space-between; }
+            div > p {
+                margin: 1rem;
+            }
         </style>
     </head>
     <body>
         <div>
-            <header>
-                
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" id="cabecera" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polygon points="200,20 250,100 300,150 250,350 200,380 125,275 90,200 100,125 180,25" id="iceberg" />
-                    <line x1="10" y1="100" x2="390" y2="100" id="mar" />
-                </svg> 
-                
-                <h1>TITANIC <span><sup>v</sup>/<small>s</small></span> ICEBERG</h1>
-            
-            </header>
-            <main>
-                
-                <p>Usaremos datos disponibles en línea, en <a href="https://github.com/datasciencedojo/datasets/blob/master/titanic.csv" target="_blank">esta tabla</a>. Con tales datos podremos visualizar el destino de las <span id="dato"></span> personas que iban a bordo del Titanic, divididas en tres clases:</p>
+            <svg viewBox="0 0 100 100">
+                <defs>
+                    <clipPath id="clipping">
+                        <path
+                            d="M94.53,5.54V94.46H73.74l-1.85-6.15H88.38V11.69H49.75V29.4c-10.94,0-16.6,5-19.55,16.6l-1.73,6.64c-1.1,4.43,1.36,8.25,6.15,8.25H37l-1.47,6H30.44c-4.06,0-6.39,1.36-7.62,5l-3,8.85H46.31l3.44-3.32v17H5.47V5.54ZM66.36,88.31l1.84,6.15H59.35l-1.72-6.15L50,62.61H48.52L46.31,74.17l-3.44,3H25.28l1.23-3.81A3.87,3.87,0,0,1,30.2,70.6h8.11l7-29.76c-2.83.73-4.31,2.83-5.29,7l-1.73,7A3.26,3.26,0,0,1,35,57.69a3.1,3.1,0,0,1-2.83-4.06l1.73-6.77c2.58-10.08,7.25-13.77,17.22-13.77,7.75,0,11.81,3.32,10.08,11.19L57.75,59.9Zm-2.09-67.4c0,2.95,0,7.63-.86,9-.37.61-1.85,1.6-4.55,1.6-2.46,0-4.06-1-4.43-1.6-.86-1.48-1.11-6.27-1.11-9.23a3.11,3.11,0,0,1,.74-2.46,6.57,6.57,0,0,1,4.8-1.84,7.32,7.32,0,0,1,4.79,1.84C64.27,18.7,64.27,19.56,64.27,20.91Zm6.89,39a9.47,9.47,0,0,1-2.59-.49l-6.89-2L63,50.92l8.61,2.34a3.37,3.37,0,0,1-.49,6.64Z"
+                        />
+                    </clipPath>
+                </defs>
+                <image height="100%" width="100%" preserveAspectRatio="xMinYMin slice" xlink:href="https://www.guemil.info/wp-content/themes/guemil_fondart/img/bg-1.png" clip-path="url(#clipping)" />
+            </svg>
 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 892 150">
-                    <g id="segmentos"></g>
-                </svg>
-                
-                <p>Aprovechando la ficción y algunas condiciones lógicas: Calculemos el número de personas como <a href="https://es.wikipedia.org/wiki/Rose_DeWitt_Bukater" target="_blank">Rose DeWitt Bukater</a> y <a href="https://es.wikipedia.org/wiki/Jack_Dawson" target="_blank">Jack Dawson</a>.</p>
+            <p>
+                Usando <a href="https://www.guemil.info/" target="_blank">Guemil</a> para una doble representación; el <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths" target="_blank">path</a> que recorta es una
+                representación y la <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image" target="_blank">image</a> recortada es otra.
+            </p>
 
-            </main>
-            <footer>
-                
-                <p><a href="https://github.com/profesorfaco/opr/tree/main/clase-04">DNO097</a> <a href="#">Nombre Apellido</a></p>
-                
-            </footer>
+            <svg viewBox="0 0 42 42">
+                <circle cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ddd" stroke-width="2"></circle>
+                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#FE4300" stroke-width="2" stroke-dasharray="79 21" stroke-dashoffset="25"></circle>
+                <text x="50%" y="29" dominant-baseline="middle" text-anchor="middle" font-size="6" fill="#FE4300">79%</text>
+                <image x="15" y="10" width="12" height="12" xlink:href="https://raw.githubusercontent.com/Guemil/Guemil_Icons_v15_2020/main/svg/09_Emergency_exit_v15.svg"></image>
+            </svg>
+
+            <p>
+                Entre las personas consultadas, un 79% refiere a la semejanza de lo visto con una salida de emergencia ya vista (lo que se está representando). El dato de éxito de la referencia también se podría presentar, si se aproxima a
+                8 en 10, como sigue:
+            </p>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 16" id="personas"></svg>
+
+            <p>En la presentación gráfica del dato de 8 en 10 se utilizó un <a href="https://datavizcatalogue.com/ES/metodos/grafico_de_pictogramas.html" target="_blank">Gráfico de pictogramas</a></p>
         </div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        
         <script>
-            var primera = 0;
-            var segunda = 0;
-            var tercera = 0;
-            const total = document.querySelector("#dato");
-            const clases = document.querySelector("#segmentos");
-
-            Papa.parse("https://raw.githubusercontent.com/datasciencedojo/datasets/refs/heads/master/titanic.csv", {
-                download: true,
-                header: true,
-                dynamicTyping: true,
-                
-                complete: function (results) {
-                    console.log(results);
-                    total.innerHTML = results.data.length;
-                    
-                    //reviso los datos
-
-                    results.data.forEach(d => {
-                        if(d.Pclass == 1){
-                            primera = primera+1;
-                        } else if(d.Pclass == 2){
-                            segunda = segunda+1;
-                        }else{
-                            tercera = tercera+1;
-                        }
-                    })
-
-                    //trabajo con el resultado de la revisión
-
-                    clases.innerHTML = `<rect x="0" y="0" width="${primera}" height="100" fill="#333"></rect>
-                    <text x="${primera/2}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${primera}</text>
-                    <text x="${primera/2}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#012d4f">PRIMERA CLASE</text>`
-
-                    clases.innerHTML += `<rect x="${primera}" y="0" width="${segunda}" height="100" fill="#666"></rect>
-                    <text x="${primera+(segunda/2)}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${segunda}</text>
-                    <text x="${primera+(segunda/2)}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#012d4f">SEGUNDA CLASE</text>`
-
-                   clases.innerHTML += `<rect x="${primera+segunda}" y="0" width="${tercera}" height="100" fill="#999"></rect>
-                    <text x="${primera+segunda+(tercera/2)}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${tercera}</text>
-                    <text x="${primera+segunda+(tercera/2)}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#012d4f">TERCERA CLASE</text>`
-
-                } // cierra lo abierto después de complete: function…
-
-            }); // cierra lo abierto después de Papa.parse("https…
-
+            for (let x = 0; x < 10; x++) {
+                if (x < 8) {
+                    document.querySelector("#personas").innerHTML += `<path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" fill="#FE4300" transform ="translate(${x * 16} 0)"/>`;
+                } else {
+                    document.querySelector("#personas").innerHTML += `<path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" fill="#ddd" transform ="translate(${x * 16} 0)"/>`;
+                }
+            }
         </script>
     </body>
 </html>
