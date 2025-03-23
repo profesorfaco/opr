@@ -84,23 +84,20 @@ Partamos copiando lo que sigue en un documento nuevo, para luego guardarlo como 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>TITANIC v/s ICEBERG</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <style>
-            body {   font-family: "Barlow Condensed", sans-serif; text-align: center; color:#222; background:#fcfeff}
-            
-            div { margin: 2vh 25vw 5vh 25vw; }
-            
-            @media (orientation: portrait) {
-                div { margin: 2vh 4vw 3vh 4vw; }
-            }
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-            a{color:#01579B;}
-
-            a:hover{color:#1976D2}
+            body{ font-family: "Roboto Condensed", sans-serif; font-weight:300; color:#333; background:#fcfeff; }
             
-            svg#cabecera { width: 70%; margin: 0 auto;}
+            div{ width:min(95%,700px); margin:0 auto;}
+            
+            a{color:#000;}
+
+            a:hover{color:#333;}
+            
+            header{text-align: center; }
+
+            header svg{ width: 75%; margin: 0 auto;}
 
             @keyframes flota {
                 0% {transform: translateY(0);}
@@ -111,29 +108,22 @@ Partamos copiando lo que sigue en un documento nuevo, para luego guardarlo como 
 
             line#mar { animation: flota 2s ease infinite alternate; }
 
-            h1 { font-size: calc(2rem + 2vw); letter-spacing: 0.1rem;}
+            h1 { font-size: calc(1rem + 4vw); line-height: 1; font-weight: 200;}
 
-            h1 > span { font-size: 80%; color: #0288d1; margin-left: 0.5rem; margin-right: 0.5rem; display: inline-block;}
+            h1 > span {font-size: 90%; color: #111; font-weight: 200; display: inline-block; margin:0 0.5rem}
 
-            p {text-align: left; font-size:1.25rem;}
+            p {margin:0.9rem 0.3rem;}
 
-            footer{
-                border-top:1px solid silver;
-                margin-top:3rem;
-                padding-bottom:3rem;
-            }
-            footer > p{
-                font-size: 1rem;
-                display:flex;
-                justify-content: space-between;
-            }
+            footer{ border-top:1px solid #eee; margin-top:3rem; padding-bottom:3rem; }
+            
+            footer > p{ display:flex; justify-content: space-between; }
         </style>
     </head>
     <body>
         <div>
             <header>
                 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" id="cabecera" fill="none" stroke="#29B6F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" id="cabecera" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polygon points="200,20 250,100 300,150 250,350 200,380 125,275 90,200 100,125 180,25" id="iceberg" />
                     <line x1="10" y1="100" x2="390" y2="100" id="mar" />
                 </svg> 
@@ -191,17 +181,17 @@ Partamos copiando lo que sigue en un documento nuevo, para luego guardarlo como 
 
                     //trabajo con el resultado de la revisión
 
-                    clases.innerHTML = `<rect x="0" y="0" width="${primera}" height="100" fill="#42A5F5"></rect>
-                    <text x="${primera/2}" y="50" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${primera}</text>
-                    <text x="${primera/2}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#012d4f">PRIMERA CLASE</text>`
+                    clases.innerHTML = `<rect x="0" y="0" width="${primera}" height="100" fill="#333"></rect>
+                    <text x="${primera/2}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${primera}</text>
+                    <text x="${primera/2}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#012d4f">PRIMERA CLASE</text>`
 
-                    clases.innerHTML += `<rect x="${primera}" y="0" width="${segunda}" height="100" fill="#1E88E5"></rect>
-                    <text x="${primera+(segunda/2)}" y="50" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${segunda}</text>
-                    <text x="${primera+(segunda/2)}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#012d4f">SEGUNDA CLASE</text>`
+                    clases.innerHTML += `<rect x="${primera}" y="0" width="${segunda}" height="100" fill="#666"></rect>
+                    <text x="${primera+(segunda/2)}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${segunda}</text>
+                    <text x="${primera+(segunda/2)}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#012d4f">SEGUNDA CLASE</text>`
 
-                   clases.innerHTML += `<rect x="${primera+segunda}" y="0" width="${tercera}" height="100" fill="#0277BD"></rect>
-                    <text x="${primera+segunda+(tercera/2)}" y="50" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${tercera}</text>
-                    <text x="${primera+segunda+(tercera/2)}" y="120" font-size="24" dominant-baseline="middle" text-anchor="middle" fill="#012d4f">TERCERA CLASE</text>`
+                   clases.innerHTML += `<rect x="${primera+segunda}" y="0" width="${tercera}" height="100" fill="#999"></rect>
+                    <text x="${primera+segunda+(tercera/2)}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${tercera}</text>
+                    <text x="${primera+segunda+(tercera/2)}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#012d4f">TERCERA CLASE</text>`
 
                 } // cierra lo abierto después de complete: function…
 
