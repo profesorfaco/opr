@@ -33,15 +33,15 @@ Así mismo podríamos leer un CSV con más datos:
 
 https://raw.githubusercontent.com/datasciencedojo/datasets/refs/heads/master/titanic.csv
 
-Por legibilidad, conviene aprovecharnos de una manera en que GitHub muestra los CSV dentro de los repositorios:
+Por legibilidad, conviene aprovecharnos de la manera en que GitHub muestra los CSV dentro de los repositorios:
 
 https://github.com/datasciencedojo/datasets/blob/master/titanic.csv
 
-Podríamos buscar en tales datos por el total de pasajeros por clase, cuántos sobrevivieron en total, la distribución sexogenérica, etc. 
+Podríamos revisar en tales datos el total de pasajeros por clase, cuántos sobrevivieron, la distribución sexogenérica, etc. 
 
 ¡Pero no los busquemos a mano! Hagámoslo con JavaScript, y mostremos el resultado con SVG.
 
-Primero necesitamos hacer un *fetch* y un *parser* de los datos en [titanic.csv](https://raw.githubusercontent.com/datasciencedojo/datasets/refs/heads/master/titanic.csv). Para hacer lo que necesitamos muy rápido y [sin dolores de cabeza](https://youtu.be/RfMkdvN-23o?feature=shared), podríamos usar un atajo: [Papa Parse –The powerful, in-browser CSV parser for big boys and girls](https://www.papaparse.com/).
+Para esto, primero necesitamos hacer un *fetch* y un *parser* de los datos en [titanic.csv](https://raw.githubusercontent.com/datasciencedojo/datasets/refs/heads/master/titanic.csv). Para hacer lo que necesitamos muy rápido y [sin dolores de cabeza](https://youtu.be/RfMkdvN-23o?feature=shared), podríamos usar un atajo: [Papa Parse –The powerful, in-browser CSV parser for big boys and girls](https://www.papaparse.com/).
 
 Para usar el atajo, podríamos partir con algo como lo que sigue:
 
@@ -69,7 +69,7 @@ Y si leemos tal estructura contenida por `Papa.parse("…", {})`, notaremos que 
 
 `dynamicTyping: true` → trate a los números como tales, sin transformarlos a "caracteres" ni "cadenas de caracteres". 
 
-Con ello ya tenemos datos con los que comenzar a trabajar, desde el examen de la Consola de JavaScript (donde se podrían ver los `results` del *script*).
+Con ello ya tenemos datos con los que comenzar a trabajar, datos que podríamos ver en la Consola de JavaScript.
 
 - - - - - - - - - - - - - - 
 
