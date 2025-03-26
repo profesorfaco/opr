@@ -202,6 +202,18 @@ Partamos copiando lo que sigue en un documento nuevo, para luego guardarlo como 
 </html>
 ```
 
+Y les dejo la base para los gráficos de dona: 
+
+```
+<svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+    <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+    <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#000" stroke-width="3" stroke-dasharray="37 63" stroke-dashoffset="0"></circle>
+    <text x="21" y="19" font-size="9" dominant-baseline="middle" text-anchor="middle">37%</text>
+    <text x="21" y="25" font-size="3" dominant-baseline="middle" text-anchor="middle">PRIMERA CLASE</text>
+</svg>
+```
+
+
 - - - - - - - 
 
 ###### [← CLASE PREVIA](https://github.com/profesorfaco/opr/tree/main/clase-03) • [SIGUIENTE CLASE →](https://github.com/profesorfaco/opr/tree/main/clase-05)
