@@ -108,7 +108,7 @@ Partamos copiando lo que sigue en un documento nuevo, para luego guardarlo como 
 
             line#mar { animation: flota 2s ease infinite alternate; }
 
-            h1 { font-size: calc(1rem + 4vw); line-height: 1; font-weight: 200;}
+            h1 { font-size: calc(1rem + 3vw); line-height: 1; font-weight: 200;}
 
             h1 > span {font-size: 90%; color: #111; font-weight: 200; display: inline-block; margin:0 0.5rem}
 
@@ -183,15 +183,15 @@ Partamos copiando lo que sigue en un documento nuevo, para luego guardarlo como 
 
                     clases.innerHTML = `<rect x="0" y="0" width="${primera}" height="100" fill="#333"></rect>
                     <text x="${primera/2}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${primera}</text>
-                    <text x="${primera/2}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#012d4f">PRIMERA CLASE</text>`
+                    <text x="${primera/2}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#333">PRIMERA CLASE</text>`
 
                     clases.innerHTML += `<rect x="${primera}" y="0" width="${segunda}" height="100" fill="#666"></rect>
                     <text x="${primera+(segunda/2)}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${segunda}</text>
-                    <text x="${primera+(segunda/2)}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#012d4f">SEGUNDA CLASE</text>`
+                    <text x="${primera+(segunda/2)}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#333">SEGUNDA CLASE</text>`
 
                    clases.innerHTML += `<rect x="${primera+segunda}" y="0" width="${tercera}" height="100" fill="#999"></rect>
                     <text x="${primera+segunda+(tercera/2)}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${tercera}</text>
-                    <text x="${primera+segunda+(tercera/2)}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#012d4f">TERCERA CLASE</text>`
+                    <text x="${primera+segunda+(tercera/2)}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#333">TERCERA CLASE</text>`
 
                 } // cierra lo abierto después de complete: function…
 
