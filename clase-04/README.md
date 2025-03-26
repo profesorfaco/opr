@@ -202,7 +202,7 @@ Partamos copiando lo que sigue en un documento nuevo, para luego guardarlo como 
 </html>
 ```
 
-Y les dejo la base para los gráficos de dona: 
+Les dejo la base para los gráficos de dona: 
 
 ```
 <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
@@ -213,6 +213,13 @@ Y les dejo la base para los gráficos de dona:
 </svg>
 ```
 
+Y la parte del cierre: 
+
+```
+<div id="cierre">
+    <img src="https://www.gerdarntz.org/sites/gerdarntz.org/files/GMDH02_00290.gif" />
+</div>
+```
 
 - - - - - - - 
 
