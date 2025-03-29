@@ -82,74 +82,27 @@ Partamos con el código que sigue, pegándolo en un index.html y revisando el re
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Partiendo la quinta clase</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-        <style>
-            image {
-                filter: grayscale(1);
-                opacity: 0.3;
-            }
-        </style>
     </head>
     <body>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-            <defs>
-                <clipPath id="clipping">
-                    <circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="#fff"></circle>
-                </clipPath>
-            </defs>
-        </svg>
-        <div class="container">
-            <div class="row">
-                <div class="col py-5"><h1 class="fs-6 text-center">PROFESORES BUENOS PARA LOS SIETES</h1></div>
-            </div>
-            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3" id="tartas"></div>
-        </div>
         <script>
-            //copiando de antes
-            const graficaTarta = document.querySelector("#tartas");
-            //esto es nuevo
-            const fotos = [
-                "https://diseno.uc.cl/wp-content/uploads/2014/11/allard_jose.jpg",
-                "https://diseno.uc.cl/wp-content/uploads/2014/11/alvarez-pedro.jpg",
-                "https://diseno.uc.cl/wp-content/uploads/2014/11/caro_ivan.jpg",
-                "https://diseno.uc.cl/wp-content/uploads/2014/11/duran_alejandro.jpg",
-                "https://diseno.uc.cl/wp-content/uploads/2019/06/gonzalez_alberto.jpg",
-                "https://diseno.uc.cl/wp-content/uploads/2014/11/FOTO-PATRICIA-MANNS.png",
-                "https://diseno.uc.cl/wp-content/uploads/2025/07/image-1.png",
-                "https://diseno.uc.cl/wp-content/uploads/2019/06/moreno_paola.jpg",
-                "https://diseno.uc.cl/wp-content/uploads/2014/11/rramirez.jpg",
-                "https://diseno.uc.cl/wp-content/uploads/2014/11/ximena_ulibarri.png",
-            ];
-            //esto es para lo nuevo
-            var f = 0;
-
             async function datos() {
                 const consulta = await fetch("https://raw.githubusercontent.com/profesorfaco/opr/main/clase-05/datos.json");
                 const data = await consulta.json();
                 console.log(data);
-                data.forEach((d) => {
-                    if (d.sietes.length > 3) {
-                        //lo que ya teníamos
-                        console.log(d.tutor + " - Lleva " + d.sietes.length + ", o un " + Math.round((100 * d.sietes.length) / 13) + " de 100");
-                        //lo del clase 2
-                        graficaTarta.innerHTML += `<div class="col h-100 d-flex align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><circle class="donut-hole" cx="20" cy="20" r="15.91549430918954" fill="#fff"></circle><image x="5" y="5" width="30" height="30" xlink:href="${
-                            fotos[f]
-                        }"  clip-path="url(#clipping)"></image><circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke="#eee" stroke-width="3"></circle><circle class="donut-segment" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke="#0ad" stroke-width="3" stroke-dasharray="${Math.round(
-                            (100 * d.sietes.length) / 13
-                        )} ${100 - Math.round((100 * d.sietes.length) / 13)}" stroke-dashoffset="25"></circle><text x="20" y="28" font-size="2" text-anchor="middle" fill="#09c">${d.tutor}</text></svg></div>`;
-                        f++;
-                    }
-                });
+                //armaré un arreglo
+                var profes = [];
+                data.forEach((x) => { profes.push(x.tutor); });
+                console.log(profes);
+                //armaré un objeto
+                var cuenta = {};
+                profes.forEach((y) => {cuenta[y] = (cuenta[y] || 0) + 1});
+                document.write(JSON.stringify(cuenta));
             }
             datos().catch((error) => console.error(error));
         </script>
     </body>
 </html>
 ```
-
-En la partida usamos un [`String.length`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/length) para contar número de elementos de arreglos con el índice `sietes`. Y lo usamos dos veces, primero en una condición [`if…else`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/if...else) y después en la construcción del [mensaje del `console.log()`](https://developer.mozilla.org/es/docs/Web/API/console/log_static)
-
-Ojo que en la construcción del mensaje también interviene un [`Math.round()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/round).
 
 - - - - - - - 
 
