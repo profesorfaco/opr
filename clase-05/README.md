@@ -83,18 +83,18 @@ Partamos con el código que sigue, pegándolo en un index.html y revisando el re
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Partiendo la quinta clase</title>
         <style>
-            *{ margin:0; padding:0;}
-            body{ font-family:monospace; text-align: center;}
-            table{ margin:5vh auto; text-align: left; }
-            table tr td{ padding:.3rem; }
-            table tr td:nth-child(1){ color:#aaa; text-align: right; padding-right:1rem; }
-            table tr td:nth-child(2){ font-weight: bolder; }
+            * { margin: 0; padding: 0; }
+            body { font-family: monospace; text-align: center; }
+            table { margin: 5vh auto; text-align: left; }
+            table tr td { padding: 0.3rem; }
+            table tr td:nth-child(1) { color: #aaa; text-align: right; padding-right: 1rem; }
+            table tr td:nth-child(2) { font-weight: bolder; }
         </style>
     </head>
     <body>
         <table></table>
     <script>
-            const visulizacion = document.querySelector("table");
+            const visualizacion = document.querySelector("table");
             function plecas(numero){
                 var visual = "";
                 for(let x = 0; x < numero; x++){
@@ -118,7 +118,7 @@ Partamos con el código que sigue, pegándolo en un index.html y revisando el re
                 // creo otra variable, a la que empujaré nombres de Profes' con una condición
                 var nombres = [];
                 conteo.forEach((x) => {
-                    visulizacion.innerHTML+=`<tr><td>${x.profesor}</td><td>${plecas(x.veces)}</td></tr>`;
+                    visualizacion.innerHTML+=`<tr><td>${x.profesor}</td><td>${plecas(x.veces)}</td></tr>`;
                     if (x.veces > 3) { nombres.push(x.profesor) }
                 });
                 // revisemos el siguiente dato en la consola para avanzar
