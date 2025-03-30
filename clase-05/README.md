@@ -93,33 +93,37 @@ Partamos con el código que sigue, pegándolo en un index.html y revisando el re
     </head>
     <body>
         <table></table>
-
 	<script>
-            const tablita = document.querySelector("table");
-            
-            function marcas(n){
+            const visulizacion = document.querySelector("table");
+            function plecas(numero){
                 var visual = "";
-                for(let x = 0; x < n; x++){
+                for(let x = 0; x < numero; x++){
                     visual = visual+"|";
                 }
                 return visual;
             }
-
             async function datos() {
                 const consulta = await fetch("https://raw.githubusercontent.com/profesorfaco/opr/main/clase-05/datos.json");
                 const data = await consulta.json();
                 // ya tengo los datos de proyectos con nota 7
                 console.log(data);
-                // ahora armo un arreglo que tengan sólo nombres
+                // ahora armo un arreglo que tengan sólo nombres de Profes'
                 var profes = [];
                 data.forEach((x) => {profes.push(x.tutor)});
                 console.log(profes);
                 // https://gist.github.com/ralphcrisostomo/3141412?permalink_comment_id=2315571#gistcomment-2315571 
-                var conteo = profes.reduce((b,c)=>((b[b.findIndex(d=>d.profesor===c)]||b[b.push({profesor:c,sietes:0})-1]).sietes++,b),[]);
+                // puedo contar las veces que se repiten los nombres de cada Profe'
+                var conteo = profes.reduce((a,b)=>((a[a.findIndex(d=>d.profesor===b)]||a[a.push({profesor:b,veces:0})-1]).veces++,a),[]);
                 console.log(conteo);
-                conteo.forEach((x) => {tablita.innerHTML+=`<tr><td>${x.profesor}</td><td>${marcas(x.sietes)}</td></tr>`});
+                // creo otra variable, a la que empujaré nombres de Profes' con una condición
+                var nombres = [];
+                conteo.forEach((x) => {
+                    visulizacion.innerHTML+=`<tr><td>${x.profesor}</td><td>${plecas(x.veces)}</td></tr>`;
+                    if (x.veces > 3) { nombres.push(x.profesor) }
+                });
+                // revisemos el siguiente dato en la consola para avanzar
+                console.log("Más de 3 sietes guiados: " + nombres);
             }
-
             datos().catch((error) => console.error(error));
         </script>
     </body>
