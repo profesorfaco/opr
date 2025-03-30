@@ -49,13 +49,13 @@ Cada estudiante en este OPR debe disponer de:
 
 Según [Calendario de Actividades Académicas y Estudiantiles 2025](https://registrosacademicos.uc.cl/wp-content/uploads/2024/11/Calendario-de-Actividades-Academicas-y-Estudiantiles-2025.pdf), las clases del primer semestre comienzan el día miércoles 5 de marzo y finalizan el viernes 27 de junio.
 
-[Clase 01](https://github.com/profesorfaco/opr/tree/main/clase-01) → 05/03/2025 → Datos e información
+[Clase 01](https://github.com/profesorfaco/opr/tree/main/clase-01) → 05/03/2025 → Datos e información ✔
 
-[Clase 02](https://github.com/profesorfaco/opr/tree/main/clase-02) → 12/03/2025 → Datos e información en gráficas (primera parte)
+[Clase 02](https://github.com/profesorfaco/opr/tree/main/clase-02) → 12/03/2025 → Datos e información en gráficas (primera parte) ✔
 
-[Clase 03](https://github.com/profesorfaco/opr/tree/main/clase-03) → 19/03/2025 → Datos e información en gráficas (segunda parte)
+[Clase 03](https://github.com/profesorfaco/opr/tree/main/clase-03) → 19/03/2025 → Datos e información en gráficas (segunda parte) ✔
 
-[Clase 04](https://github.com/profesorfaco/opr/tree/main/clase-04) → 26/03/2025 → Formatos ligeros de intercambios de datos en la creación de gráficas: CSV
+[Clase 04](https://github.com/profesorfaco/opr/tree/main/clase-04) → 26/03/2025 → Formatos ligeros de intercambios de datos en la creación de gráficas: CSV ✔
 
 [Clase 05](https://github.com/profesorfaco/opr/tree/main/clase-05) → 02/04/2025 → Formatos ligeros de intercambios de datos en la creación de gráficas: JSON (primera parte)
 
