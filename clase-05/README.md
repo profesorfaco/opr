@@ -82,21 +82,41 @@ Partamos con el código que sigue, pegándolo en un index.html y revisando el re
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Partiendo la quinta clase</title>
+        <style>
+            *{ margin:0; padding:0;}
+            body{ font-family:monospace; text-align: center;}
+            table{ margin:5vh auto; text-align: left; }
+            table tr td{ padding:.3rem; }
+            table tr td:nth-child(1){ color:#aaa; text-align: right; padding-right:1rem; }
+            table tr td:nth-child(2){ font-weight: bolder; }
+        </style>
     </head>
     <body>
+        <table></table>
         <script>
+            const tablita = document.querySelector("table");
+            
+            function marcas(n){
+                var visual = "";
+                for(let x = 0; x < n; x++){
+                    visual = visual+"|";
+                }
+                return visual;
+            }
+
             async function datos() {
                 const consulta = await fetch("https://raw.githubusercontent.com/profesorfaco/opr/main/clase-05/datos.json");
                 const data = await consulta.json();
+                // ya tengo los datos de proyectos con nota 7
                 console.log(data);
-                //armaré un arreglo
+                // ahora armo un arreglo que tengan sólo nombres
                 var profes = [];
-                data.forEach((x) => { profes.push(x.tutor); });
+                data.forEach((x) => {profes.push(x.tutor)});
                 console.log(profes);
-                //armaré un objeto
-                var cuenta = {};
-                profes.forEach((y) => {cuenta[y] = (cuenta[y] || 0) + 1});
-                document.write(JSON.stringify(cuenta));
+                // https://gist.github.com/ralphcrisostomo/3141412?permalink_comment_id=2315571#gistcomment-2315571 
+                var conteo = profes.reduce((b,c)=>((b[b.findIndex(d=>d.profesor===c)]||b[b.push({profesor:c,sietes:0})-1]).sietes++,b),[]);
+                console.log(conteo);
+                conteo.forEach((x) => {tablita.innerHTML+=`<tr><td>${x.profesor}</td><td>${marcas(x.sietes)}</td></tr>`});
             }
             datos().catch((error) => console.error(error));
         </script>
