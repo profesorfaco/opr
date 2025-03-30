@@ -54,7 +54,7 @@ Si los mismos datos fueran intercambiados mediante un `ejemplo.json`, sería:
 
 Pueden copiar el código del ejemplo y revisarlo con servios tales como https://webformatter.com/json, https://jsonlint.com/ o https://jsonformatter.curiousconcept.com/
 
-El parecido entre lo que es, originalmente, *JavaScript Object Notation* y el formato JSON, nos permite prescindir de alguna biblioteca de Javascript que simplifican el *fetch* y *parsing* (como hicimos la clase recién pasada con PapaParse); es suficiente [esperar](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/await) el resultado de un [fetch](https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Using_Fetch) que debe intepretarse como [json](https://developer.mozilla.org/en-US/docs/Web/API/Response/json): 
+El parecido entre lo que es, originalmente, *JavaScript Object Notation* y el formato JSON, nos permite prescindir de alguna biblioteca de Javascript que simplifican el *fetch* y *parsing* (como hicimos [la clase recién pasada](https://github.com/profesorfaco/opr/tree/main/clase-04), con PapaParse); es **suficiente [esperar](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/await) el resultado de un [fetch](https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Using_Fetch) que debe intepretarse como [json](https://developer.mozilla.org/en-US/docs/Web/API/Response/json)**: 
 
 ```
 <script>
