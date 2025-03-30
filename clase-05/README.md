@@ -93,7 +93,7 @@ Partamos con el código que sigue, pegándolo en un index.html y revisando el re
     </head>
     <body>
         <table></table>
-	<script>
+    <script>
             const visulizacion = document.querySelector("table");
             function plecas(numero){
                 var visual = "";
@@ -122,7 +122,7 @@ Partamos con el código que sigue, pegándolo en un index.html y revisando el re
                     if (x.veces > 3) { nombres.push(x.profesor) }
                 });
                 // revisemos el siguiente dato en la consola para avanzar
-                console.log("Más de 3 sietes guiados: " + nombres);
+                console.log("HAN GUIADO A MÁS DE TRES NOTAS SIETE: " + nombres);
             }
             datos().catch((error) => console.error(error));
         </script>
