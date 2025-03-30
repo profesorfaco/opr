@@ -93,7 +93,8 @@ Partamos con el código que sigue, pegándolo en un index.html y revisando el re
     </head>
     <body>
         <table></table>
-        <script>
+
+	<script>
             const tablita = document.querySelector("table");
             
             function marcas(n){
@@ -118,6 +119,7 @@ Partamos con el código que sigue, pegándolo en un index.html y revisando el re
                 console.log(conteo);
                 conteo.forEach((x) => {tablita.innerHTML+=`<tr><td>${x.profesor}</td><td>${marcas(x.sietes)}</td></tr>`});
             }
+
             datos().catch((error) => console.error(error));
         </script>
     </body>
