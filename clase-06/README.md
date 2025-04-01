@@ -121,16 +121,16 @@ Partamos con un código, que se pega en un `index.html`:
                     </table>
                 </article>
 
-                <h3>Palabras habituales en el ámbito</h3>
-                <article>
-                    <p>Se reúnen todos los "para qué" de los proyectos y se seleccionan las palabras repetidas tres o más veces (descartando artículos, adverbios, preposiciones y conjunciones).</p>
-                    <p id="palabreo"></p>
-                </article>
-
                 <h3>Notas promedio por Prof. Guía en el ámbito</h3>
                 <article>
                     <p>El promedio de las calificaciones de memorias en este ámbito es de <em id="corte"></em>. Los promedios de las memorias guiadas por distintos profesores es el que sigue:</p>
                     <svg id="aqui"></svg>
+                </article>
+
+                <h3>Palabras habituales en el ámbito</h3>
+                <article>
+                    <p>Se reúnen todos los "para qué" de los proyectos y se seleccionan las palabras repetidas tres o más veces (descartando artículos, adverbios, preposiciones y conjunciones).</p>
+                    <p id="palabreo"></p>
                 </article>
             </main>
             <footer>Datos de memorias presentadas entre primer semestre de 2018 y segundo semestre de 2023. Se descartaron memorias con calificaciones bajo el 5.0. También se descartan memorias sobre tal calificación cuando no está disponible su PDF o falta algún dato en su descripción.</footer>
@@ -160,10 +160,20 @@ Partamos con un código, que se pega en un `index.html`:
                 });
                 console.log("Lo que sigue es una selección de los datos:");
                 console.log(seleccion);
+
+                seleccion.sort(function (a, b) {
+                  if (a.nombre_guia < b.nombre_guia) {
+                    return -1;
+                  }
+                  if (a.nombre_guia > b.nombre_guia) {
+                    return 1;
+                  }
+                  return 0;
+                });
                 
-                //Trabajando con la selección, creo una tabla
+                //Trabajando con la selección, ya organizada por nombre_guia, para crear una tabla 
                 seleccion.forEach((s, i) => {
-                    tabla.innerHTML += `<tr><td>${s.nombre_completo}.</td><td>${s.year}</td><td><a href="https://diseno.uc.cl/memorias/pdf/${s.nombre_pdf}" class="link-dark">${s.nombre_proyecto} <svg width="1em" height="1em"><use href="#pdf"></use></svg></a></td><td>${s.nombre_guia}</td><td class="text-center">${s.nota_titulo.toFixed(1)}</td></tr>`;
+                    tabla.innerHTML += `<tr><td>${s.nombre_completo}</td><td>${s.year}</td><td><a href="https://diseno.uc.cl/memorias/pdf/${s.nombre_pdf}" class="link-dark">${s.nombre_proyecto} <svg width="1em" height="1em"><use href="#pdf"></use></svg></a></td><td>${s.nombre_guia}</td><td class="text-center">${s.nota_titulo.toFixed(1)}</td></tr>`;
                     let obj = {};
                     obj["prof"] = `${s.nombre_guia}`;
                     obj["nota"] = `${s.nota_titulo}`;
