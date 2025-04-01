@@ -22,19 +22,19 @@ Partamos con un código, que se pega en un `index.html`:
         <style>
             * { margin: 0; padding: 0;}
             :root{
-                --base: #03122E;
-                --detalle:#0D47A1;
-                --ajuste:#1976D2;
-                --borde:#E3F2FD;
+                --background:#FEFEFE;
+                --foreground: #03122E;
+                --acento:#0D47A1;
+                --borde:#eee;
                 --claro:#FAFAFA;
             }
-            body { color: var(--base); text-align: center; font-family: Helvetica, Arial, sans-serif; }
+            body { color: var(--foreground); background: var(--background);text-align: center; font-family: Helvetica, Arial, sans-serif; }
             
             em { font-style: normal; font-weight: bold; }
             
-            a{ color:var(--detalle); text-decoration: none; transition:color .3s ease; }
+            a{ color:var(--acento); text-decoration: none; transition:color .3s ease; }
             
-            a:hover{ color:var(--ajuste); text-decoration: none; transition:color .3s ease; }
+            a:hover{ color:var(--foreground); text-decoration: none; transition:color .3s ease; }
             
             div {margin: 3% auto; text-align: left; width: min(90%, 700px);}
             
@@ -64,9 +64,9 @@ Partamos con un código, que se pega en un `index.html`:
             
             article p{ line-height: 1.5; margin-bottom:0.5rem; }
             
-            p > span{ border:1px solid var(--detalle); padding-right:0.2rem; font-size:88%; color:var(--detalle); margin-right:0.2rem }
+            p > span{ border:1px solid var(--acento); padding-right:0.2rem; font-size:88%; color:var(--acento); margin-right:0.2rem }
             
-            span.badge{ background:var(--detalle); color:white; padding:0 0.2rem; font-weight: bold; }
+            span.badge{ background:var(--acento); color:white; padding:0 0.2rem; font-weight: bold; }
             
             footer{ font-size: 78%; margin:1rem .4rem; color:#999;}
         </style>
@@ -211,7 +211,7 @@ Partamos con un código, que se pega en un `index.html`:
                 let mayor = 0;
                 barras.forEach((x) => {
                     mayor = Math.max(mayor, x.promedio);
-                        visualizacion.innerHTML += `<g transform="translate(0 ${ajuste * 3})"><rect x="0" y="0" height="2" width="70" fill="#eee"></rect><rect x="0" y="0" height="2" width="${x.promedio.toFixed(1) * 10}" fill="var(--detalle)"></rect><text fill="white" font-size="1.2" x="0.5" y="1.4" font-weight="bold">${x.prof}</text><text fill="white" font-size="1.2" x="${x.promedio.toFixed(1) * 10 - 2.5}" y="1.4">${x.promedio.toFixed(1)}</text></g>`;
+                        visualizacion.innerHTML += `<g transform="translate(0 ${ajuste * 3})"><rect x="0" y="0" height="2" width="70" fill="#eee"></rect><rect x="0" y="0" height="2" width="${x.promedio.toFixed(1) * 10}" fill="var(--acento)"></rect><text fill="white" font-size="1.2" x="0.5" y="1.4" font-weight="bold">${x.prof}</text><text fill="white" font-size="1.2" x="${x.promedio.toFixed(1) * 10 - 2.5}" y="1.4">${x.promedio.toFixed(1)}</text></g>`;
                         ajuste++;
                 });
                 visualizacion.innerHTML += `<line x1="${mayor.toFixed(1) * 10}" y1="0" x2="${mayor.toFixed(1) * 10}" y2="${ajuste * 3}" stroke="white" stroke-width="0.1"/>`;
