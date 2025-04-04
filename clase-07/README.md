@@ -8,6 +8,7 @@
 Ya hemos avanzado bastante en datos, convendría volver sobre SVG y posibilidades de hacerlo interactivo.
 
 ```
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -55,7 +56,6 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y posibilidade
             <p>Fill: <input type="color" value="#FFFFFF" onchange="tercera(this.value)" ></p>
             <h2>Y del setAttribute al addClass</h2>
             <img src="img/mapache.png">
-            <input type="range" min="0" max="359" step="1" value="0" onchange="segunda(this.value)" />
             <!--usando input type="checkbox"-->
             <input type="checkbox" name="animado" onchange="cuarta()"> <label>ANÍMATE, PEDRO</label>
         </div>
