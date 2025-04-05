@@ -5,10 +5,9 @@
 
 ### Teoría (para la casa)
 
-Ya hemos avanzado bastante en datos, convendría volver sobre SVG y posibilidades de hacerlo interactivo.
+Ya hemos avanzado bastante en datos, convendría volver sobre SVG y algunas posibilidades de hacerlo interactivo.
 
 ```
-
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -20,27 +19,20 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y posibilidade
             body { font-family: monospace; }
             div { padding: 10px; width: min(90%, 500px); margin: 10px auto; text-align: center; }
             div svg { margin: 2rem; }
-            h2 {font-size: 1.5rem; margin: 5vh 0}
-            p { font-size: 1.25rem; }
-            p:nth-child(2n + 1){ margin-top:1rem; }
-            @keyframes pedrope{
-                0%{transform:rotate(0)}
-                100%{transform:rotate(360deg)}
-            }
-            img{ display:block;  width:50%;  margin:0 auto 2rem auto;}
+            h2 {font-size: 1.5rem; margin: 10vh 0 2vh 0;   }
+            p { font-size: 1.25rem; }     
+            @keyframes pedrope{ 0%{transform:rotate(0)} 100%{transform:rotate(360deg)}}  
+            img{ display:block; width:50%; margin:2rem auto 4rem auto;}
             img.animate { animation: pedrope 2s linear infinite; }
+            aside{background:#eee; border:3px solid black; margin:1rem 2rem; padding:1rem;}
+            .escondido{opacity:0.1;}
         </style>
     </head>
     <body>
         <div>
             <h2>Del innerHTML al setAttribute</h2>
             <!--usando input type="radio"-->
-            <input type="radio" name="stroke" value="0.25" onchange="primera(this.value)" />
-            <label for="light">LIGHT</label>
-            <input type="radio" name="stroke" value="1" checked onchange="primera(this.value)" />
-            <label for="normal">NORMAL</label>
-            <input type="radio" name="stroke" value="1.75" onchange="primera(this.value)" />
-            <label for="bold">BOLD</label>
+            <input type="radio" name="stroke" value="0.25" onchange="primera(this.value)" /> LIGHT <input type="radio" name="stroke" value="1" checked onchange="primera(this.value)" /> NORMAL <input type="radio" name="stroke" value="1.75" onchange="primera(this.value)" /> BOLD 
             <!--un svg que tomo de https://feathericons.com/-->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="0" y="0" width="24" height="24"></rect>
@@ -54,25 +46,49 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y posibilidade
             <p>Stroke: HSL(<span>0</span>,100%,50%)</p>
             <!--usando input type="color"-->
             <p>Fill: <input type="color" value="#FFFFFF" onchange="tercera(this.value)" ></p>
-            <h2>Y del setAttribute al addClass</h2>
-            <img src="img/mapache.png">
+            <h2>Del setAttribute al AddClass</h2>
             <!--usando input type="checkbox"-->
             <input type="checkbox" name="animado" onchange="cuarta()"> <label>ANÍMATE, PEDRO</label>
+            <img src="https://raw.githubusercontent.com/profesorfaco/opr/refs/heads/main/clase-07/img/mapache.png">
+            <aside>
+                <!--usando el select-->
+                <select onchange="quinta(this.value)">
+                    <option value="0">Primero</option>
+                    <option value="1">Segundo</option>
+                    <option value="2">Tercero</option>
+                    <option value="3">Cuarto</option>
+                    <option value="4">Quinto</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20">
+                    <g id="fases" stroke-width=".2" stroke="black" fill="none">
+                        <circle cx="5" cy="10" r="1" class="escondido"></circle>
+                        <circle cx="10" cy="10" r="1" class="escondido"></circle>
+                        <circle cx="15" cy="10" r="1" class="escondido"></circle>
+                        <circle cx="20" cy="10" r="1" class="escondido"></circle>
+                        <circle cx="25" cy="10" r="1" class="escondido"></circle>
+                    </g>
+                </svg>
+            </aside>
         </div>
         <script>
             // Hay muchos tipos de inputs: https://www.w3schools.com/html/html_form_input_types.asp
-            // Acá usaremos cuatro, radio, range, [3] color y [4] checkbox
+            // Acá usaremos cuatro: radio, range, color y checkbox; también usaremos el select
             function primera(valor) {
-                document.querySelector("svg").setAttribute("stroke-width", valor);
+                document.querySelectorAll("svg")[0].setAttribute("stroke-width", valor);
             }
+            primera(1);
+
             function segunda(valor) {
-                document.querySelector("svg").setAttribute("stroke", "hsl(" + valor + ",100%,50%)");
+                document.querySelectorAll("svg")[0].setAttribute("stroke", "hsl(" + valor + ",100%,50%)");
                 document.querySelector("span").innerHTML = valor;
             }
+            segunda(0);
+
             function tercera(valor){
                 document.querySelector("rect").setAttribute("fill", valor);
 
             }
+
             function cuarta(){
                 if(document.querySelector("input[type=checkbox]").checked == true){
                     document.querySelector("img").classList.add("animate");
@@ -80,9 +96,19 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y posibilidade
                     document.querySelector("img").removeAttribute("class");
                 }
             }
-            primera(1);
-            segunda(0);
-            //No necesito ejecutar tercera ni cuarta.
+
+            function quinta(valor){
+                var circulos = document.querySelectorAll("#fases > circle");
+                for (let x = 0; x < 5; x++){
+                    if (x == valor){
+                        circulos[x].removeAttribute("class");
+                    } else {
+                        circulos[x].classList.add("escondido");
+                    } 
+                }
+            }
+            quinta(0);
+
         </script>
     </body>
 </html>
