@@ -8,6 +8,7 @@
 Ya hemos avanzado bastante en datos, convendría volver sobre SVG y algunas posibilidades de hacerlo interactivo.
 
 ```
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -61,7 +62,7 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y algunas posi
                     <option value="5">Tierra y Urano</option>
                     <option value="6">Tierra y Neptuno</option>
                 </select>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" stroke-width=".25" stroke="black" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24">
                     <circle cx="12" cy="12" r="1"></circle>
                     <g id="planetas">
                         <circle cx="36" cy="12" r=".38" class="escondido"></circle>
