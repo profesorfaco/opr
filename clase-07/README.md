@@ -25,7 +25,7 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y algunas posi
             img{ display:block; width:50%; margin:2rem auto 4rem auto;}
             img.animate { animation: pedrope 2s linear infinite; }
             aside{background:#eee; border:3px solid black; margin:1rem 2rem; padding:1rem;}
-            .escondido{opacity:0.1;}
+            .escondido{opacity:0;}
         </style>
     </head>
     <body>
@@ -51,21 +51,26 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y algunas posi
             <input type="checkbox" name="animado" onchange="cuarta()"> <label>ANÍMATE, PEDRO</label>
             <img src="https://raw.githubusercontent.com/profesorfaco/opr/refs/heads/main/clase-07/img/mapache.png">
             <aside>
-                <!--usando el select-->
+                <!--usando select-->
                 <select onchange="quinta(this.value)">
-                    <option value="0">Primero</option>
-                    <option value="1">Segundo</option>
-                    <option value="2">Tercero</option>
-                    <option value="3">Cuarto</option>
-                    <option value="4">Quinto</option>
+                    <option value="0">Tierra y Mercurio</option>
+                    <option value="1">Tierra y Venus</option>
+                    <option value="2">Tierra y Marte</option>
+                    <option value="3">Tierra y Júpiter</option>
+                    <option value="4">Tierra y Saturno</option>
+                    <option value="5">Tierra y Urano</option>
+                    <option value="6">Tierra y Neptuno</option>
                 </select>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20">
-                    <g id="fases" stroke-width=".2" stroke="black" fill="none">
-                        <circle cx="5" cy="10" r="1" class="escondido"></circle>
-                        <circle cx="10" cy="10" r="1" class="escondido"></circle>
-                        <circle cx="15" cy="10" r="1" class="escondido"></circle>
-                        <circle cx="20" cy="10" r="1" class="escondido"></circle>
-                        <circle cx="25" cy="10" r="1" class="escondido"></circle>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" stroke-width=".25" stroke="black" fill="none">
+                    <circle cx="12" cy="12" r="1"></circle>
+                    <g id="planetas">
+                        <circle cx="36" cy="12" r=".38" class="escondido"></circle>
+                        <circle cx="36" cy="12" r=".95" class="escondido"></circle>
+                        <circle cx="36" cy="12" r=".53" class="escondido"></circle>
+                        <circle cx="36" cy="12" r="11.21" class="escondido"></circle>
+                        <circle cx="36" cy="12" r="9.45" class="escondido"></circle>
+                        <circle cx="36" cy="12" r="4.01" class="escondido"></circle>
+                        <circle cx="36" cy="12" r="3.88" class="escondido"></circle>
                     </g>
                 </svg>
             </aside>
@@ -98,8 +103,8 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y algunas posi
             }
 
             function quinta(valor){
-                var circulos = document.querySelectorAll("#fases > circle");
-                for (let x = 0; x < 5; x++){
+                var circulos = document.querySelectorAll("#planetas > circle");
+                for (let x = 0; x < 8; x++){
                     if (x == valor){
                         circulos[x].removeAttribute("class");
                     } else {
