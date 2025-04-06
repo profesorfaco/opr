@@ -20,11 +20,11 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y algunas posi
 
             article { padding: 1rem; width: min(90%, 500px); margin: 2rem auto; text-align: center; }
 
-            article:nth-child(3){ width: min(90%, 800px); }
+            article:nth-child(3) { width: min(90%, 1000px); }
 
             h2 { font-size: 1.5rem; margin: 1.5rem auto; line-height: 1; }
 
-            p { margin:.75rem auto; line-height: 1.5; }
+            p { margin: 0.75rem auto; line-height: 1.5; }
 
             @keyframes pedrope {
                 0% { transform: rotate(0); }
@@ -34,14 +34,24 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y algunas posi
             img { display: block; width: 50%; margin: 2rem auto; }
 
             img.animate { animation: pedrope 2s linear infinite; }
+
+            @media (orientation: portrait) {
+                div.landscape { display: none; }
+            }
+
+            @media (orientation: landscape) {
+                div.portrait { display: none; }
+            }
         </style>
     </head>
     <body>
         <article>
             <h2>Del innerHTML al setAttribute</h2>
             <!--usando input type="radio"-->
-            <p><input type="radio" name="stroke" value="0.25" onchange="primera(this.value)" /> LIGHT <input type="radio" name="stroke" value="1" checked onchange="primera(this.value)" /> NORMAL
-            <input type="radio" name="stroke" value="1.75" onchange="primera(this.value)" /> BOLD</p>
+            <p>
+                <input type="radio" name="stroke" value="0.25" onchange="primera(this.value)" /> LIGHT <input type="radio" name="stroke" value="1" checked onchange="primera(this.value)" /> NORMAL
+                <input type="radio" name="stroke" value="1.75" onchange="primera(this.value)" /> BOLD
+            </p>
             <!--un svg que tomo de https://feathericons.com/-->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="0" y="0" width="24" height="24"></rect>
@@ -63,54 +73,25 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y algunas posi
             <img src="https://raw.githubusercontent.com/profesorfaco/opr/refs/heads/main/clase-07/img/mapache.png" />
         </article>
         <article>
-            <h2>Y cerremos con un "SVG responsive"</h2> 
-            <div></div>           
+            <h2>Y cerremos con "un SVG responsive"</h2>
+            <div class="portrait">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 140" fill="none">
+                    <rect x="0" y="0" width="30" height="140" fill="black"></rect>
+                    <g stroke-width=".2" stroke="white">
+                    </g>
+                </svg>
+            </div>
+            <div class="landscape">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 40" fill="none">
+                    <rect x="0" y="0" width="300" height="40" fill="black"></rect>
+                    <g stroke-width=".5" stroke="white"></g>
+                </svg>
+            </div>
         </article>
         <script>
-            //Partamos por el cierre
-            const planetas = document.querySelectorAll("div")[0];
-
-            function cero() {
-                var ancho = window.innerWidth;
-                var alto = window.innerHeight;
-                if (ancho < alto) {
-                    planetas.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 150" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="black">
-                        <g id="planetas" stroke-width=".2">
-                            <circle cx="15" cy="${10-0.38}" r=".38"></circle>
-                            <circle cx="15" cy="${20-0.95}" r=".95"></circle>
-                            <circle cx="15" cy="${30-1}" r="1" fill="#1976D2"></circle>
-                            <circle cx="15" cy="${40-0.53}" r=".53"></circle>
-                            <circle cx="15" cy="${70-11.21}" r="11.21"></circle>
-                            <circle cx="15" cy="${100-9.45}" r="9.45"></circle>
-                            <circle cx="15" cy="${120-4.01}" r="4.01"></circle>
-                            <circle cx="15" cy="${140-3.88}" r="3.88"></circle>
-                        </g>
-                        <rect x="0" y="0" width="30" height="150" stroke-width="1"></rect>
-                    </svg>`;
-                } else {
-                    planetas.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 30" fill="none" stroke="black">
-                        <g id="planetas" stroke-width=".6">
-                            <circle cx="${10-0.38}" cy="15" r=".38"></circle>
-                            <circle cx="${20-0.95}" cy="15" r=".95"></circle>
-                            <circle cx="${30-1}" cy="15" r="1" fill="#1976D2"></circle>
-                            <circle cx="${40-0.53}" cy="15" r=".53"></circle>
-                            <circle cx="${70-11.21}" cy="15" r="11.21"></circle>
-                            <circle cx="${100-9.45}" cy="15" r="9.45"></circle>
-                            <circle cx="${120-4.01}" cy="15" r="4.01"></circle>
-                            <circle cx="${140-3.88}" cy="15" r="3.88"></circle>
-                        </g>
-                        <rect x="0" y="0" width="150" height="30" stroke-width="2"></rect>
-                    </svg>`;
-                }
-            }
-
-            cero();
-            window.addEventListener("resize", cero);
-            
             // Hay muchos tipos de inputs: https://www.w3schools.com/html/html_form_input_types.asp
-            
             // Acá usaremos cuatro: radio, range, color y checkbox
-            
+
             function primera(valor) {
                 document.querySelectorAll("svg")[0].setAttribute("stroke-width", valor);
             }
@@ -134,6 +115,45 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y algunas posi
                 }
             }
 
+            async function quinta() {
+                const consulta = await fetch("https://raw.githubusercontent.com/profesorfaco/opr/refs/heads/main/clase-07/planetas.json");
+                const data = await consulta.json();
+                const svgAncho = document.querySelectorAll("g")[1];
+                const svgAngosto = document.querySelectorAll("g")[0];
+                data.forEach((v, i) => {
+                    if (i < 4) {
+                        svgAncho.innerHTML += `<circle cx="${(i + 1) * 25}" cy="20" r="${v.comparado}"></circle>`;
+                        svgAngosto.innerHTML += `<circle cx="15" cy="${(i + 1) * 10}" r="${v.comparado}"></circle>`;
+                        if (i == 2) {
+                            svgAncho.innerHTML += `<circle cx="${(i + 1) * 25}" cy="20" r="${v.comparado}" fill="white"></circle>`;
+                            svgAngosto.innerHTML += `<circle cx="15" cy="${(i + 1) * 10}" r="${v.comparado}" fill="white"></circle>`;
+                        }
+                    } else if (i == 4) {
+                        svgAncho.innerHTML += `<circle cx="${(i + 1) * 27}" cy="20" r="${v.comparado}"></circle>`;
+                        svgAngosto.innerHTML += `<circle cx="15" cy="${(i + 1) * 12}" r="${v.comparado}"></circle>`;
+                    } else if (i == 5) {
+                        svgAncho.innerHTML += `<circle cx="${(i + 1) * 29.5}" cy="20" r="${v.comparado}"></circle>`;
+                        svgAngosto.innerHTML += `<circle cx="15" cy="${(i + 1) * 15}" r="${v.comparado}"></circle>`;
+                    } else  {
+                        svgAncho.innerHTML += `<circle cx="${(i + 1) * 30}" cy="20" r="${v.comparado}"></circle>`;
+                        svgAngosto.innerHTML += `<circle cx="15" cy="${(i + 1) * 16}" r="${v.comparado}"></circle>`;
+                    }
+                });
+            }
+            quinta().catch((error) => console.error(error));
+
+            function sexta(){
+                var ancho = window.innerWidth;
+                var alto = window.innerHeight;
+                if(ancho > alto){
+                    document.body.style.background="#FFFDE7";
+                } else {
+                    document.body.style.background="#E1F5FE";                    
+                }
+            }
+
+            sexta();
+            window.addEventListener("resize", sexta);
         </script>
     </body>
 </html>
