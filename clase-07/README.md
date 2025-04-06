@@ -15,13 +15,13 @@ Ya hemos avanzado bastante en datos, convendría volver sobre el SVG y algunas p
         <title>Séptima clase</title>
         <style>
             [data-theme="light"] {
-              --color-bg: #fefefe;
-              --color-fg: #111;
+              --color-bg: #ECEFF1;
+              --color-fg: #263238;
             }
 
             [data-theme="dark"] {
               --color-bg: #263238;
-              --color-fg: #fff;
+              --color-fg: #ECEFF1;
             }
 
             * { margin: 0; padding: 0; }
