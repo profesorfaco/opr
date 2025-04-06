@@ -1,49 +1,41 @@
 [
   {
     "planeta": "Mercurio",
-    "lugar": 1,
     "diametro": 4880,
     "comparado": 0.38
   },
   {
     "planeta": "Venus",
-    "lugar": 2,
     "diametro": 12104,
     "comparado": 0.95
   },
   {
     "planeta": "Tierra",
-    "lugar": 3,
     "diametro": 12756,
     "comparado": 1
   },
   {
     "planeta": "Marte",
-    "lugar": 4,
     "diametro": 6794,
     "comparado": 0.53
   },
   {
     "planeta": "Júpiter",
-    "lugar": 5,
     "diametro": 142984,
     "comparado": 11.21
   },
   {
     "planeta": "Saturno",
-    "lugar": 6,
     "diametro": 120536,
     "comparado": 9.45
   },
   {
     "planeta": "Urano",
-    "lugar": 7,
     "diametro": 51118,
     "comparado": 4.01
   },
   {
     "planeta": "Neptuno",
-    "lugar": 8,
     "diametro": 49532,
     "comparado": 3.88
   }
