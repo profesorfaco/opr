@@ -4,19 +4,29 @@
 
 ### Teoría (para la casa)
 
-Ya hemos avanzado bastante en datos, convendría volver sobre SVG y algunas posibilidades de hacerlo responsive, además de interactivo. 
+Ya hemos avanzado bastante en datos, convendría volver sobre el SVG y algunas posibilidades de hacerlo responsive, además de interactivo. 
 
 ```
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Séptima clase</title>
         <style>
+            [data-theme="light"] {
+              --color-bg: #fefefe;
+              --color-fg: #111;
+            }
+
+            [data-theme="dark"] {
+              --color-bg: #263238;
+              --color-fg: #fff;
+            }
+
             * { margin: 0; padding: 0; }
 
-            body { font-family: monospace; }
+            body { font-family: monospace; color:var(--color-fg); background:var(--color-bg)}
 
             article { padding: 1rem; width: min(90%, 500px); margin: 2rem auto; text-align: center; }
 
@@ -31,7 +41,9 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y algunas posi
                 100% { transform: rotate(360deg); }
             }
 
-            img { display: block; width: 50%; margin: 2rem auto; }
+            figure{width: 50%; margin: 2rem auto; background: #fff}
+
+            img { width:100% }
 
             img.animate { animation: pedrope 2s linear infinite; }
 
@@ -54,7 +66,7 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y algunas posi
             </p>
             <!--un svg que tomo de https://feathericons.com/-->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="0" y="0" width="24" height="24"></rect>
+                <rect x="0.9" y="0.9" width="22.2" height="22.2"></rect>
                 <circle cx="12" cy="12" r="10"></circle>
                 <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
                 <line x1="9" y1="9" x2="9.01" y2="9"></line>
@@ -70,7 +82,9 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y algunas posi
             <h2>Del setAttribute al AddClass</h2>
             <!--usando input type="checkbox"-->
             <input type="checkbox" name="animado" onchange="cuarta()" /> <label>ANÍMATE, PEDRO</label>
-            <img src="https://raw.githubusercontent.com/profesorfaco/opr/refs/heads/main/clase-07/img/mapache.png" />
+            <figure>
+                <img src="https://raw.githubusercontent.com/profesorfaco/opr/refs/heads/main/clase-07/img/mapache.png" />
+            </figure>
         </article>
         <article>
             <h2>Y cerremos con "un SVG responsive"</h2>
@@ -118,25 +132,26 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y algunas posi
             async function quinta() {
                 const consulta = await fetch("https://raw.githubusercontent.com/profesorfaco/opr/refs/heads/main/clase-07/planetas.json");
                 const data = await consulta.json();
-                const svgAncho = document.querySelectorAll("g")[1];
-                const svgAngosto = document.querySelectorAll("g")[0];
+                console.log(data);
+                const svgMobile = document.querySelectorAll("g")[0];
+                const svgOther = document.querySelectorAll("g")[1];
                 data.forEach((v, i) => {
                     if (i < 4) {
-                        svgAncho.innerHTML += `<circle cx="${(i + 1) * 25}" cy="20" r="${v.comparado}"></circle>`;
-                        svgAngosto.innerHTML += `<circle cx="15" cy="${(i + 1) * 10}" r="${v.comparado}"></circle>`;
-                        if (i == 2) {
-                            svgAncho.innerHTML += `<circle cx="${(i + 1) * 25}" cy="20" r="${v.comparado}" fill="white"></circle>`;
-                            svgAngosto.innerHTML += `<circle cx="15" cy="${(i + 1) * 10}" r="${v.comparado}" fill="white"></circle>`;
+                        svgMobile.innerHTML += `<circle cx="15" cy="${(i + 1) * 10}" r="${v.comparado}"></circle>`;
+                        svgOther.innerHTML += `<circle cx="${(i + 1) * 25}" cy="20" r="${v.comparado}"></circle>`;
+                        if (v.comparado == 1) {
+                            svgMobile.innerHTML += `<circle cx="15" cy="${(i + 1) * 10}" r="${v.comparado}" fill="white"></circle>`;
+                            svgOther.innerHTML += `<circle cx="${(i + 1) * 25}" cy="20" r="${v.comparado}" fill="white"></circle>`;
                         }
                     } else if (i == 4) {
-                        svgAncho.innerHTML += `<circle cx="${(i + 1) * 27}" cy="20" r="${v.comparado}"></circle>`;
-                        svgAngosto.innerHTML += `<circle cx="15" cy="${(i + 1) * 12}" r="${v.comparado}"></circle>`;
+                        svgMobile.innerHTML += `<circle cx="15" cy="${(i + 1) * 12}" r="${v.comparado}"></circle>`;
+                        svgOther.innerHTML += `<circle cx="${(i + 1) * 27}" cy="20" r="${v.comparado}"></circle>`;
                     } else if (i == 5) {
-                        svgAncho.innerHTML += `<circle cx="${(i + 1) * 29.5}" cy="20" r="${v.comparado}"></circle>`;
-                        svgAngosto.innerHTML += `<circle cx="15" cy="${(i + 1) * 15}" r="${v.comparado}"></circle>`;
+                        svgMobile.innerHTML += `<circle cx="15" cy="${(i + 1) * 15}" r="${v.comparado}"></circle>`;
+                        svgOther.innerHTML += `<circle cx="${(i + 1) * 29.5}" cy="20" r="${v.comparado}"></circle>`;
                     } else  {
-                        svgAncho.innerHTML += `<circle cx="${(i + 1) * 30}" cy="20" r="${v.comparado}"></circle>`;
-                        svgAngosto.innerHTML += `<circle cx="15" cy="${(i + 1) * 16}" r="${v.comparado}"></circle>`;
+                        svgMobile.innerHTML += `<circle cx="15" cy="${(i + 1) * 16}" r="${v.comparado}"></circle>`;
+                        svgOther.innerHTML += `<circle cx="${(i + 1) * 30}" cy="20" r="${v.comparado}"></circle>`;
                     }
                 });
             }
@@ -145,10 +160,10 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y algunas posi
             function sexta(){
                 var ancho = window.innerWidth;
                 var alto = window.innerHeight;
-                if(ancho > alto){
-                    document.body.style.background="#FFFDE7";
+                if(ancho < alto){
+                    document.querySelector("html").setAttribute("data-theme", "dark");
                 } else {
-                    document.body.style.background="#E1F5FE";                    
+                    document.querySelector("html").setAttribute("data-theme", "light");
                 }
             }
             sexta();
