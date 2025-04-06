@@ -30,7 +30,7 @@ Ya hemos avanzado bastante en datos, convendría volver sobre el SVG y algunas p
 
             article { padding: 1rem; width: min(90%, 500px); margin: 2rem auto; text-align: center; }
 
-            article:nth-child(3) { width: min(90%, 1000px); }
+            article:nth-child(3) { width: min(90%, 1000px); margin-bottom:5rem;}
 
             h2 { font-size: 1.5rem; margin: 1.5rem auto; line-height: 1; }
 
