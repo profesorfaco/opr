@@ -14,38 +14,44 @@ Ya hemos avanzado bastante en datos, convendría volver sobre el SVG y algunas p
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Séptima clase</title>
         <style>
-            [data-theme="light"] {
-              --color-bg: #ECEFF1;
-              --color-fg: #263238;
-            }
+            [data-theme="light"] { --color-bg: #eceff1; --color-fg: #263238; }
 
-            [data-theme="dark"] {
-              --color-bg: #263238;
-              --color-fg: #ECEFF1;
-            }
+            [data-theme="dark"] { --color-bg: #263238; --color-fg: #eceff1; }
 
             * { margin: 0; padding: 0; }
 
-            body { font-family: monospace; color:var(--color-fg); background:var(--color-bg)}
+            body { font-family: monospace; color: var(--color-fg); background: var(--color-bg); }
 
             article { padding: 1rem; width: min(90%, 500px); margin: 2rem auto; text-align: center; }
 
-            article:nth-child(3) { width: min(90%, 1000px); margin-bottom:5rem;}
+            article:nth-child(3) { width: min(90%, 1000px); margin-bottom: 5rem; }
 
             h2 { font-size: 1.5rem; margin: 1.5rem auto; line-height: 1; }
 
             p { margin: 0.75rem auto; line-height: 1.5; }
+
+            input[type="radio"] { accent-color: #232323; }
 
             @keyframes pedrope {
                 0% { transform: rotate(0); }
                 100% { transform: rotate(360deg); }
             }
 
-            figure{width: 50%; margin: 2rem auto; background: #fff}
+            figure { width: 50%; margin: 2rem auto; background: #fff; }
 
-            img { width:100% }
+            img { width: 100%; }
 
             img.animate { animation: pedrope 2s linear infinite; }
+
+            div.portrait > svg { font-size: 7.5%; stroke-width: 0; fill: white; alignment-baseline: middle; text-anchor: start; display: block; margin:3rem; }
+
+            div.landscape { display: inline-block; }
+
+            div.landscape > svg { width: 10%; font-size: 25%; stroke-width: 0; fill: black; alignment-baseline: middle; text-anchor: middle; }
+
+            div.landscape > svg:nth-child(5) { margin-left:3%; margin-right:4%; }
+
+            div.landscape > svg:nth-child(7) { margin-left:2%; }
 
             @media (orientation: portrait) {
                 div.landscape { display: none; }
@@ -88,19 +94,8 @@ Ya hemos avanzado bastante en datos, convendría volver sobre el SVG y algunas p
         </article>
         <article>
             <h2>Y cerremos con "un SVG responsive"</h2>
-            <div class="portrait">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 140" fill="none">
-                    <rect x="0" y="0" width="30" height="140" fill="black"></rect>
-                    <g stroke-width=".2" stroke="white">
-                    </g>
-                </svg>
-            </div>
-            <div class="landscape">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 40" fill="none">
-                    <rect x="0" y="0" width="300" height="40" fill="black"></rect>
-                    <g stroke-width=".5" stroke="white"></g>
-                </svg>
-            </div>
+            <div class="portrait"></div>
+            <div class="landscape"></div>
         </article>
         <script>
             // Hay muchos tipos de inputs: https://www.w3schools.com/html/html_form_input_types.asp
@@ -135,34 +130,19 @@ Ya hemos avanzado bastante en datos, convendría volver sobre el SVG y algunas p
                 const consulta = await fetch("https://raw.githubusercontent.com/profesorfaco/opr/refs/heads/main/clase-07/planetas.json");
                 const data = await consulta.json();
                 console.log(data);
-                const svgMobile = document.querySelectorAll("g")[0];
-                const svgOther = document.querySelectorAll("g")[1];
+                const svgMobile = document.querySelectorAll("div.portrait")[0];
+                const svgOther = document.querySelectorAll("div.landscape")[0];
                 data.forEach((v, i) => {
-                    if (i < 4) {
-                        svgMobile.innerHTML += `<circle cx="15" cy="${(i + 1) * 10}" r="${v.comparado}"></circle>`;
-                        svgOther.innerHTML += `<circle cx="${(i + 1) * 25}" cy="20" r="${v.comparado}"></circle>`;
-                        if (v.comparado == 1) {
-                            svgMobile.innerHTML += `<circle cx="15" cy="${(i + 1) * 10}" r="${v.comparado}" fill="white"></circle>`;
-                            svgOther.innerHTML += `<circle cx="${(i + 1) * 25}" cy="20" r="${v.comparado}" fill="white"></circle>`;
-                        }
-                    } else if (i == 4) {
-                        svgMobile.innerHTML += `<circle cx="15" cy="${(i + 1) * 12}" r="${v.comparado}"></circle>`;
-                        svgOther.innerHTML += `<circle cx="${(i + 1) * 27}" cy="20" r="${v.comparado}"></circle>`;
-                    } else if (i == 5) {
-                        svgMobile.innerHTML += `<circle cx="15" cy="${(i + 1) * 15}" r="${v.comparado}"></circle>`;
-                        svgOther.innerHTML += `<circle cx="${(i + 1) * 29.5}" cy="20" r="${v.comparado}"></circle>`;
-                    } else  {
-                        svgMobile.innerHTML += `<circle cx="15" cy="${(i + 1) * 16}" r="${v.comparado}"></circle>`;
-                        svgOther.innerHTML += `<circle cx="${(i + 1) * 30}" cy="20" r="${v.comparado}"></circle>`;
-                    }
+                    svgMobile.innerHTML += `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 ${v.comparado*2}"><circle cx="12" cy="${v.comparado}" r="${v.comparado}" fill="white"></circle><text x="${v.comparado + 13}" y="${v.comparado+0.3}">${v.planeta}</text></svg>`;
+                    svgOther.innerHTML += `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 33"><circle cx="12" cy="13" r="${v.comparado}" fill="black"></circle><text x="12" y="30">${v.planeta}</text></svg>`;
                 });
             }
             quinta().catch((error) => console.error(error));
 
-            function sexta(){
+            function sexta() {
                 var ancho = window.innerWidth;
                 var alto = window.innerHeight;
-                if(ancho < alto){
+                if (ancho < alto) {
                     document.querySelector("html").setAttribute("data-theme", "dark");
                 } else {
                     document.querySelector("html").setAttribute("data-theme", "light");
