@@ -126,6 +126,8 @@ Ya hemos avanzado bastante en datos, convendría volver sobre el SVG y algunas p
                     document.querySelector("img").classList.add("animate");
                 } else {
                     document.querySelector("img").removeAttribute("class");
+                    // también podría borrar la clase, dejando un class vacío
+                    // document.querySelector("img").classList.remove("animate");
                 }
             }
 
