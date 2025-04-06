@@ -151,7 +151,6 @@ Ya hemos avanzado bastante en datos, convendría volver sobre SVG y algunas posi
                     document.body.style.background="#E1F5FE";                    
                 }
             }
-
             sexta();
             window.addEventListener("resize", sexta);
         </script>
