@@ -4,7 +4,19 @@
 
 ### Teoría (para la casa)
 
-Ya hemos avanzado bastante en datos, convendría volver sobre el SVG y algunas posibilidades de hacerlo responsive, además de interactivo. 
+Ya hemos avanzado bastante en datos, convendría volver sobre el SVG y algunas posibilidades de hacerlo [responsive](https://es.wikipedia.org/wiki/Dise%C3%B1o_web_adaptable), además de interactivo. 
+
+Para lo interactivo, conviene prepararse con:
+
+El subtítulo de **Llamar funciones** en el artículo sobre funciones en MDN: https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Functions#llamar_funciones
+
+La respuesta a la pregunta **¿Qué es un evento?** en el mismo MDN: https://developer.mozilla.org/es/docs/Learn_web_development/Core/Scripting/Events#%C2%BFqu%C3%A9_es_un_evento
+
+La recomendación en el mismo documento ya referido respecto de **Manejadores de eventos en línea**: https://developer.mozilla.org/es/docs/Learn_web_development/Core/Scripting/Events#manejadores_de_eventos_en_l%C3%ADnea_no_los_utilices
+
+- - - - - - - - - - - - - - 
+
+### Práctica (para la clase)
 
 ```
 <!DOCTYPE html>
