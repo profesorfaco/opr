@@ -4,13 +4,13 @@
 
 ### Teoría (para la casa)
 
-Pendiente.
+Repasaremos lo tratado en clases previas.
 
 - - - - - - - - - - - - - - 
 
 ### Práctica (para la clase)
 
-Pendiente.
+Repasaremos lo tratado en clases previas.
 
 - - - - - - - 
 
