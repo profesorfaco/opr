@@ -5,17 +5,11 @@
 
 ### Teoría (para la casa)
 
-Aprovechemos esta clase: https://profesorfaco.github.io/mid/clase-1/
-
-Y con esa base re-diseñemos los trabajos de la [clase 08](https://github.com/profesorfaco/opr/tree/main/clase-08), considerando un arco narrativo que se despliegue con el *scroll*. 
+Pendiente
 
 - - - - - - - - - - - - - - 
 
 ### Práctica (para la clase)
-
-Se parte desde un ámbito: https://profesorfaco.github.io/opr/clase-07/
-
-O se puede "inventar" otro, tal como diseño para la resiliencia: https://d4rs.info/
 
 Al momento de crear gráficos no figurativos (*charts*), pueden aprovecharse de herramientas tales como:
 
