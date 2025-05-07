@@ -3,9 +3,18 @@
 
 # Gráficas y datos en diseño web responsive: SVG, HTML y JavaScript (primera parte)
 
-### Teoría (para la casa)
+### Más que teoría, algunos *tips*
 
-Pendiente
+https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3
+
+https://materialui.co/colors
+
+https://meyerweb.com/eric/tools/color-blend/#:::hex
+
+https://webaim.org/resources/contrastchecker/
+
+https://fonts.google.com/knowledge/readability_and_accessibility/introducing_accessibility_in_typography
+
 
 - - - - - - - - - - - - - - 
 
