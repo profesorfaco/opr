@@ -33,6 +33,10 @@ Para generar metadatos
 
 - https://metatags.io/
 
+Para evaluar la accesibilidad de la página: 
+
+- https://wave.webaim.org/
+
 - - - - - - - - - - - - - - 
 
 ### Práctica (para la clase)
