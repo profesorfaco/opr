@@ -7,29 +7,31 @@
 
 Para evitar el error 429
 
-https://myjson.online/
+- https://myjson.online/
 
 Para revisar lo del color
 
-https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3
+- https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3
 
-https://materialui.co/colors
+- https://materialui.co/colors
 
-https://meyerweb.com/eric/tools/color-blend/#:::hex
+- https://meyerweb.com/eric/tools/color-blend/#:::hex
 
-https://webaim.org/resources/contrastchecker/
+- https://webaim.org/resources/contrastchecker/
+
+- https://color.adobe.com/es/create/image
 
 Para la tipografía
 
-https://fonts.google.com/knowledge/readability_and_accessibility/introducing_accessibility_in_typography
+- https://fonts.google.com/knowledge/readability_and_accessibility/introducing_accessibility_in_typography
 
 Para ordenar el código
 
-https://webformatter.com/
+- https://webformatter.com/
 
 Para generar metadatos
 
-https://metatags.io/
+- https://metatags.io/
 
 - - - - - - - - - - - - - - 
 
