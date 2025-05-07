@@ -57,13 +57,13 @@ Según [Calendario de Actividades Académicas y Estudiantiles 2025](https://regi
 
 [Clase 04](https://github.com/profesorfaco/opr/tree/main/clase-04) → 26/03/2025 → Formatos ligeros de intercambios de datos en la creación de gráficas: CSV ✓
 
-[Clase 05](https://github.com/profesorfaco/opr/tree/main/clase-05) → 02/04/2025 → Formatos ligeros de intercambios de datos en la creación de gráficas: JSON (primera parte)
+[Clase 05](https://github.com/profesorfaco/opr/tree/main/clase-05) → 02/04/2025 → Formatos ligeros de intercambios de datos en la creación de gráficas: JSON (primera parte) ✓
 
-[Clase 06](https://github.com/profesorfaco/opr/tree/main/clase-06) → 09/04/2025 → Formatos ligeros de intercambios de datos en la creación de gráficas: JSON (segunda parte)
+[Clase 06](https://github.com/profesorfaco/opr/tree/main/clase-06) → 09/04/2025 → Formatos ligeros de intercambios de datos en la creación de gráficas: JSON (segunda parte) ✓
 
-[Clase 07](https://github.com/profesorfaco/opr/tree/main/clase-07) → 16/04/2025 → Gráficas y datos en diseño web responsive: SVG
+[Clase 07](https://github.com/profesorfaco/opr/tree/main/clase-07) → 16/04/2025 → Gráficas y datos en diseño web responsive: SVG ✓
 
-[Clase 08](https://github.com/profesorfaco/opr/tree/main/clase-08)  → 23/04/2025 → Gráficas y datos en diseño web responsive: SVG y HTML
+[Clase 08](https://github.com/profesorfaco/opr/tree/main/clase-08)  → 23/04/2025 → Gráficas y datos en diseño web responsive: SVG y HTML ✓
 
 Clase 09  → 30/04/2025 → Receso de docencia bimestral (Se suspenden las clases. Las evaluaciones académicas quedarán suspendidas entre el lunes 28 de abril y el lunes 5 de mayo inclusive).
 
