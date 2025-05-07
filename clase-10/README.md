@@ -5,7 +5,11 @@
 
 ### Más que teoría, algunos *tips*
 
+Para evitar el error 429
+
 https://myjson.online/
+
+Para revisar lo del color
 
 https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3
 
@@ -15,8 +19,17 @@ https://meyerweb.com/eric/tools/color-blend/#:::hex
 
 https://webaim.org/resources/contrastchecker/
 
+Para la tipografía
+
 https://fonts.google.com/knowledge/readability_and_accessibility/introducing_accessibility_in_typography
 
+Para ordenar el código
+
+https://webformatter.com/
+
+Para generar metadatos
+
+https://metatags.io/
 
 - - - - - - - - - - - - - - 
 
