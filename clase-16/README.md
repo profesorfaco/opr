@@ -2,9 +2,7 @@
 
 # Diseño y programación: Desarollo de la propuesta
 
-### No pasó nada
-
-Desde un curso optativo se entiende que, de vez en cuando, corresponde priorizar los cursos mínimos.
+Pendiente.
 
 - - - - - - - 
 
