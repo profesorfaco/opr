@@ -65,9 +65,9 @@ Según [Calendario de Actividades Académicas y Estudiantiles 2025](https://regi
 
 [Clase 08](https://github.com/profesorfaco/opr/tree/main/clase-08)  → 23/04/2025 → Gráficas y datos en diseño web responsive: SVG y HTML ✓
 
-Clase 09  → 30/04/2025 → Receso de docencia bimestral (Se suspenden las clases. Las evaluaciones académicas quedarán suspendidas entre el lunes 28 de abril y el lunes 5 de mayo inclusive).
+Clase 09  → 30/04/2025 → Receso de docencia bimestral (Se suspenden las clases. Las evaluaciones académicas quedarán suspendidas entre el lunes 28 de abril y el lunes 5 de mayo inclusive) ✓
 
-[Clase 10](https://github.com/profesorfaco/opr/tree/main/clase-10)  → 07/05/2025 → Gráficas y datos en diseño web responsive: SVG, HTML y JavaScript (primera parte)
+[Clase 10](https://github.com/profesorfaco/opr/tree/main/clase-10)  → 07/05/2025 → Gráficas y datos en diseño web responsive: SVG, HTML y JavaScript (primera parte) ✓
 
 [Clase 11](https://github.com/profesorfaco/opr/tree/main/clase-11)  → 14/05/2025 → Gráficas y datos en diseño web responsive: SVG, HTML y JavaScript (segunda parte)
 
