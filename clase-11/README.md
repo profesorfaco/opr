@@ -8,7 +8,9 @@ Crear el "último repositorio" del curso. Puede llamarse "trabajo_final", pero m
 
 En el repositorio sólo modificar el README.md
 
-En la modificación describa su tema, las fuentes de datos principales y las referencias, que puede tomar desde: 
+**En la modificación describa su tema, las fuentes de datos principales y las referencias**. 
+
+Tome refernecias desde:
 
 - https://www.reuters.com/graphics/
 
