@@ -2,7 +2,7 @@
 
 # EXÁMENES DE CURSOS MÍNIMOS Y OPTATIVOS (re-entrega)
 
-Puede usar esta clase para re-entregar, y mejorar su evalación.
+Puede usar esta clase para re-entregar, y mejorar su calificación.
 
 - - - - - - - 
 
