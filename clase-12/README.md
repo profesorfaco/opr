@@ -10,7 +10,7 @@ Cada estudiante debería tener, al final de la clase, al menos:
 
 - un README.md con antecedentes y referentes.
 
-Para el último punto, un ejemplo: Puede contar como antecedente esta página https://www.reuters.com/graphics/WALTDISNEY-FILM/SNOW-WHITE/gkvljloxavb/, pero no cuenta este sitio https://www.reuters.com/graphics/ -- Es que la página apunta a algo determinado, mientras el sitio no lo hace.
+Para el último punto, un ejemplo: Puede contar como antecedente esta página https://www.reuters.com/graphics/WALTDISNEY-FILM/SNOW-WHITE/gkvljloxavb/, pero NO cuenta este sitio https://www.reuters.com/graphics/ -- Es que la página apunta a algo determinado, mientras el sitio no lo hace.
 
 Si el ejemplo es insuficiente, por favor revisar este PDF, que es un fragmento del *creando valor a través del diseño de servicios*: https://github.com/user-attachments/files/20396213/antecedentes-referentes.pdf 
 
