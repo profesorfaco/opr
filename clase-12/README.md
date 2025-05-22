@@ -2,8 +2,6 @@
 
 # ~~Gráficas y datos en diseño web responsive SVG, HTML, CSS y JavaScript (primera parte)~~ Diseño y programación: Datos para la propuesta
 
-Corresponde organizar preparar los datos. 
-
 Cada estudiante debería tener, al final de la clase, al menos: 
 
 - una hoja en Google SpreadSheet con los datos por visualizar
