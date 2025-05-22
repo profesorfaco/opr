@@ -2,7 +2,16 @@
 
 # Diseño y programación: Desarrollo y entrega de la propuesta final-final-esta-si (entrega final)
 
-Use la clase para afinar detalles y hacer la entrega de la última versión de su trabajo.
+Use la clase para afinar detalles y hacer la entrega de la última versión de su trabajo. El último criterio de evaluación se modifica:
+
+| Ítem  | Puntaje |
+|:-------|:-------:|
+| Calidad y cantidad de trabajo en la organización de los datos | 0 a 2 |
+| Pertinencia de la alternativa de visualización de los datos organizados (dashboard o infografía digital) | 0 a 1 |
+| Desarrollo, considerando: consultas a bases de datos (JS o CSV), gráficas junto a textos (presentando información que no podría presentarse de otra manera), y decisiones generales de estilo (CSS) | 0 a 3 | 
+| Superar una evaluación del https://wave.webaim.org/ sin errores | 0 a 1 | 
+| TOTAL | 7.0 |
+
 
 - - - - - - - 
 
