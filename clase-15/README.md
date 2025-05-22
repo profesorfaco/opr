@@ -1,10 +1,8 @@
-### Optativo de Profundización: Desarrollo Web y Diseño Visual de Información → Clase 15 → 11/06/2025
+### Optativo de Profundización: Desarrollo Web y Diseño Visual de Información → Clase 15 → 18/06/2025
 
-# Diseño y programación: Datos para la propuesta
+#  Diseño y programación: Desarrollo y evaluación de la propuesta V2.0
 
-### Teoría (para la casa)
-
-Pendiente.
+Aprovechando la evaluación de la clase recién pasada, avance en la mejora de su propuesta.
 
 - - - - - - - 
 
