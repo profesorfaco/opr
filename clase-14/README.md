@@ -1,10 +1,10 @@
-### Optativo de Profundización: Desarrollo Web y Diseño Visual de Información → Clase 14 → 04/06/2025
+### Optativo de Profundización: Desarrollo Web y Diseño Visual de Información → 11/06/2025
 
-# Diseño y programación: Propuesta de tablero de información (dashboard) o infografía digital, interactiva y dinámica
+# ~~Diseño y programación: Propuesta de tablero de información (dashboard) o infografía digital, interactiva y dinámica~~ Primera evaluación de la propuesta
 
-### Teoría (para la casa)
+En este clase se presenta un primer avance en línea, donde sea evidente un claro avance en la propuesta individual. 
 
-Pendiente.
+
 
 - - - - - - - 
 
