@@ -1,4 +1,4 @@
-### Optativo de Profundización: Desarrollo Web y Diseño Visual de Información → Clase 17 → 25/06/2025
+### Optativo de Profundización: Desarrollo Web y Diseño Visual de Información → Clase 17 → 02/07/2025
 
 # EXÁMENES DE CURSOS MÍNIMOS Y OPTATIVOS (re-entrega)
 
