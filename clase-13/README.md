@@ -1,10 +1,12 @@
-### Optativo de Profundización: Desarrollo Web y Diseño Visual de Información → Clase 13 → 28/05/2025
+### Optativo de Profundización: Desarrollo Web y Diseño Visual de Información → Clase 13 → 04/06/2025
 
-# Gráficas y datos en diseño web responsive SVG, HTML, CSS y JavaScript (segunda parte)
+# ~~Gráficas y datos en diseño web responsive SVG, HTML, CSS y JavaScript (segunda parte)~~ Diseño y programación: Desarrollo de la propuesta
 
-### Teoría (para la casa)
+Cada estudiante debería tener, al final de la clase, al menos: 
 
-Pendiente.
+- una consulta resuelta a un csv o json con los datos que ya pudo preparar
+  
+- una página html con un relato y algunos bocetos de visualizaciones
 
 - - - - - - - 
 
