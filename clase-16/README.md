@@ -2,7 +2,7 @@
 
 # Diseño y programación: Desarrollo y entrega de la propuesta final-final-esta-si (entrega final)
 
-Use la clase para afinar detalles y hacer la entrega de la última versión de su trabajo. El último criterio de evaluación se modifica:
+Use la clase para afinar detalles y hacer la entrega de la última versión de su trabajo. El último criterio de evaluación se modifica, ya no aplica la "comparación de avances", sino la accesibilidad del resultado final.
 
 | Ítem  | Puntaje |
 |:-------|:-------:|
