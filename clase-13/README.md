@@ -8,7 +8,7 @@ Cada estudiante debería tener, al final de la clase, al menos:
   
 - una página html con un relato y algunos bocetos de visualizaciones
 
-- un README.md con antecedentes y referentes.
+- un README.md con antecedentes y referentes. Cada uno con imagen, descripción (qué es), dirección (fuente), aspectos positivos y aspectos negativos.
  
 
 - - - - - - - 
