@@ -2,7 +2,7 @@
 
 #  Diseño y programación: Desarrollo y evaluación de la propuesta V2.0
 
-Aprovechando la evaluación de la clase recién pasada, avance en la mejora de su propuesta. Se repite la pauta: 
+Aprovechando la evaluación de la clase recién pasada, avance en la mejora de su propuesta. Se repite la pauta y se puede cambiar la nota obtenida la clase recién pasada.
 
 
 | Ítem  | Puntaje |
