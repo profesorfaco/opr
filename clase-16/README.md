@@ -9,7 +9,7 @@ Use la clase para afinar detalles y hacer la entrega de la última versión de s
 | Calidad y cantidad de trabajo en la organización de los datos | 0 a 2 |
 | Pertinencia de antecedentes y referentes | 0 a 1 |
 | Desarrollo, considerando: consultas a bases de datos (JS o CSV), gráficas junto a textos (presentando información que no podría presentarse de otra manera), y decisiones generales de estilo (CSS) | 0 a 3 | 
-| Superar una evaluación del https://wave.webaim.org/ sin errores | 0 a 1 | 
+| Superar una revisión de https://wave.webaim.org/ sin errores | 0 a 1 | 
 | TOTAL | 7.0 |
 
 
