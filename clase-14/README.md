@@ -2,7 +2,7 @@
 
 # ~~Diseño y programación: Propuesta de tablero de información (dashboard) o infografía digital, interactiva y dinámica~~ Primera evaluación de la propuesta
 
-En este clase se presenta un primer avance en línea, donde sea evidente un claro avance en la propuesta individual. 
+En este clase se presenta un primer avance en línea, para recibir una nota que considera 
 
 | Ítem  | Puntaje |
 |:-------|:-------:|
