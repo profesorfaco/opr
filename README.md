@@ -69,21 +69,20 @@ Clase 09  → 30/04/2025 → Receso de docencia bimestral (Se suspenden las clas
 
 [Clase 10](https://github.com/profesorfaco/opr/tree/main/clase-10)  → 07/05/2025 → Gráficas y datos en diseño web responsive: SVG, HTML y JavaScript (primera parte) ✓
 
-[Clase 11](https://github.com/profesorfaco/opr/tree/main/clase-11)  → 14/05/2025 → ~~Gráficas y datos en diseño web responsive: SVG, HTML y JavaScript (segunda parte)~~ Diseño y programación: Definición de la propuesta
+[Clase 11](https://github.com/profesorfaco/opr/tree/main/clase-11)  → 14/05/2025 → ~~Gráficas y datos en diseño web responsive: SVG, HTML y JavaScript (segunda parte)~~ Diseño y programación: Definición de la propuesta ✓
 
-[Clase 12](https://github.com/profesorfaco/opr/tree/main/clase-12) → 21/05/2025 → ~~Gráficas y datos en diseño web responsive SVG, HTML, CSS y JavaScript (primera parte)~~ Diseño y programación: Datos para la propuesta
+[Clase 12](https://github.com/profesorfaco/opr/tree/main/clase-12) → 28/05/2025 → ~~Gráficas y datos en diseño web responsive SVG, HTML, CSS y JavaScript (primera parte)~~ Diseño y programación: Datos para la propuesta
 
-[Clase 13](https://github.com/profesorfaco/opr/tree/main/clase-13)  → 28/05/2025 → ~~Gráficas y datos en diseño web responsive SVG, HTML, CSS y JavaScript (segunda parte)~~ Diseño y programación: Desarrollo de la propuesta
+[Clase 13](https://github.com/profesorfaco/opr/tree/main/clase-13)  → 04/06/2025 → ~~Gráficas y datos en diseño web responsive SVG, HTML, CSS y JavaScript (segunda parte)~~ Diseño y programación: Desarrollo de la propuesta
 
-[Clase 14](https://github.com/profesorfaco/opr/tree/main/clase-14)  → 04/06/2025 → ~~iseño y programación: Propuesta de tablero de información (*dashboard*) o infografía digital, interactiva y dinámica~~ Primera evaluación de la propuesta
+[Clase 14](https://github.com/profesorfaco/opr/tree/main/clase-14)  → 11/06/2025 → ~~iseño y programación: Propuesta de tablero de información (*dashboard*) o infografía digital, interactiva y dinámica~~ Primera evaluación de la propuesta
 
-[Clase 15](https://github.com/profesorfaco/opr/tree/main/clase-15)  → 11/06/2025 → Diseño y programación: Desarrollo de la propuesta V2.0
+[Clase 15](https://github.com/profesorfaco/opr/tree/main/clase-15)  → 18/06/2025 → Diseño y programación: Desarrollo y evaluación de la propuesta V2.0
 
-[Clase 16](https://github.com/profesorfaco/opr/tree/main/clase-16)  → 18/06/2025 → Diseño y programación: Evaluación de la propuesta V2.0
+[Clase 16](https://github.com/profesorfaco/opr/tree/main/clase-16)  → 25/06/2025 → Diseño y programación: Desarrollo y entrega de la propuesta final-final-esta-si (entrega final)
 
-[Clase 17](https://github.com/profesorfaco/opr/tree/main/clase-17)  → 25/06/2025 → Diseño y programación: Desarrollo y entrega de la propuesta final-final-esta-si (entrega final)
+[Clase 17](https://github.com/profesorfaco/opr/tree/main/clase-17)  → 02/07/2025 → EXÁMENES DE CURSOS MÍNIMOS Y OPTATIVOS (re-entrega)
 
-[Clase 18](https://github.com/profesorfaco/opr/tree/main/clase-18) → 02/07/2025 → EXÁMENES DE CURSOS MÍNIMOS Y OPTATIVOS (re-entrega)
 
 **Cada clase se basará en modalidad de “aula invertida”**; esto transfiere a cada estudiante la responsabilidad de adelantar la revisión de la "teoría" en el README.md de cada clase. Para que quede más claro, en los primeros README.md el título de **Teoría** es seguido por un paréntesis **(para la casa)**. Si cada estudiante revisa esta "teoría para la casa", las clases de los miércoles podrán basarse en una práctica que organizará su comprensión, atendiendo a dudas puntuales.
 
