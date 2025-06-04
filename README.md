@@ -71,9 +71,9 @@ Clase 09  → 30/04/2025 → Receso de docencia bimestral (Se suspenden las clas
 
 [Clase 11](https://github.com/profesorfaco/opr/tree/main/clase-11)  → 14/05/2025 → ~~Gráficas y datos en diseño web responsive: SVG, HTML y JavaScript (segunda parte)~~ Diseño y programación: Definición de la propuesta ✓
 
-[Clase 12](https://github.com/profesorfaco/opr/tree/main/clase-12) → 28/05/2025 → ~~Gráficas y datos en diseño web responsive SVG, HTML, CSS y JavaScript (primera parte)~~ Diseño y programación: Datos para la propuesta
+[Clase 12](https://github.com/profesorfaco/opr/tree/main/clase-12) → 28/05/2025 → ~~Gráficas y datos en diseño web responsive SVG, HTML, CSS y JavaScript (primera parte)~~ Diseño y programación: Datos para la propuesta ✓
 
-[Clase 13](https://github.com/profesorfaco/opr/tree/main/clase-13)  → 04/06/2025 → ~~Gráficas y datos en diseño web responsive SVG, HTML, CSS y JavaScript (segunda parte)~~ Diseño y programación: Desarrollo de la propuesta
+[Clase 13](https://github.com/profesorfaco/opr/tree/main/clase-13)  → 04/06/2025 → ~~Gráficas y datos en diseño web responsive SVG, HTML, CSS y JavaScript (segunda parte)~~ Diseño y programación: Desarrollo de la propuesta ✓
 
 [Clase 14](https://github.com/profesorfaco/opr/tree/main/clase-14)  → 11/06/2025 → ~~iseño y programación: Propuesta de tablero de información (*dashboard*) o infografía digital, interactiva y dinámica~~ Primera evaluación de la propuesta
 
