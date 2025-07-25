@@ -52,7 +52,7 @@ Clase 02 → 15/08/2025 → Asunción de la Santísima Virgen. Feriado legal.
 
 [Clase 04 → 29/08/2025](https://github.com/profesorfaco/opr/tree/main/clase-04) → Comprendiendo dos lenguajes de descripción y un lenguaje de programación: HTML5, CSS3, JS
 
-[Clase 05 → 05/09/2025](https://github.com/profesorfaco/opr/tree/main/clase-05) → Evalación N°1**
+**[Clase 05 → 05/09/2025](https://github.com/profesorfaco/opr/tree/main/clase-05) → Evalación N°1**
 
 [Clase 06 → 12/09/2025](https://github.com/profesorfaco/opr/tree/main/clase-06) → Aplicando HTML5, CSS3 y JS sin bibliotecas
 
