@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>👴🏻👴🏼👴🏽👴🏾👴🏿 jQuery</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <p>
+                <a href="index.html">Hola</a>
+                <a href="page-1.html" class="activo">Selecciona</a>
+                <a href="page-2.html">Foto</a>
+            </p>
+            <h1>Selecciona</h1>
+            
+            <select>
+                <option>todos</option>
+                <option>aries</option>
+                <option>tauro</option>
+                <option>cancer</option>
+                <option>virgo</option>
+                <option>sagitario</option>
+                <option>acuario</option>
+            </select>
+
+            <aside></aside>
+            
+        </main>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+        $.getJSON("https://raw.githubusercontent.com/profesorfaco/dno096-2024/main/clase-05/datos.json", function(data) {
+                console.log(data);
+                
+                data.forEach(function(d){
+                    $("aside").append("<div class='"+ d.signo +"'><img src='"+ d.foto +"'><p>" + d.nombre +"</p></div>");
+                });
+
+        }); 
+        </script>
+        <script>
+            $("select").change(function () {
+                valor = $("select").val();
+                if (valor == "aries") {
+                    $(".aries").show();
+                    $(".tauro").hide();
+                    $(".geminis").hide();
+                    $(".cancer").hide();
+                    $(".leo").hide();
+                    $(".virgo").hide();
+                    $(".libra").hide();
+                    $(".escorpio").hide();
+                    $(".sagitario").hide();
+                    $(".capricornio").hide();
+                    $(".acuario").hide();
+                    $(".piscis").hide();
+                } 
+                else if (valor == "tauro"){
+                    //repetir
+                } else {
+                    //todos quieren su show
+                }
+            });          
+        </script>
+    </body>
+</html>
