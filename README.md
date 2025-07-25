@@ -44,7 +44,7 @@ Nuestro horario de clases: **Viernes en módulos 3 y 4, esto es entre 11:00 y 13
 
 **Cada clase se basará en modalidad de “aula invertida”**; esto transfiere a cada estudiante la responsabilidad de adelantar la revisión de la "teoría" en el README.md de cada clase vinculada a continuación. Para que quede más claro, en los primeros README.md el título de **Teoría** es seguido por un paréntesis **(para la casa)**. Si cada estudiante revisa esta "teoría para la casa", las clases de los miércoles podrán basarse en una práctica que organizará su comprensión, atendiendo a dudas puntuales:
 
-[Clase 01 → 08/08/2025](https://github.com/profesorfaco/opr/tree/main/clase-01) → Conociendo dos lenguajes de descripción y una biblioteca de un lenguaje de programación: HTML5, CSS3 y p5.js. Primera clase es una clase especial, que parte presencialmente a las 12:30 hrs. Antes se les confía la revisión de este repositorio en GitHub.
+[Clase 01 → 08/08/2025](https://github.com/profesorfaco/opr/tree/main/clase-01) → Conociendo dos lenguajes de descripción y una biblioteca de un lenguaje de programación: HTML5, CSS3 y p5.js ——— Primera clase es una clase especial, que parte presencialmente a las 12:30 hrs. Antes se les confía la revisión de este repositorio en GitHub.
 
 Clase 02 → 15/08/2025 → Asunción de la Santísima Virgen. Feriado legal.
 
