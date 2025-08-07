@@ -86,9 +86,11 @@ La relación de pre-evaluación y evaluación es similar a la relación de entre
 
 ### Nota final
 
-**30%** → puntos acumulados como punto base + puntaje obtenido en evaluación Nº1
+**20%** → puntos acumulados como punto base + puntaje obtenido en evaluación Nº1
 
-**30%** → puntos acumulados como punto base + puntaje obtenido en evaluación Nº2
+**20%** → puntos acumulados como punto base + puntaje obtenido en evaluación Nº2
+
+**20%** → puntos acumulados como punto base + puntaje obtenido en evaluación Nº3
 
 **40%** → puntos acumulados como punto base + puntaje obtenido en evaluación Nº3
 
