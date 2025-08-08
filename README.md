@@ -80,7 +80,7 @@ Clase 12 → 31/10/2025 → Día de las Iglesias Evangélicas y Protestantes. Fe
 
 **[Clase 17 → 5/12/2025](https://github.com/profesorfaco/opr/tree/main/clase-17) → Evaluación Nº4**
 
-La relación de pre-evaluación y evaluación es similar a la relación de entrega y repechaje; en caso no haya necesidad de repechaje, la evaluación (clase 18) será la misma que la pre-evaluación (clase 17).
+La relación de pre-evaluación y evaluación es similar a la relación de entrega y repechaje; en caso no haya necesidad de repechaje, la evaluación (clase 17) será la misma que la pre-evaluación (clase 16).
 
 - - - - - - - -
 
