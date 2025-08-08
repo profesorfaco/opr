@@ -2,7 +2,7 @@
 
 # Conociendo y comprendiendo dos lenguajes y otras biblioteca de JavaScript
 
-Pendiente
+Pendiente.
 
 - - - - - - - -
 
