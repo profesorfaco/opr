@@ -1,10 +1,8 @@
 ### Introducción al desarrollo web desde el diseño → Clase 01 → 08/08/2025
 
-# Conociendo dos lenguajes y una biblioteca: HTML5, CSS3 y p5.js
+# Conociendo el optativo y sus temas
 
-### Teoría (para la casa)
-
-Escribir "código fuente" implica describir y/o programar. 
+En este optativo vamos a escribir "código fuente", lo que implica describir y/o programar. 
 
 Para reconocer los lenguajes de descripción y programación que son claves para el desarollo de sitios web profesionales o prototipos avanzados de aplicaciones web, trabajaremos con un editor de código fuente ([Sublime Text](https://www.sublimetext.com/) o [Phoenix Code Editor](https://phcode.dev/)).
 
@@ -36,16 +34,6 @@ Esto sin desconocer que existen varias alternativas para simplificar el *program
 
 Alternativas tales como [p5.js](https://p5js.org/es/), una biblioteca (*library*) de JavaScript mantenida por una comunidad que trabaja por ofrecer *una herramienta amigable para aprender a programar y hacer arte*. Y será con el [p5.js Web Editor](https://editor.p5js.org/) con el que empezaremos a programar.
 
-- - - - - - - - - - - - - - 
-
-### Práctica (para la clase)
-
-En un `index.html` describimos un título de primer nivel y un párrafo, con cierto contenido (HTML) y en cierta ubicación (CSS). Y programamos un “fondo” sobre el que se puede dibujar (JavaScript simplificado con la biblioteca p5.js).
-
-Los resultados deben ser ingresados antes de las 23.59 hrs. de hoy, miércoles 7 de agosto, al foro en: https://cursos.canvas.uc.cl/courses/80331/discussion_topics/844230
-
-Si se cumple con el plazo y se atiende a la instrucciones del foro: Se obtienen 0,5 como base para la primera evaluación. 
-
 - - - - - - - 
 
-###### [SIGUIENTE CLASE →](https://github.com/profesorfaco/dno096-2024/tree/main/clase-02)
+###### [SIGUIENTE CLASE →](https://github.com/profesorfaco/dno096-2024/tree/main/clase-03)
