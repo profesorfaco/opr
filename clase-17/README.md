@@ -2,7 +2,7 @@
 
 # Evaluación Nº4
 
-Pendiente
+Pendiente.
 
 - - - - - - - 
 
