@@ -4,9 +4,7 @@
 
 En este optativo vamos a escribir "código fuente", lo que implica describir y/o programar. 
 
-Para reconocer los lenguajes de descripción y programación que son claves para el desarollo de sitios web profesionales o prototipos avanzados de aplicaciones web, trabajaremos con un editor de código fuente ([Sublime Text](https://www.sublimetext.com/) o [Phoenix Code Editor](https://phcode.dev/)).
-
-El editor de código fuente nos darán indicaciones para poder describir y/o programar respuesta a las siguientes preguntas, cada una con un lenguaje distinto:
+Para reconocer los lenguajes de descripción y programación que son claves para el desarollo de sitios web profesionales o prototipos avanzados de aplicaciones web, trabajaremos con algún editor de código fuente, editor que nos dará indicaciones para poder describir y/o programar respuesta a las siguientes preguntas, cada una con un lenguaje distinto:
 
 - **¿Qué es lo que contiene la página? Se responde con HTML (HyperText Markup Language)**. Lenguaje estándar que describe la estructura de las páginas web. HTML5 es la versión más reciente de este lenguaje. El bloque constructivo más básico del HTML es el elemento. Cada elemento de HTML se escribe, generalmente, entre etiquetas: `<etiqueta>contenido</etiqueta>` → Podemos complementar esta breve introducción a HTML con una revisión de la página: https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics
 
