@@ -2,7 +2,7 @@
 
 # Evaluación N°2
 
-Pendiente.
+Pendiente. Pendiente. Equivale al 20% de la nota final. Resultará de la suma entre los puntos acumulados en clases previas ([06](https://github.com/profesorfaco/opr/tree/main/clase-06), [07](https://github.com/profesorfaco/opr/tree/main/clase-07)) y el puntaje obtenido según pauta de evaluación.
 
 - - - - - - - - - - - - -
 
