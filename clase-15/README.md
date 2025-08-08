@@ -2,7 +2,7 @@
 
 # Diseño y desarrollo de su primer sitio web profesional o prototipo avanzado de aplicación web
 
-Pendiente
+Pendiente.
 
 - - - - - - - 
 
