@@ -2,7 +2,7 @@
 
 # Avanzando en JavaScript sin bibliotecas
 
-Pendiente
+Pendiente.
 
 - - - - - - - - - - - -
 
