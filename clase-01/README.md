@@ -1,4 +1,4 @@
-### Introducción al desarrollo web desde el diseño → Clase 01 → 08/08/2025
+### [Introducción al desarrollo web desde el diseño](https://github.com/profesorfaco/opr/tree/main?tab=readme-ov-file#clase-a-clase) → Clase 01 → 08/08/2025
 
 # Conociendo el optativo y sus temas
 
