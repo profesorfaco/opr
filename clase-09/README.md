@@ -2,7 +2,7 @@
 
 # Conociendo Bootstrap
 
-Pendiente
+Pendiente.
 
 - - - - - - - - - - - - -
 
