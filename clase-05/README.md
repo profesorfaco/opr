@@ -2,6 +2,8 @@
 
 # Evaluación N°1
 
+Pendiente
+
 - - - - - - - 
 
 ###### [← CLASE ANTERIOR](https://github.com/profesorfaco/opr/tree/main/clase-04) — [SIGUIENTE CLASE →](https://github.com/profesorfaco/opr/tree/main/clase-06)
