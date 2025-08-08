@@ -2,7 +2,7 @@
 
 # Evaluación N°1
 
-Pendiente
+Pendiente.
 
 - - - - - - - 
 
