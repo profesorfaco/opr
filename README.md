@@ -44,41 +44,41 @@ Nuestro horario de clases: **Viernes en módulos 3 y 4, esto es entre 11:00 y 13
 
 **Cada clase se basará en modalidad de “aula invertida”**; esto transfiere a cada estudiante la responsabilidad de adelantar la revisión de la "teoría" en el README.md de cada clase vinculada a continuación. Para que quede más claro, en los primeros README.md el título de **Teoría** es seguido por un paréntesis **(para la casa)**. Si cada estudiante revisa esta "teoría para la casa", las clases de los miércoles podrán basarse en una práctica que organizará su comprensión, atendiendo a dudas puntuales:
 
-[Clase 01 → 08/08/2024](https://github.com/profesorfaco/opr/tree/main/clase-01) → Conociendo el optativo y sus temas.
+[Clase 01 → 08/08/2025](https://github.com/profesorfaco/opr/tree/main/clase-01) → Conociendo el optativo y sus temas.
 
-Clase 02 → 15/08/2024 → Asunción de la Santísima Virgen. Feriado legal.
+Clase 02 → 15/08/2025 → Asunción de la Santísima Virgen. Feriado legal.
 
-[Clase 03 → 22/08/2024](https://github.com/profesorfaco/opr/tree/main/clase-03) → Conociendo dos lenguajes y una biblioteca: HTML5, CSS3 y p5.js.
+[Clase 03 → 22/08/2025](https://github.com/profesorfaco/opr/tree/main/clase-03) → Conociendo dos lenguajes y una biblioteca: HTML5, CSS3 y p5.js.
 
-[Clase 04 → 29/08/2024](https://github.com/profesorfaco/opr/tree/main/clase-04) → Comprendiendo dos lenguajes y una biblioteca: HTML5, CSS3 y p5.js (Semana Universitaria. Se suspenden las evaluaciones académicas entre el lunes 25 y el sábado 30 de agosto).
+[Clase 04 → 29/08/2025](https://github.com/profesorfaco/opr/tree/main/clase-04) → Comprendiendo dos lenguajes y una biblioteca: HTML5, CSS3 y p5.js (Semana Universitaria. Se suspenden las evaluaciones académicas entre el lunes 25 y el sábado 30 de agosto).
 
-**[Clase 05 → 05/09/2024](https://github.com/profesorfaco/opr/tree/main/clase-05) → Evaluación Nº1**
+**[Clase 05 → 05/09/2025](https://github.com/profesorfaco/opr/tree/main/clase-05) → Evaluación Nº1**
 
-[Clase 06 → 12/09/2024](https://github.com/profesorfaco/opr/tree/main/clase-06) → Conociendo y comprendiendo dos lenguajes y otras biblioteca de JavaScript.
+[Clase 06 → 12/09/2025](https://github.com/profesorfaco/opr/tree/main/clase-06) → Conociendo y comprendiendo dos lenguajes y otras biblioteca de JavaScript.
 
-Receso de docencia bimestral → 19/09/2024 → Se suspenden las clases. Las evaluaciones académicas quedarán suspendidas entre el lunes 15 y el lunes 22 de septiembre inclusive.
+Receso de docencia bimestral → 19/09/2025 → Se suspenden las clases. Las evaluaciones académicas quedarán suspendidas entre el lunes 15 y el lunes 22 de septiembre inclusive.
 
-[Clase 07 → 26/09/2024](https://github.com/profesorfaco/opr/tree/main/clase-08) → Avanzando en JavaScript sin bibliotecas.
+[Clase 07 → 26/09/2025](https://github.com/profesorfaco/opr/tree/main/clase-08) → Avanzando en JavaScript sin bibliotecas.
 
-**[Clase 08 → 03/10/2023](https://github.com/profesorfaco/opr/tree/main/clase-09) → Evaluación Nº2**
+**[Clase 08 → 03/10/2025](https://github.com/profesorfaco/opr/tree/main/clase-09) → Evaluación Nº2**
 
-[Clase 09 → 10/10/2024](https://github.com/profesorfaco/opr/tree/main/clase-10) → Conociendo Bootstrap
+[Clase 09 → 10/10/2025](https://github.com/profesorfaco/opr/tree/main/clase-10) → Conociendo Bootstrap
 
-[Clase 10 → 17/10/2024](https://github.com/profesorfaco/opr/tree/main/clase-11) → Comprendiendo Bootstrap
+[Clase 10 → 17/10/2025](https://github.com/profesorfaco/opr/tree/main/clase-11) → Comprendiendo Bootstrap
 
-**[Clase 11 → 24/10/2024](https://github.com/profesorfaco/opr/tree/main/clase-12) →  Evaluación Nº3**
+**[Clase 11 → 24/10/2025](https://github.com/profesorfaco/opr/tree/main/clase-12) →  Evaluación Nº3**
 
-Clase 12 → 31/10/2023 → Día de las Iglesias Evangélicas y Protestantes. Feriado legal.
+Clase 12 → 31/10/2025 → Día de las Iglesias Evangélicas y Protestantes. Feriado legal.
 
-[Clase 13 → 07/11/2024](https://github.com/profesorfaco/opr/tree/main/clase-14) → Diseño y desarrollo de su primer sitio web profesional o prototipo avanzado de aplicación web.
+[Clase 13 → 07/11/2025](https://github.com/profesorfaco/opr/tree/main/clase-14) → Diseño y desarrollo de su primer sitio web profesional o prototipo avanzado de aplicación web.
 
-[Clase 14 → 14/11/2024](https://github.com/profesorfaco/opr/tree/main/clase-15) → Diseño y desarrollo de su primer sitio web profesional o prototipo avanzado de aplicación web.
+[Clase 14 → 14/11/2025](https://github.com/profesorfaco/opr/tree/main/clase-15) → Diseño y desarrollo de su primer sitio web profesional o prototipo avanzado de aplicación web.
 
-[Clase 15 → 21/11/2020](https://github.com/profesorfaco/opr/tree/main/clase-16) → Diseño y desarrollo de su primer sitio web profesional o prototipo avanzado de aplicación web.
+[Clase 15 → 21/11/2025](https://github.com/profesorfaco/opr/tree/main/clase-16) → Diseño y desarrollo de su primer sitio web profesional o prototipo avanzado de aplicación web.
 
-**[Clase 16 → 28/11/2024](https://github.com/profesorfaco/opr/tree/main/clase-17) → Pre-evaluación Nº4**
+**[Clase 16 → 28/11/2025](https://github.com/profesorfaco/opr/tree/main/clase-17) → Pre-evaluación Nº4**
 
-**[Clase 17 → 5/12/2024](https://github.com/profesorfaco/opr/tree/main/clase-18) → Evaluación Nº4**
+**[Clase 17 → 5/12/2025](https://github.com/profesorfaco/opr/tree/main/clase-18) → Evaluación Nº4**
 
 La relación de pre-evaluación y evaluación es similar a la relación de entrega y repechaje; en caso no haya necesidad de repechaje, la evaluación (clase 18) será la misma que la pre-evaluación (clase 17).
 
