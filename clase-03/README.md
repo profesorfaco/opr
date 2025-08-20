@@ -2,7 +2,7 @@
 
 # Conociendo dos lenguajes y una biblioteca: HTML5, CSS3 y p5.js
 
-Conviene partir insistiendo en una síntesis: 
+Conviene partir insistiendo en preguntas y respuestas, para simplificar la partida: 
 
 - **¿Qué es lo que contiene la página? Se responde con HTML (HyperText Markup Language)**. Lenguaje estándar que describe la estructura de las páginas web. HTML5 es la versión más reciente de este lenguaje. El bloque constructivo más básico del HTML es el elemento. Cada elemento de HTML se escribe, generalmente, entre etiquetas: `<etiqueta>contenido</etiqueta>` → Podemos complementar esta breve introducción a HTML con una revisión de la página: https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics
 
