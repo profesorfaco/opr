@@ -32,9 +32,6 @@ Con el DOM podemos manipular una página así como cuando *photoshopeamos* una i
 
 Por la manipulación del DOM **podríamos encontrar inconcruencias entre** dos vista: la del **código fuente de la página** y la de los **elementos de la página**. Estirando la analogía: En el código fuente de la página ves el fenómeno tal como fue capturado, mientras que en la vista de elementos de la misma página está lo *photoshopeado* (lo que tenemos a la vista en toda la página del navegador).
 
-Para que esta diferencia quede muy clara, aprovechen [este ejemplo](https://profesorfaco.github.io/dno037-2023-2/clase-02/ejemplo.html), donde pueden revisar las diferencias entre la vista del **código fuente de la página** y la de los **elementos de la página**. Noten que en el código fuente faltan contenidos que sí están en la visualización que ofrece el navegador y en los elementos de la página.
-
-
 - - - - - - - 
 
 ###### [← CLASE ANTERIOR](https://github.com/profesorfaco/opr/tree/main/clase-01) — [SIGUIENTE CLASE →](https://github.com/profesorfaco/opr/tree/main/clase-04)
