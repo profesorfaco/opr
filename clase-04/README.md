@@ -93,7 +93,27 @@ Con lo recién visto tenemos un avance consistente en lo que respeta a descripci
 
 La programación se hace con lenguajes de programación, tales como JavaScript. 
 
-A tal lenguaje de programación nos acercaremos por la vía de **p5.js**, aprovechando sus [referencias](https://p5js.org/reference/), [tutoriales](https://p5js.org/tutorials/) y [ejemplos](https://p5js.org/examples/). 
+A tal lenguaje de programación nos acercaremos por la vía de **p5.js**, aprovechando sus [referencias](https://p5js.org/reference/), [tutoriales](https://p5js.org/tutorials/) y [ejemplos](https://p5js.org/examples/).
+
+Para hacerlo, el primer cambio que haremos será en el HTML, donde vamos a buscar a esta biblioteca de JavaScript. 
+
+Dentro de la <head></head>, reemplazaremos: 
+
+```
+<!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.11.8/lib/p5.js"></script> -->
+```
+
+Por esta otra línea:
+
+```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/2.0.4/p5.min.js" integrity="sha512-rOTpdy9fXlcLeLxPj5H4pof51FAx2lVK8Soexk8yTek9wrenwm56MKT2VddH8GCDd4a2js2i4GwezlUkbGdVQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+```
+
+Una vez hecho ese cambio, habrá que volver a activar la línea que vincula al `sketch.js`, quitándole la indicación de comentario a la línea:
+
+```
+<!-- <script src="sketch.js"></script> -->
+```
 
 - - - - - - - 
 
