@@ -144,6 +144,24 @@ function windowResized() {
 }
 ```
 
+Ahora agreguemos al `style.css`, lo siguiente:
+
+```
+#bloque {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: auto;
+    padding: 1%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    box-shadow: 0 0 30px white;
+    z-index: 9999;
+}
+```
+
 
 - - - - - - - 
 
