@@ -97,7 +97,7 @@ A tal lenguaje de programación nos acercaremos por la vía de **p5.js**, aprove
 
 Para hacerlo, el primer cambio que haremos será en el HTML, donde vamos a buscar a esta biblioteca de JavaScript. 
 
-Dentro de la <head></head>, reemplazaremos: 
+Dentro de la `<head></head>`, reemplazaremos: 
 
 ```
 <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.11.8/lib/p5.js"></script> -->
