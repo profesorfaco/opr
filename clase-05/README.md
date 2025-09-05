@@ -28,7 +28,8 @@ En cada `html` corresponde:
 1. Ajustar el texto de introducción, repitiéndolo en cada p´ágina.
 
 2. Agregar una imagen parar mostrar, tipo "avatar", justo arriba del título de primer nivel, en cada página.
-   
+
+Lo demás considera el logro del ejercicio en cada página.
 
 
 - - - - - - - 
