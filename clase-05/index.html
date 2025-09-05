@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title><!--nombre apellido--></title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/2.0.4/p5.min.js" integrity="sha512-rOTpdy9fXlcLeLxPj5H4pof51FAx2lVK8Soexk8yTek9wrenwm56MKT2VddH8GCDd4a2js2i4GwezlUkbGdVQg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+        ></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body id="cuerpo">
+        <main id="bloque">
+            <!--editar lo que sigue-->
+            <h1>¡Hola mundo!</h1>
+            <h2>Me llamo <a href="#" target="_blank">{Nombre o Apodo, vinculado a cuenta en GitHub}</a></h2>
+            <p>Soy {breve reseña}</p>
+            <!--no sigas editando desde acá-->
+            <p>Esta es mi primera prueba de <a href="https://github.com/profesorfaco/opr" target="_blank">Introducción al Desarrollo Web desde el Diseño</a>, un Optativo de Profundización de la <a href="https://diseno.uc.cl/" target="_blank">Escuela de Diseño UC</a>.</p>
+            <p>Aquí puedes echarle un vistazo a las páginas que preparé usando <code>HTML</code>, <code>CSS</code> y <code>p5.js</code>, una bibliteca de <code>JavaScript</code>:</p>
+            <nav>
+                <a href="index.html" class="active">Portada</a> 
+                <a href="page-1.html">Primera interior</a> 
+                <a href="page-2.html">Segunda interior</a>
+            </nav>
+            <p>En la portada puedes ver un <code>circle</code>, con un radio definido al azar en cada iteración del <code>draw()</code>, que va marcando una huella del movimiento del mouse</p>
+        </main>
+
+        <script>
+        var canvas;
+
+        function setup() {
+          canvas = createCanvas(windowWidth, windowHeight);
+          canvas.parent("cuerpo");
+          canvas.position(0,0);
+          canvas.style('z-index','-1');
+        }
+
+        function draw() {
+          
+        }
+
+        function windowResized() {
+          resizeCanvas(windowWidth, windowHeight);
+        }
+        </script>
+    </body>
+</html>
