@@ -2,7 +2,17 @@
 
 # Evaluación N°1
 
-Pendiente. Equivale al 20% de la nota final. Resultará de la suma entre los puntos acumulados en clases previas ([01](https://github.com/profesorfaco/opr/tree/main/clase-01), [03](https://github.com/profesorfaco/opr/tree/main/clase-03), [04](https://github.com/profesorfaco/opr/tree/main/clase-04)) y el puntaje obtenido según pauta de evaluación.
+Esta evaluación equivale al 20% de la nota final. Resultará de la suma entre los puntos acumulados en clases previas ([01](https://github.com/profesorfaco/opr/tree/main/clase-01), [03](https://github.com/profesorfaco/opr/tree/main/clase-03), [04](https://github.com/profesorfaco/opr/tree/main/clase-04)) y el puntaje obtenido según pauta de evaluación.
+
+El trabajo debe partir de los documentos compartidos en la carpeta de esta clase: 
+
+- `index.html`
+- `page-1.html`
+- `page-2.html`
+- `style.css`
+
+
+
 
 - - - - - - - 
 
