@@ -25,7 +25,7 @@ Un mismo `style.css` afecta a todas las páginas del sitio. Corresponde ajustarl
 
 En cada `html` corresponde: 
 
-1. Ajustar el texto de introducción, repitiéndolo en cada p´ágina.
+1. Ajustar el texto de introducción, repitiéndolo en cada página.
 
 2. Agregar una imagen parar mostrar, tipo "avatar", justo arriba del título de primer nivel, en cada página.
 
