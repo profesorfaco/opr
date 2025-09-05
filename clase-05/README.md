@@ -17,7 +17,7 @@ Un mismo `style.css` afecta a todas las páginas del sitio. Corresponde ajustarl
 
 2. Definir, para título de primero nivel y título de segundo nivel una fuente tomada desde Google Fonts
 
-3. Ajustar los cuerpos tipográficos del título de primer y segundo nivel. También ajustar sus colores. Ajustar también el color de cada título. 
+3. Ajustar los cuerpos tipográficos del título de primer y segundo nivel. También ajustar sus colores.
 
 4. Ajustar los colores de los “botones” de navegación en función de los colores ya escogidos. 
 
