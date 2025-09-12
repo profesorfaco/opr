@@ -12,7 +12,7 @@ El código está usando p5.js y [ml5.js](https://ml5js.org/)
 
 Detalles del HandPose que nos ofrece ml5.js se encuentran en: https://docs.ml5js.org/#/reference/handpose
 
-**Para seguir jugando: https://thecodingtrain.com/tracks/ml5js-beginners-guide/ml5/facemesh**
+**Para seguir jugando con ml5, recomiendo: https://thecodingtrain.com/tracks/ml5js-beginners-guide/ml5/facemesh**
 
 Ahora veamos otra biblioteca, usando el siguiente código fuente: 
 
