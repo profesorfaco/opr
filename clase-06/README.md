@@ -72,9 +72,9 @@ Ahora veamos otra biblioteca, usando el siguiente código fuente:
 
 Con lo revisado revisamos dos bibliotecas de JavaScript.
 
-1- Usamos el editor de p5.js para explorar un poco [ml5.js](https://ml5js.org/)
+1. Usamos el editor de p5.js para explorar un poco [ml5.js](https://ml5js.org/)
 
-2- Usamos el editor de código fuente en sus computadores para explorar un poco de [chart.js](https://www.chartjs.org/)
+2. Usamos el editor de código fuente en sus computadores para explorar un poco de [chart.js](https://www.chartjs.org/)
 
 Hay muchas bibliotecas más, pero la mayoría comparte la posibilidad de simplicar una tarea específica, ofreciendo un "dialecto" que se explica en las referencias disponibles en la web oficial de la misma biblioteca.
 
