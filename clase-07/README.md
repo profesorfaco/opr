@@ -28,7 +28,7 @@ Ese par de funciones con las que parte p5.js sólo funcionan con la biblioteca t
 
 - https://p5js.org/es/reference/p5/draw/
 
-Al trabajar sin p5.js ni otra biblioteca podremos crear funciones que no tendrán un “comportamiento predefinido". Podríamos crear, por ejemplo, una función que se llame setup y me calcule cuántas mesas necesito para un número determinado de personas: 
+Al trabajar sin p5.js ni otra biblioteca podremos crear funciones que no tendrán un “comportamiento predefinido". Podríamos crear, por ejemplo, una función que se llame `setup`, que calcule cuántas mesas necesito para un número determinado de personas: 
 
 ```
 <html>
@@ -40,9 +40,9 @@ Al trabajar sin p5.js ni otra biblioteca podremos crear funciones que no tendrá
 </html>
 ```
 
-Tal código fuente lo pueden copiar y pegar en un nuevo documento HTML. Luego pueden abrir la consola de Javascript para escribir `setup(123)`. El resultado será el número de mesas para 5 personas que se necesitan conseguir para 123 personas. Y pueden probar cualquier otro número.
+Tal código fuente lo pueden copiar y pegar en un nuevo documento HTML. Luego pueden abrir ese documento en su navegador para consultar la consola de Javascript. En tal consolan escriban `setup(123)` y presionen `⏎ enter`. El resultado será el número de mesas para 5 personas que necesitan para 123 personas. Y pueden probar cualquier otro número.
 
-El `Math.ceil()`, que contiene a la división de número por 5, hace algo como el `Math.roud()` y el `Math.floor()`, que se explican junto a otros `Math` en https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math 
+El `Math.ceil()`, que contiene a la división de `n` por 5, hace algo como el `Math.roud()` y el `Math.floor()`, que se explican junto a otros `Math` en https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math 
 
 Queda así que `setup()` no implica algo más allá de la biblioteca de p5.js, pero `Math.ceil()` implica algo en cualquier uso de JavaScript, con o sin bibliotecas. 
 
