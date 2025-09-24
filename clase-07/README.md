@@ -28,7 +28,7 @@ Ese par de funciones con las que parte p5.js sólo funcionan con la biblioteca t
 
 - https://p5js.org/es/reference/p5/draw/
 
-Al trabajar sin p5.js ni otra biblioteca podremos crear funciones que no tendrán un “comportamiento predefinido". Podríamos crear, por ejemplo, una función que se llame `setup`, que calcule cuántas mesas necesito para un número determinado de personas: 
+Al trabajar sin p5.js ni otra biblioteca podremos crear funciones que no tendrán un “comportamiento predefinido". Podríamos crear, por ejemplo: Una función que se llame `setup`, que calcule cuántas mesas necesito para un número determinado de personas: 
 
 ```
 <html>
@@ -44,23 +44,27 @@ Tal código fuente lo pueden copiar y pegar en un nuevo documento HTML. Luego pu
 
 El `Math.ceil()`, que contiene a la división de `n` por 5, hace algo como el `Math.roud()` y el `Math.floor()`, que se explican junto a otros `Math` en https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math 
 
-Queda así que `setup()` no implica algo más allá de la biblioteca de p5.js, pero `Math.ceil()` implica algo en cualquier uso de JavaScript, con o sin bibliotecas. 
+Queda así que `setup()` no implica algo más allá de la biblioteca de p5.js. Pero `Math.ceil()` implica algo en cualquier uso de JavaScript, con o sin bibliotecas. 
 
 #### Hazlo tantas veces sea necesario
 
+A propósito de cualquier uso de JavaScript, con o sin bibliotecas:
+
 Corresponde conocer el ciclo `for`: https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration#declaraci%C3%B3n_for
 
-Diferenciarlo del método `forEach()`: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+También corresponde diferenciarlo del método `forEach()`: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 
 #### Selecciona
 
 Seguramente usaremos `document.querySelector()`: https://developer.mozilla.org/es/docs/Web/API/Document/querySelector
 
-Alguna vez podría ser necesario usar el `document.querySelectorAll()` https://developer.mozilla.org/es/docs/Web/API/Document/querySelectorAll
+Y alguna vez podría ser necesario usar el `document.querySelectorAll()`: https://developer.mozilla.org/es/docs/Web/API/Document/querySelectorAll
 
 #### Interacción
 
 Para más adelante dejaremos el registro de eventos: https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener
+
+En lo que sigue usaremos un atributo de elemento HTML, que se recomienda ya no usar.
 
 #### Probemos
 
