@@ -72,6 +72,7 @@ Para más adelante dejaremos el registro de eventos: https://developer.mozilla.o
     <title>Ejemplo</title>
   </head>
   <body>
+    <button onclick="muestra()">Click</button>
     <p></p>
     <p></p>
     <p></p>
@@ -91,7 +92,6 @@ Para más adelante dejaremos el registro de eventos: https://developer.mozilla.o
         }
         return imprime;
       }
-      muestra();
     </script>
   </body>
 </html>
