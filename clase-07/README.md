@@ -24,8 +24,9 @@ Como se lee en [MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/
 
 Ese par de funciones con las que parte p5.js sólo funcionan con la biblioteca tal como indica la referencia: 
 
-https://p5js.org/es/reference/p5/setup/
-https://p5js.org/es/reference/p5/draw/
+- https://p5js.org/es/reference/p5/setup/
+
+- https://p5js.org/es/reference/p5/draw/
 
 Al trabajar sin p5.js ni otra biblioteca podremos crear funciones que no tendrán un “comportamiento” diferenciado. Podríamos crear, por ejemplo, una función que se llame setup y me calcule cuántas mesas necesito para un número determinado de personas: 
 
