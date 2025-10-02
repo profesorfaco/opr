@@ -14,7 +14,7 @@ Es importante señalar que todo ese HTML y CSS fue generado por una inteligencia
 
 **Paso 2**. En el cuerpo del `index.html` elimine todas las divisiones de clase `gallery-item` (pero deje en alguna parte una copia de la estructura de una división para el paso siguiente)
 
-**Paso 3**. Use la misma estructura de lo recién eliminado para agregar en el división de identidad `portafolio` tantas divisiones de clase `gallery-item` como corresponda a los datos en su variable con datos para su portafolio.
+**Paso 3**. Use la misma estructura de lo recién eliminado para agregar en el división de identidad `portafolio` tantas divisiones de clase `gallery-item` como corresponda a los datos en su variable con datos para su portafolio (la `const trabajos = []` en JavaScript).
 
 **Paso 4**. Asegúrese de que en cada división de clase `gallery-item` contenga una imagen de un alto y ancho determinado y repetido, además de un título de tercer nivel para indicar el nombre y un párrafo para indicar la calificación.
  
