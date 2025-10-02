@@ -22,7 +22,7 @@ Es importante señalar que todo ese HTML y CSS fue generado por una inteligencia
 
 **Paso 6**. Pendiente (se presentará al inicio de la clase; se relacionará con https://www.chartjs.org/)
 
-**Paso 7**. Pendiente (se presentará al inicio de la clase; se relacionará con CSS)
+**Paso 7**. Pendiente (se presentará al inicio de la clase; se relacionará con clases 6 y 7)
 
 Cada paso será calificado entre 0,0 y 1,0 punto si y sólo si ingresan en el foro de la clase de hoy, hasta las 13.30 hrs. la dirección de su repositorio y github page activa. 
 
