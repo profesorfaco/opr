@@ -1,4 +1,4 @@
-### Introducción al desarrollo web desde el diseño → Clase 08 → 25/09/2024
+### Introducción al desarrollo web desde el diseño → Clase 08 → 03/10/2025
 
 # Evaluación N°2
 
