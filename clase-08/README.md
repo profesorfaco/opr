@@ -20,9 +20,9 @@ Es importante señalar que todo ese HTML y CSS fue generado por una inteligencia
  
 **Paso 5**. Crear una página `about.html`, con parte de la página `index.html`. Puede mantener la sección de clase `gallery`, eliminando lo que contiene para reemplazarlos por párrafos que escriba directamente 
 
-**Paso 6**. Pendiente (se presentará al inicio de la clase; se relacionará con https://www.chartjs.org/)
+**Paso 6**. En la página `about.html` debe agregar un gráfico usando la bibliteca https://www.chartjs.org/ Este gráfico debe mostrar [alguna progresión de datos a lo largo del tiempo](https://datavizcatalogue.com/ES/buscar/datos_a_lo_largo_del_tiempo.html).
 
-**Paso 7**. Pendiente (se presentará al inicio de la clase; se relacionará con clases 6 y 7)
+**Paso 7**. Se suman hasta 0,5 por calidad de cada ejercicio con URL operativa y publicado en Canvas; se harán excepciones en casos de estudiantes que aún no están en la lista oficial (y por eso no tienen acceso al Canvas).
 
 Cada paso será calificado entre 0,0 y 1,0 punto si y sólo si ingresan en el foro de la clase de hoy, hasta las 13.30 hrs. la dirección de su repositorio y github page activa. 
 
