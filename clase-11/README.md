@@ -2,8 +2,25 @@
 
 # Evaluación N°3
 
-Pendiente. Equivale al 20% de la nota final. Resultará de la suma entre los puntos acumulados en clases previas ([09](https://github.com/profesorfaco/opr/tree/main/clase-09), [10](https://github.com/profesorfaco/opr/tree/main/clase-10)) y el puntaje obtenido según pauta de evaluación.
+El 20% de la nota final se obtiene con: 
 
+**1,0 punto base**.
+
+**3,0 puntos** por:
+
+- CLASE 09 - hasta el 16 de oct 23:59
+
+- CLASE 10 - hasta 20 de octubre 23.59 
+
+- CLASE 10 - Re-entrega - hasta 23 de octubre 23.59 (revisaré correcciones en el repositorio presentado en foro de discusión original, ya cerrado y comentado; quienes hayan recibido comentario positivo, sin indicación de ajuste, no necesitan comentar en este foro)
+
+**3,0 puntos** por los siguientes 3 pasos: 
+
+- Paso 1: Uso del JSON que se le indique para completar el portafolio de compañerx de curso.
+
+- Paso 2: Uso del example Album en https://getbootstrap.com/docs/5.3/examples/
+
+- Paso 3: Uso de la “lógica de programación” presentada en clases; ninguna otra generada con inteligencia artificial que, probablemente, no pueda descifrar. 
 
 - - - - - - - 
 
