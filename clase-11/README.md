@@ -20,7 +20,7 @@ El 20% de la nota final se obtiene con:
 
 - Paso 2: Uso del example Album en https://getbootstrap.com/docs/5.3/examples/
 
-- Paso 3: Uso de la “lógica de programación” presentada en clases; ninguna otra generada con inteligencia artificial que, probablemente, no pueda descifrar. 
+- Paso 3: Uso de la “lógica de programación” presentada en clases para el despliegue de las habilidades y el portafolio.
 
 - - - - - - - 
 
