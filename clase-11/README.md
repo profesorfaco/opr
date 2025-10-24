@@ -78,7 +78,7 @@ En la línea se agrega la variable `resultado`, para luego apuntar con la variab
 |	LIVKA	KUTZ	|	https://l1vk4.github.io/10ma-clase/	|
 |	ANTONIA	LABRA	|	https://ant-nia.github.io/c10/	|
 |	AMBAR	MARTIN	|	https://lavendas.github.io/Clase10/	|
-|	MARÍA	ORELLANA	|	https://marita03.github.io/clase10.2/	|
+|	MARÍA	IGNACIA ORELLANA	|	https://marita03.github.io/clase10.2/	|
 |	JOSEFA	PÉREZ	|	https://josefa020.github.io/clase-10/	|
 |	MARÍA	PUELMA	|	https://isapuelma.github.io/Clase.10/	|
 |	AMANCAY	RAMÍREZ	|	https://loubingui.github.io/Clase_10/	|
