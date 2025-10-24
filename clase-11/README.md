@@ -66,7 +66,7 @@ En la línea se agrega la variable `resultado`, para luego apuntar con la variab
 |	PÍA	CANALES	|	https://piacanalesr.github.io/webo_10/	| [Catalina Bustos](https://github.com/catita-b/) |
 |	JASMÍN	CASTILLO	|	https://jasmcastillo-dev.github.io/Clase-10/	| [Josefa Pérez](https://github.com/josefa020/) |
 |	JOSEFINA	CASTRO	|	https://josecastrod.github.io/Clase-9/	| [Agustín Avendaño](https://github.com/agustin070702/) |
-|	JUAN CARLOS	CONTRERAS	|	https://juancarlos2docontreras.github.io/NovenaClase/	| Javiera Baldebenito |
+|	JUAN CARLOS	CONTRERAS	|	https://juancarlos2docontreras.github.io/NovenaClase/	| [Javiera Valdebenito](https://github.com/javaaa000/) |
 |	JAVIERA	DONOSO	|	https://javy3003.github.io/decima-clase/	| [Matilde Flores](https://github.com/matildeflvi/) |
 |	CAMILA	FALCON	|	—	| — |
 |	MATILDE	FLORES	|	https://matildeflvi.github.io/decima_clase/	|[ María Ignacia Orellana](https://github.com/marita03/) |
