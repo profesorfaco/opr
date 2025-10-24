@@ -27,7 +27,7 @@ El 20% de la nota final se obtiene con:
 
 En algunos casos podría mostrarse un error 429 en lugar del JSON.
 
-En Google, usando su modo IA, podrían *buscar*: error 429 github pages json
+En [Google, usando su modo IA](https://www.google.com/), podrían *buscar*: error 429 github pages json
 
 Para evitarlo, sin complejizar, se recomienda usar https://myjson.online/
 
