@@ -59,36 +59,36 @@ En la línea se agrega la variable `resultado`, para luego apuntar con la variab
 
 |	Nombres		|	Entrega en foro	| Trabaja para… |
 |:-------------|:---------|:-----------|
-|	AGUSTÍN	AVENDAÑO	|	https://agustin070702.github.io/decimaClase/	| Jose Castro |
-|	AYLEEN	BAHAMÓNDEZ	|	https://ayleenba23.github.io/Clase-10/	| Bárbara Trabert |
-|	SOFÍA	BASSALETTI	|	https://mbassaletti.github.io/clase10/	| Rosario Fuentes |
-|	CATALINA	BUSTOS	|	https://catita-b.github.io/web_clase10/	| Pía Canales |
-|	PÍA	CANALES	|	https://piacanalesr.github.io/webo_10/	| Catalina Bustos |
-|	JASMÍN	CASTILLO	|	https://jasmcastillo-dev.github.io/Clase-10/	| Josefa |
-|	JOSE	CASTRO	|	https://josecastrod.github.io/Clase-9/	| Agustín Avendaño |
+|	AGUSTÍN	AVENDAÑO	|	https://agustin070702.github.io/decimaClase/	| [Josefina Castro](https://github.com/josecastrod/) |
+|	AYLEEN	BAHAMÓNDEZ	|	https://ayleenba23.github.io/Clase-10/	| [Bárbara Trabert](https://github.com/barbaratrabert/) |
+|	SOFÍA	BASSALETTI	|	https://mbassaletti.github.io/clase10/	| [Rosario Fuentes](https://github.com/rosi2701/) |
+|	CATALINA	BUSTOS	|	https://catita-b.github.io/web_clase10/	| [Pía Canales](https://github.com/piacanalesr/) |
+|	PÍA	CANALES	|	https://piacanalesr.github.io/webo_10/	| [Catalina Bustos](https://github.com/catita-b/) |
+|	JASMÍN	CASTILLO	|	https://jasmcastillo-dev.github.io/Clase-10/	| [Josefa Pérez](https://github.com/josefa020/) |
+|	JOSEFINA	CASTRO	|	https://josecastrod.github.io/Clase-9/	| [Agustín Avendaño](https://github.com/agustin070702/) |
 |	JUAN CARLOS	CONTRERAS	|	https://juancarlos2docontreras.github.io/NovenaClase/	| Javiera Baldebenito |
-|	JAVIERA	DONOSO	|	https://javy3003.github.io/decima-clase/	| Matilde Flores |
+|	JAVIERA	DONOSO	|	https://javy3003.github.io/decima-clase/	| [Matilde Flores](https://github.com/matildeflvi/) |
 |	CAMILA	FALCON	|	—	| — |
-|	MATILDE	FLORES	|	https://matildeflvi.github.io/decima_clase/	| María Ignacia Orellana |
-|	ROSARIO	FUENTES	|	https://rosi2701.github.io/decimaClase/	| Pamela Jorquera |
-|	ANTONIA	GARCÉS	|	—	| Bárbara Trabert |
-|	FERNANDA	HUMERES	|	https://mikuby11.github.io/Clase_10/	| Magda |
-|	NOUR	JALILIE	|	https://nourjalilie.github.io/Clase10/	| Ambar |
-|	PAMELA	JORQUERA	|	https://pameee73.github.io/17-10new/	| Rosario Fuentes |
-|	LIVKA	KUTZ	|	https://l1vk4.github.io/10ma-clase/	| Ayleen Bahamondes |
-|	ANTONIA	LABRA	|	https://ant-nia.github.io/c10/	| Matilde Flores |
-|	AMBAR	MARTIN	|	https://lavendas.github.io/Clase10/	| Nour |
-|	MARÍA	IGNACIA ORELLANA	|	https://marita03.github.io/clase10.2/	| Matilde Flores |
-|	JOSEFA	PÉREZ	|	https://josefa020.github.io/clase-10/	| Jazmín Castillo |
-|	MARÍA	PUELMA	|	https://isapuelma.github.io/Clase.10/	| Javiera Baldebenito |
-|	AMANCAY	RAMÍREZ	|	https://loubingui.github.io/Clase_10/	| Magdalena Rivas |
-|	MAGDALENA	RIVAS	|	https://magdarivas.github.io/clase10/	| Javiera Baldebenito |
-|	PALOMA	ROJAS	|	—	| Amancay Ramirez |
-|	ANNA	SCHAEFERS	|	https://deleteandescape.github.io/clase-10/	| Rosario Fuentes |
-|	FLORENCIA	SEGRETTI	|	https://flosegretti.github.io/clase10/	| María Ignacia Orellana |
-|	ANAIS	SILVA	|	—	| Pendiente |
-|	BÁRBARA	TRABERT	|	https://barbaratrabert.github.io/clase-10/	| Livka |
-|	JAVIERA	VALDEBENITO	|	https://javaaa000.github.io/decima_clase/	| Magdalena Rivas |
+|	MATILDE	FLORES	|	https://matildeflvi.github.io/decima_clase/	|[ María Ignacia Orellana](https://github.com/marita03/) |
+|	ROSARIO	FUENTES	|	https://rosi2701.github.io/decimaClase/	| [Pamela Jorquera](https://github.com/pameee73/) |
+|	ANTONIA	GARCÉS	|	—	| [Bárbara Trabert](https://github.com/barbaratrabert/) |
+|	FERNANDA	HUMERES	|	https://mikuby11.github.io/Clase_10/	| [Magdalena Rivas](https://github.com/magdarivas/) |
+|	NOUR	JALILIE	|	https://nourjalilie.github.io/Clase10/	| [Ambar Martin](https://github.com/lavendas/) |
+|	PAMELA	JORQUERA	|	https://pameee73.github.io/17-10new/	| [Rosario Fuentes](https://github.com/rosi2701/) |
+|	LIVKA	KUTZ	|	https://l1vk4.github.io/10ma-clase/	| [Ayleen Bahamondez](https://github.com/ayleenba23/) |
+|	ANTONIA	LABRA	|	https://ant-nia.github.io/c10/	| [Matilde Flores](https://github.com/matildeflvi/) |
+|	AMBAR	MARTIN	|	https://lavendas.github.io/Clase10/	| [Nour Jalilie](https://github.com/nourjalilie/) |
+|	MARÍA	IGNACIA ORELLANA	|	https://marita03.github.io/clase10.2/	| [Matilde Flores](https://github.com/matildeflvi/) |
+|	JOSEFA	PÉREZ	|	https://josefa020.github.io/clase-10/	| [Jazmín Castillo](https://github.com/jasmcastillo-dev) |
+|	MARÍA	PUELMA	|	https://isapuelma.github.io/Clase.10/	| [Javiera Valdebenito](https://github.com/javaaa000/) |
+|	AMANCAY	RAMÍREZ	|	https://loubingui.github.io/Clase_10/	| [Magdalena Rivas](https://github.com/magdarivas/) |
+|	MAGDALENA	RIVAS	|	https://magdarivas.github.io/clase10/	| [Javiera Valdebenito](https://github.com/javaaa000/) |
+|	PALOMA	ROJAS	|	—	| [Amancay Ramirez](https://github.com/loubingui/) |
+|	ANNA	SCHAEFERS	|	https://deleteandescape.github.io/clase-10/	| [Rosario Fuentes](https://github.com/rosi2701/) |
+|	FLORENCIA	SEGRETTI	|	https://flosegretti.github.io/clase10/	| [María Ignacia Orellana](https://github.com/marita03/) |
+|	ANAIS	SILVA	|	—	| — |
+|	BÁRBARA	TRABERT	|	https://barbaratrabert.github.io/clase-10/	| [Livka Kutz](https://github.com/l1vk4/) |
+|	JAVIERA	VALDEBENITO	|	https://javaaa000.github.io/decima_clase/	| [Magdalena Rivas](https://github.com/magdarivas/) |
 
 
 
