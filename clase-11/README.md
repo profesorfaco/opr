@@ -18,7 +18,7 @@ El 20% de la nota final se obtiene con:
 
 - Paso 1: Uso del JSON que se le indique para completar el portafolio de compañerx de curso.
 
-- Paso 2: Uso del example Album en https://getbootstrap.com/docs/5.3/examples/
+- Paso 2: Uso del example Album en https://getbootstrap.com/docs/5.3/examples/ con adaptaciones ya indicadas.
 
 - Paso 3: Uso de la “lógica de programación” presentada en clases para el despliegue de las habilidades y el portafolio.
 
