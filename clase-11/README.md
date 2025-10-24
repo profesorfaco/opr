@@ -27,11 +27,11 @@ El 20% de la nota final se obtiene con:
 
 En algunos casos podría mostrarse un error 429 en lugar del JSON.
 
-El código de error 429 es un error del lado del cliente que se produce cuando el servidor recibe demasiadas solicitudes.
+En Google, usando su modo IA, podrían *buscar*: error 429 github pages json
 
-Para evitarlo, se recomienda usar https://myjson.online/
+Para evitarlo, sin complejizar, se recomienda usar https://myjson.online/
 
-Al momento de publicar su JSON en tal plataforma, corresponde considerar que habrá un cambio en la estructura de lo que se publique.
+Al momento de publicar su JSON en tal plataforma, corresponde considerar que habrá un cambio en la estructura.
 
 La estructura original quedará dentro de `data` 
 
