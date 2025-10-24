@@ -22,6 +22,40 @@ El 20% de la nota final se obtiene con:
 
 - Paso 3: Uso de la “lógica de programación” presentada en clases para el despliegue de las habilidades y el portafolio.
 
+
+- - - - - - - 
+
+En algunos casos podría mostrarse un error 429 en lugar del JSON.
+
+El código de error 429 es un error del lado del cliente que se produce cuando el servidor recibe demasiadas solicitudes.
+
+Para evitarlo, se recomienda usar https://myjson.online/
+
+Al momento de publicar su JSON en tal plataforma, corresponde considerar que habrá un cambio en la estructura de lo que se publique.
+
+La estructura original quedará dentro de `data` 
+
+```
+{
+"data”:[…],
+"id": "serie de caracteres",
+"version": número,
+"displayName": "nombre"
+}
+```
+
+Para ir por los datos dentro de `data`, habría que agregar una línea al `script.js`:
+
+```
+let consulta = await fetch(raw);
+let resultado = await consulta.json();
+let trabajos = resultado.data;
+console.log(trabajos);
+```
+
+En la línea se agrega la variable `resultado`, para luego apuntar con la variable `trabajos` a una parte de la variable agregada.
+
+
 - - - - - - - 
 
 ###### [← CLASE ANTERIOR](https://github.com/profesorfaco/opr/tree/main/clase-10) — [SIGUIENTE CLASE →](https://github.com/profesorfaco/opr/tree/main/clase-13)
