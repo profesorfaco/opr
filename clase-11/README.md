@@ -59,36 +59,36 @@ En la línea se agrega la variable `resultado`, para luego apuntar con la variab
 
 |	Nombres		|	Entrega en foro	| Trabaja para… |
 |:-------------|:---------|:-----------|
-|	AGUSTÍN	AVENDAÑO	|	https://agustin070702.github.io/decimaClase/	| Pendiente |
-|	AYLEEN	BAHAMÓNDEZ	|	https://ayleenba23.github.io/Clase-10/	| Pendiente |
-|	SOFÍA	BASSALETTI	|	https://mbassaletti.github.io/clase10/	| Pendiente |
-|	CATALINA	BUSTOS	|	https://catita-b.github.io/web_clase10/	| Pendiente |
-|	PÍA	CANALES	|	https://piacanalesr.github.io/webo_10/	| Pendiente |
-|	JASMÍN	CASTILLO	|	https://jasmcastillo-dev.github.io/Clase-10/	| Pendiente |
-|	MARÍA	CASTRO	|	https://josecastrod.github.io/Clase-9/	| Pendiente |
-|	JUAN CARLOS	CONTRERAS	|	https://juancarlos2docontreras.github.io/NovenaClase/	| Pendiente |
-|	JAVIERA	DONOSO	|	https://javy3003.github.io/decima-clase/	| Pendiente |
-|	CAMILA	FALCON	|	—	| Pendiente |
-|	MATILDE	FLORES	|	https://matildeflvi.github.io/decima_clase/	| Pendiente |
-|	ROSARIO	FUENTES	|	https://rosi2701.github.io/decimaClase/	| Pendiente |
-|	ANTONIA	GARCÉS	|	—	| Pendiente |
-|	FERNANDA	HUMERES	|	https://mikuby11.github.io/Clase_10/	| Pendiente |
-|	NOUR	JALILIE	|	https://nourjalilie.github.io/Clase10/	| Pendiente |
-|	PAMELA	JORQUERA	|	https://pameee73.github.io/17-10new/	| Pendiente |
-|	LIVKA	KUTZ	|	https://l1vk4.github.io/10ma-clase/	| Pendiente |
-|	ANTONIA	LABRA	|	https://ant-nia.github.io/c10/	| Pendiente |
-|	AMBAR	MARTIN	|	https://lavendas.github.io/Clase10/	| Pendiente |
-|	MARÍA	IGNACIA ORELLANA	|	https://marita03.github.io/clase10.2/	| Pendiente |
-|	JOSEFA	PÉREZ	|	https://josefa020.github.io/clase-10/	| Pendiente |
-|	MARÍA	PUELMA	|	https://isapuelma.github.io/Clase.10/	| Pendiente |
-|	AMANCAY	RAMÍREZ	|	https://loubingui.github.io/Clase_10/	| Pendiente |
-|	MAGDALENA	RIVAS	|	https://magdarivas.github.io/clase10/	| Pendiente |
-|	PALOMA	ROJAS	|	—	| Pendiente |
-|	ANNA	SCHAEFERS	|	https://deleteandescape.github.io/clase-10/	| Pendiente |
-|	FLORENCIA	SEGRETTI	|	https://flosegretti.github.io/clase10/	| Pendiente |
+|	AGUSTÍN	AVENDAÑO	|	https://agustin070702.github.io/decimaClase/	| Jose Castro |
+|	AYLEEN	BAHAMÓNDEZ	|	https://ayleenba23.github.io/Clase-10/	| Bárbara Trabert |
+|	SOFÍA	BASSALETTI	|	https://mbassaletti.github.io/clase10/	| Rosario Fuentes |
+|	CATALINA	BUSTOS	|	https://catita-b.github.io/web_clase10/	| Pía Canales |
+|	PÍA	CANALES	|	https://piacanalesr.github.io/webo_10/	| Catalina Bustos |
+|	JASMÍN	CASTILLO	|	https://jasmcastillo-dev.github.io/Clase-10/	| Josefa |
+|	JOSE	CASTRO	|	https://josecastrod.github.io/Clase-9/	| Agustín Avendaño |
+|	JUAN CARLOS	CONTRERAS	|	https://juancarlos2docontreras.github.io/NovenaClase/	| Javiera Baldebenito |
+|	JAVIERA	DONOSO	|	https://javy3003.github.io/decima-clase/	| Matilde Flores |
+|	CAMILA	FALCON	|	—	| — |
+|	MATILDE	FLORES	|	https://matildeflvi.github.io/decima_clase/	| María Ignacia Orellana |
+|	ROSARIO	FUENTES	|	https://rosi2701.github.io/decimaClase/	| Pamela Jorquera |
+|	ANTONIA	GARCÉS	|	—	| Bárbara Trabert |
+|	FERNANDA	HUMERES	|	https://mikuby11.github.io/Clase_10/	| Magda |
+|	NOUR	JALILIE	|	https://nourjalilie.github.io/Clase10/	| Ambar |
+|	PAMELA	JORQUERA	|	https://pameee73.github.io/17-10new/	| Rosario Fuentes |
+|	LIVKA	KUTZ	|	https://l1vk4.github.io/10ma-clase/	| Ayleen Bahamondes |
+|	ANTONIA	LABRA	|	https://ant-nia.github.io/c10/	| Matilde Flores |
+|	AMBAR	MARTIN	|	https://lavendas.github.io/Clase10/	| Nour |
+|	MARÍA	IGNACIA ORELLANA	|	https://marita03.github.io/clase10.2/	| Matilde Flores |
+|	JOSEFA	PÉREZ	|	https://josefa020.github.io/clase-10/	| Jazmín Castillo |
+|	MARÍA	PUELMA	|	https://isapuelma.github.io/Clase.10/	| Javiera Baldebenito |
+|	AMANCAY	RAMÍREZ	|	https://loubingui.github.io/Clase_10/	| Magdalena Rivas |
+|	MAGDALENA	RIVAS	|	https://magdarivas.github.io/clase10/	| Javiera Baldebenito |
+|	PALOMA	ROJAS	|	—	| Amancay Ramirez |
+|	ANNA	SCHAEFERS	|	https://deleteandescape.github.io/clase-10/	| Rosario Fuentes |
+|	FLORENCIA	SEGRETTI	|	https://flosegretti.github.io/clase10/	| María Ignacia Orellana |
 |	ANAIS	SILVA	|	—	| Pendiente |
-|	BÁRBARA	TRABERT	|	https://barbaratrabert.github.io/clase-10/	| Pendiente |
-|	JAVIERA	VALDEBENITO	|	https://javaaa000.github.io/decima_clase/	| Pendiente |
+|	BÁRBARA	TRABERT	|	https://barbaratrabert.github.io/clase-10/	| Livka |
+|	JAVIERA	VALDEBENITO	|	https://javaaa000.github.io/decima_clase/	| Magdalena Rivas |
 
 
 
