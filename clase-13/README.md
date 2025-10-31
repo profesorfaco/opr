@@ -65,7 +65,7 @@ Mejoras implementadas por Claude, en palabras de Claude:
 
 **3. En caso de error 429**: Agregué un manejo simple del error 429 (Too Many Requests). Si detecta un error 429, espera 2 segundos automáticamente. Luego reintenta la solicitud una vez más. Esto soluciona el problema más común de rate limiting sin complicar demasiado el código.
 
-**Es importante insistir, el código de arriba ofrece mejoras mínimas. Si se necesita una mejora mayor, para un trabajo completamente seguro, podemos volver a pedirle ayuda a Claude, que/quien identifica los siguientes problemas de seguridad en el código de su propia autoría:**
+**Es importante insistir que el código de arriba ofrece mejoras mínimas. Si se necesita una mejora mayor, para un trabajo completamente seguro, podemos volver a pedirle ayuda a Claude, que/quien identifica los siguientes problemas de seguridad en el código de su propia autoría:**
 
 1. **XSS en atributo src**: Aunque escapas el HTML, al usar escapeHTML() en el atributo src de una imagen, no estás previniendo inyección de JavaScript a través de URLs maliciosas como javascript:alert(1)
 
@@ -77,7 +77,7 @@ Mejoras implementadas por Claude, en palabras de Claude:
 
 5. **Error handling insuficiente**: Los errores se logean en consola exponiendo información
 
-Después de identificar tales problemas, la misma Inteligencia Artificial propone: 
+**Después de identificar tales problemas, la misma Inteligencia Artificial propone una segunda versión**: 
 
 ```
 const portfolio = document.querySelector("#porotito");
@@ -255,13 +255,82 @@ if (document.readyState === 'loading') {
     datos("https://raw.githubusercontent.com/profesorfaco/clase-10/refs/heads/main/datos.json");
 }
 ```
-Como les adelanté: 
+**Como les adelanté**: 
 
-1. No estábamos usando las alterantivas más seguras. 
+1. No estábamos usando las alternativas más seguras. 
 
-2. No las estábamos usando para evitar mayores complejidades y complicaciones.
+2. No las estábamos usando para evitar mayores complejidades y/o complicaciones.
 
-**Pero al momento de comenzar a desarrollar, de manera autónoma, su primer sitio web profesional o prototipo avanzado de aplicación web, es necesario avanzar a tales complicaciones. Con esto pueden evitar problemas a mediano o largo plazo en lo que puedan desarrollar**; una cosa es tener una [inyección de código malicioso](https://www.imperva.com/learn/application-security/html-injection/) en un ejercicio de "clase-10", y otra cosa es tenerala en un "sitio web oficial punto ce ele". 
+**Pero al momento de comenzar a desarrollar, de manera autónoma, su primer sitio web profesional o prototipo avanzado de aplicación web, es necesario meterse en tales complicaciones. Con esto pueden evitar problemas a mediano o largo plazo en lo que puedan desarrollar**; una cosa es tener una [inyección de código malicioso](https://www.imperva.com/learn/application-security/html-injection/) en un ejercicio de "clase-10", y otra cosa es tenerala en un "sitio web oficial punto ce ele", resuelto como autoencargo o encargo real.
+
+Pero vamos con una tercera versión del mismo código, para que las complicaciones no sean tantas.
+
+Le pedí a Claude tomar su primer resultado y modificar lo que se resuelve con `innerHTML +=` por un método más seguro:
+
+```
+const portfolio = document.querySelector("#porotito");
+
+async function datos(raw) {
+    try {
+        let consulta = await fetch(raw);
+        if (consulta.status === 429) {
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            consulta = await fetch(raw);
+        }
+        let trabajos = await consulta.json();
+        console.log(trabajos);
+        
+        trabajos.forEach((trabajo) => {
+            const col = document.createElement('div');
+            col.className = 'col';
+            
+            col.innerHTML = `
+                <div class="card shadow-sm">
+                    <img class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text"></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"></button>
+                            </div>
+                            <small class="text-body-secondary">Reciente</small>
+                        </div>
+                    </div>
+                </div>`;
+            
+            col.querySelector('img').src = trabajo.imagen;
+            col.querySelector('.card-text').textContent = trabajo.titulo;
+            col.querySelector('button').textContent = trabajo.categoria;
+            
+            portfolio.appendChild(col);
+        });
+    } catch (error) {
+        console.error("Error al cargar los datos:", error);
+    }
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        datos("https://raw.githubusercontent.com/profesorfaco/clase-10/refs/heads/main/datos.json");
+    });
+} else {
+    datos("https://raw.githubusercontent.com/profesorfaco/clase-10/refs/heads/main/datos.json");
+}
+```
+
+Claude describe los cambios del siguiente modo: 
+
+1. Eliminé la función escapeHTML (ya no es necesaria)
+
+2. Creé la estructura HTML estática con innerHTML (sin datos del usuario)
+
+3. Asigné los datos dinámicos de forma segura usando: `.src` para la imagen y `.textContent` para el título y categoría
+
+4. Usé appendChild() en lugar de += con innerHTML
+
+Según la misma IA, esta solución es segura contra XSS porque los datos del usuario nunca se interpolan como HTML, sino que se asignan a propiedades del DOM que automáticamente escapan el contenido ("Escapar el contenido" en JavaScript significa utilizar el carácter de barra invertida (\) para indicar que el siguiente carácter debe tratarse como un carácter literal en lugar de una instrucción).
+
+- - - - - -
 
 A propósito de "sitio web oficial punto ce ele", o de cualquier otro dominio de nivel superior, sea geográfico ([ccTLD – country code Top Level Domains](https://es.wikipedia.org/wiki/Dominio_de_nivel_superior_geogr%C3%A1fico)) o genéricos ([gTLD – generic Top Level Domains](https://es.wikipedia.org/wiki/Dominio_de_nivel_superior_gen%C3%A9rico)): Les dejo instrucciones para poder hacer una configuración exitosa de GitHub Pages como su servidor: 
 
@@ -276,6 +345,10 @@ A propósito de "sitio web oficial punto ce ele", o de cualquier otro dominio de
 Ojo que hay un comentario en el [artículo](https://ggerena.medium.com/configurar-github-pages-para-usar-dominios-cl-13c1a644699f), publicado el año 2017, que dice: *Gracias genio, me funcionó enseguida, lo malo es que al entrar a mi dominio el navegador no lo toma como una conexión segura, alguna solución rápida para eso? Saludos*. 
 
 Han pasado los años, y GitHub ya ofrece: [Asegurar tu sitio de Páginas de GitHub con HTTPS](https://docs.github.com/es/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https).
+
+- - - - - - - - 
+
+Ojalá todo escrito en este `README.md` sea revisado antes de la clase, para dedicarla a la definción de sus propuestas de trabajo final.
 
 - - - - - - - 
 
