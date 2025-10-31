@@ -63,7 +63,7 @@ Cambios Implementados por Claude, en palabras de Claude:
 
 **3. En caso de error 429**: Agregué un manejo simple del error 429 (Too Many Requests). Si detecta un error 429, espera 2 segundos automáticamente. Luego reintenta la solicitud una vez más. Esto soluciona el problema más común de rate limiting sin complicar demasiado el código.
 
-**La mejora descrita, responde a los mínimos necesarios. Si se necesita una mejora mayor, para un trabajo completamente seguro podemos volver a pedirle ayuda a Claude, que/quien identifica los siguientes problemas de seguridad:**
+**La mejora descrita, responde a los mínimos necesarios. Si se necesita una mejora mayor, para un trabajo completamente seguro, podemos volver a pedirle ayuda a Claude, que/quien identifica los siguientes problemas de seguridad en el código de su propia autoría:**
 
 1. **XSS en atributo src**: Aunque escapas el HTML, al usar escapeHTML() en el atributo src de una imagen, no estás previniendo inyección de JavaScript a través de URLs maliciosas como javascript:alert(1)
 
@@ -259,18 +259,17 @@ Como les adelanté:
 
 2. No las estábamos usando para evitar mayores complejidades y complicaciones.
 
-**Pero al momento de comenzar a desarrollar, de manera autónoma, su primer sitio web profesional o prototipo avanzado de aplicación web, es necesario conocerlas y usarlas. Con esto pueden evitar problemas a mediano o largo plazo en lo que puedan desarrollar**. 
+**Pero al momento de comenzar a desarrollar, de manera autónoma, su primer sitio web profesional o prototipo avanzado de aplicación web, es necesario avanzar a tales complicaciones. Con esto pueden evitar problemas a mediano o largo plazo en lo que puedan desarrollar**; una cosa es tener una [inyección de código malicioso](https://www.imperva.com/learn/application-security/html-injection/) en un ejercicio de "clase-10", y otra cosa es tenerala en un "sitio web oficial punto ce ele". 
 
-Una cosa es tener una [inyección de código malicioso](https://www.imperva.com/learn/application-security/html-injection/) en un ejercicio de "clase-10", y otra cosa es tenerala en su "portafolio oficial punto ce ele". 
+A propósito de "sitio web oficial punto ce ele", o de cualquier otro dominio de nivel superior, sea geográfico ([ccTLD – country code Top Level Domains](https://es.wikipedia.org/wiki/Dominio_de_nivel_superior_geogr%C3%A1fico)) o genéricos ([gTLD – generic Top Level Domains](https://es.wikipedia.org/wiki/Dominio_de_nivel_superior_gen%C3%A9rico)), debo adelantar las siguientes instrucciones para poder hacer una configuración exitosa de GitHub Pages como su servidor: 
 
-A propóstio de "portafolio oficial punto ce ele", o cualquier punto algo, les adelanto instrucciones para poder hacer una configuración por su cuenta: 
+- **Artículo: [Configurar GitHub Pages para usar dominios.cl](https://ggerena.medium.com/configurar-github-pages-para-usar-dominios-cl-13c1a644699f)**
 
-- werew
-- werew
-- wer.
+- Video de complemento al artículo: [Hosting gratuito con GitHub Pages y dominio personalizado](https://www.youtube.com/watch?v=nbUR1jzVI5g&t=328s)
 
-La configuración toma tiempo, y exige seguir pasos descritos. No exige más.
+- Otro video de complemento al artículo: [Hosting GRATIS con Dominio propio (Dominio Personalizado Github Pages)](https://www.youtube.com/watch?v=tzjl91RP_To)
 
+Toma algunos minutos seguir los pasos descritos en el artículo. No exige horas. Sí exige concentrarse mucho en tales minutos. Mientras antes la resuelven: Mejor 👍
 
 - - - - - - - 
 
