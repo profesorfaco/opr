@@ -65,7 +65,9 @@ Mejoras implementadas por Claude, en palabras de Claude:
 
 **3. En caso de error 429**: Agregué un manejo simple del error 429 (Too Many Requests). Si detecta un error 429, espera 2 segundos automáticamente. Luego reintenta la solicitud una vez más. Esto soluciona el problema más común de rate limiting sin complicar demasiado el código.
 
-**Es importante insistir que el código de arriba ofrece mejoras mínimas. Si se necesita una mejora mayor, para un trabajo completamente seguro, podemos volver a pedirle ayuda a Claude, que/quien identifica los siguientes problemas de seguridad en el código de su propia autoría:**
+**Es importante insistir que el código de arriba ofrece mejoras mínimas**. 
+
+**Si se necesita una mejora mayor, para un trabajo completamente seguro, podemos volver a pedirle ayuda a Claude, que/quien identifica los siguientes problemas de seguridad en el código de su propia autoría:**
 
 1. **XSS en atributo src**: Aunque escapas el HTML, al usar escapeHTML() en el atributo src de una imagen, no estás previniendo inyección de JavaScript a través de URLs maliciosas como javascript:alert(1)
 
