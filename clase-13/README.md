@@ -261,6 +261,17 @@ Como les adelanté:
 
 **Pero al momento de comenzar a desarrollar, de manera autónoma, su primer sitio web profesional o prototipo avanzado de aplicación web, es necesario conocerlas y usarlas. Con esto pueden evitar problemas a mediano o largo plazo en lo que puedan desarrollar**. 
 
+Una cosa es tener una [inyección de código malicioso](https://www.imperva.com/learn/application-security/html-injection/) en un ejercicio de "clase-10", y otra cosa es tenerala en su "portafolio oficial punto ce ele". 
+
+A propóstio de "portafolio oficial punto ce ele", o cualquier punto algo, les adelanto instrucciones para poder hacer una configuración por su cuenta: 
+
+- werew
+- werew
+- wer.
+
+La configuración toma tiempo, y exige seguir pasos descritos. No exige más.
+
+
 - - - - - - - 
 
 ###### [← CLASE ANTERIOR](https://github.com/profesorfaco/opr/tree/main/clase-11) — [SIGUIENTE CLASE →](https://github.com/profesorfaco/opr/tree/main/clase-14)
