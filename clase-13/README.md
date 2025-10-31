@@ -2,7 +2,7 @@
 
 # Diseño y desarrollo de su primer sitio web profesional o prototipo avanzado de aplicación web
 
-Para mejorar el código en el README.md de la clase 10, una primera alternativa: 
+Para mejorar el código en el README.md de la [clase 10](https://github.com/profesorfaco/opr/tree/main/clase-10), una primera alternativa: 
 
 ```
 const portfolio = document.querySelector("#porotito");
