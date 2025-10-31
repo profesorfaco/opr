@@ -271,7 +271,11 @@ A propósito de "sitio web oficial punto ce ele", o de cualquier otro dominio de
 
 - Otro video de complemento al artículo: [Hosting GRATIS con Dominio propio (Dominio Personalizado Github Pages)](https://www.youtube.com/watch?v=tzjl91RP_To)
 
-**Toma algunos minutos seguir los pasos descritos en el artículo**. No exige horas. Sí exige concentrarse mucho en tales minutos. Mientras antes la resuelven: Mejor 👍
+**Toma algunos minutos seguir los pasos descritos en el [artículo](https://ggerena.medium.com/configurar-github-pages-para-usar-dominios-cl-13c1a644699f)**. No exige horas. Sí exige concentrarse mucho en tales minutos. Mientras antes la resuelven: Mejor 👍
+
+Ojo que hay un comentario en el [artículo](https://ggerena.medium.com/configurar-github-pages-para-usar-dominios-cl-13c1a644699f), publicado el año 2017, que dice: *Gracias genio, me funcionó enseguida, lo malo es que al entrar a mi dominio el navegador no lo toma como una conexión segura, alguna solución rápida para eso? Saludos*. 
+
+Han pasado los años, y GitHub ya ofrece: [Asegurar tu sitio de Páginas de GitHub con HTTPS](https://docs.github.com/es/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https).
 
 - - - - - - - 
 
