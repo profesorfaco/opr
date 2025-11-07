@@ -330,7 +330,7 @@ Claude describe los cambios del siguiente modo:
 
 4. Usé appendChild() en lugar de += con innerHTML
 
-Según la misma IA, esta solución es segura contra XSS porque los datos del usuario nunca se interpolan como HTML, sino que se asignan a propiedades del DOM que automáticamente escapan el contenido ("Escapar el contenido" en JavaScript significa utilizar el carácter de barra invertida (\) para indicar que el siguiente carácter debe tratarse como un carácter literal en lugar de una instrucción).
+Según la misma IA, esta solución es segura contra XSS porque los datos del usuario nunca se interpolan como HTML, sino que se asignan a propiedades del DOM que automáticamente escapan el contenido ("Escapar el contenido" en JavaScript significa utilizar el carácter de barra invertida (`\`) para indicar que el siguiente carácter debe tratarse como un carácter literal en lugar de una instrucción).
 
 - - - - - -
 
