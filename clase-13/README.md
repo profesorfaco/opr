@@ -263,7 +263,7 @@ if (document.readyState === 'loading') {
 
 2. No las estábamos usando para evitar mayores complejidades y/o complicaciones.
 
-**Pero al momento de comenzar a desarrollar, de manera autónoma, su primer sitio web profesional o prototipo avanzado de aplicación web, es necesario meterse en tales complicaciones. Con esto pueden evitar problemas a mediano o largo plazo en lo que puedan desarrollar**; una cosa es tener una [inyección de código malicioso](https://www.imperva.com/learn/application-security/html-injection/) en un ejercicio de "clase-10", y otra cosa es tenerala en un "sitio web oficial punto ce ele", resuelto como autoencargo o encargo real.
+**Pero al momento de comenzar a desarrollar, de manera autónoma, su primer sitio web profesional o prototipo avanzado de aplicación web, es necesario meterse en tales complicaciones. Con esto pueden evitar problemas a mediano o largo plazo en lo que puedan desarrollar**: ⚠️ Una cosa es tener una [inyección de código malicioso](https://www.imperva.com/learn/application-security/html-injection/) en un ejercicio de "clase-10", y otra cosa es tenerala en un "sitio web oficial punto ce ele", resuelto como autoencargo o encargo real ⚠️.
 
 Pero vamos con una tercera versión del mismo código, para que las complicaciones no sean tantas.
 
@@ -350,8 +350,44 @@ Han pasado los años, y GitHub ya ofrece: [Asegurar tu sitio de Páginas de GitH
 
 - - - - - - - - 
 
-Ojalá todo escrito en este `README.md` sea revisado antes de la clase, para dedicarla a la definción de sus propuestas de trabajo final.
+Ojalá todo escrito en este `README.md` haya sido revisado antes de la clase, para dedicarle todo el tiempo a la definción de sus propuestas de trabajo final.
 
 - - - - - - - 
+
+### Definición de sus propuestas de trabajo final
+
+Hoy sólo tendrán que usar el **`README.md` de un repositorio final**. 
+
+**Este repositorio ya no lleva el número de la clase**, el nombre puede ser `trabajo-final` o referir, directamente, al dominio de nivel superior que usarían para su primer sitio web profesional o prototipo avanzado de aplicación web. 
+
+En el `README.md`, que será lo único a revisar como avance, deben publicar sus respuestas a las siguientes preguntas: 
+
+- **¿Para qué es esta propuesta? → objetivo general** → describa, con una frase que comience con un verbo, el beneficio práctico que aportará el resultado de su trabajo.
+
+- **¿Para quiénes es esta propuesta? → usuarios extremos y usuarios promedio** → describa a 2 usuarias/os ubicadas/os en los extremos de lo menos probable y 1 en lo más probable. Para cada descripción considere los 4 cuadrantes de la [proto-persona](https://uxmag.com/articles/using-proto-personas-for-executive-alignment):
+
+  - *The top-left quadrant is for **a sketch of the individual, a name, and some basic demographics***.
+
+  - *The top-right quadrant is for **behaviors and beliefs of the persona***.
+
+  - *The bottom-left quadrant is for **demographics***.
+
+  - *The bottom-right quadrant is for **needs and goals***.
+
+- **¿Qué existe que es similar a la propuesta? → antecedentes** → seleccione y describa 6 sitios o aplicaciones web. Se recomienda buscarlos en https://www.awwwards.com/websites/bootstrap/, https://www.instagram.com/webuistylist/ y https://www.instagram.com/web.inspirations/. Aproveche las secciones de la ficha de clasificación de antecedentes de DSUC (p.80) para presentarlos adecuadamente:
+ 
+![ficha](https://github.com/profesorfaco/dno037-2023/assets/7999767/1faef7d0-833b-4a7e-8e65-9a2bd785b576)
+
+- **¿Qué existe que puede inspirar la propuesta? → referentes** → prepare un moodboard con elementos visuales, distintos de sitios y aplicaciones web, que puedan aportar novedad a su diseño. Ej: https://create.vista.com/es/templates/mood-board/, https://www.canva.com/es_mx/crear/mood-boards/, https://www.freepik.com/blog/es/mood-boards-consejos-trucos-crearlos/, https://www.adobe.com/es/express/create/mood-board
+
+Para sacarle provecho al **uso de `README.md`**, apóyense en:
+
+- https://devhints.io/markdown
+
+- https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+- https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
+
+- - - - - - -
 
 ###### [← CLASE ANTERIOR](https://github.com/profesorfaco/opr/tree/main/clase-11) — [SIGUIENTE CLASE →](https://github.com/profesorfaco/opr/tree/main/clase-14)
