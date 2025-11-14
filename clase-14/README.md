@@ -59,7 +59,11 @@ Han pasado los años, y GitHub ya ofrece: [Asegurar tu sitio de Páginas de GitH
 
 #### En foro de Canvas
 
-Indicar el dominio ya configurado. Basta que en el repositorio sumen un `index.html` mínimo. 
+https://cursos.canvas.uc.cl/courses/94376/discussion_topics/1095158
+
+Favor indicar el dominio ya configurado. 
+
+Basta que en el repositorio ya configurado, sumen un `index.html` con: 
 
 ```
 <!doctype html>
@@ -76,7 +80,7 @@ Indicar el dominio ya configurado. Basta que en el repositorio sumen un `index.h
 </html>
 ```
 
-Al hacer click en el dominio debería ver una página en blanco, con un texto que diga *Hola mundo!*, y nada más.
+Si está todo correctamente configurado, al hacer click en el dominio ingresado en el foro de canvas: Se debería ver una página en blanco, con un texto que diga *Hola mundo!*, y nada más.
 
 - - - - - - - 
 
