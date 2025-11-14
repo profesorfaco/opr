@@ -6,7 +6,7 @@
 
 | N° | Nombre | Cuenta en GitHub | Repo con definiciones del trabajo final | Evaluación |
 | :-----: | :-------------------------- | :-------------------------- | :-------------------------- | :-----: |
-| 1 | AGUSTIÓN AVENDAÑO | https://github.com/agustin070702/ | — | ✗ |
+| 1 | AGUSTÍN AVENDAÑO | https://github.com/agustin070702/ | — | ✗ |
 | 2 | AYLEEN BAHAMÓNDEZ | https://github.com/ayleenba23/ | — | ✗ |
 | 3 | SOFÍA BASSALETTI | https://github.com/mbassaletti/ | https://github.com/mbassaletti/trabajofinal | P |
 | 4 | CATALINA BUSTOS | https://github.com/catita-b/ | https://github.com/catita-b/final_web | P |
