@@ -63,7 +63,7 @@ Indicar el dominio ya configurado. Basta que en el repositorio sumen un `index.h
 
 ```
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
