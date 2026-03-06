@@ -62,99 +62,117 @@ Generemos los dos tipos de gráficos referidos arriba, partiendo con el siguient
 <html lang="es">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Práctica (para la clase)</title>
         <style>
-            *{ margin:0; padding:0; }
-            body{ text-align: center; font-family: Helvetica, Arial, sans-serif; }
-            h1 { padding:1vh 15vw; }
-            h2, p{ padding:.5vh 0; }
-            header, article, footer{ padding:5vh 0; }
-            header, article{ border-bottom:1px dotted black; }
-            div{ padding:2vh 6vw; }
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                text-align: center;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+
+            h1 { padding: 1vh 15vw; }
+            h2, p { padding: .5vh 0; }
+
+            header, article, footer { padding: 5vh 0; }
+            header, article { border-bottom: 1px dotted black; }
+
+            div { padding: 2vh 6vw; }
         </style>
     </head>
     <body>
+
         <header>
             <h1>Tufte refers to data-ink as the non-erasable ink used for the presentation of data</h1>
         </header>
+
         <main>
+
+            <!-- GRÁFICA 1: línea de tiempo -->
             <article>
                 <h2>Evolución de la población en la Región Metropolitana Chilena</h2>
                 <p>Con una <a href="https://datavizcatalogue.com/ES/metodos/grafica_de_linea.html" target="_blank">gráfica de línea</a></p>
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 210">
-                        <g transform="translate(0,195) scale(1,-1)" id="lineas"><!--aquí dentro va la polyline--></g>
-                        <g id="years"><!--aquí dentro van los textos con los años--></g>
+                    <svg viewBox="0 0 570 210">
+                        <!-- El grupo se voltea verticalmente para que Y crezca hacia arriba (en SVG crece hacia abajo por defecto) -->
+                        <g transform="translate(0,195) scale(1,-1)" id="lineas"></g>
+                        <g id="years"></g>
                     </svg>
                 </div>
             </article>
+
+            <!-- GRÁFICA 2: barras horizontales -->
             <article>
                 <h2>Población en las distintas regiones de Chile</h2>
                 <p>Con una <a href="https://datavizcatalogue.com/ES/metodos/graficos_de_barras.html" target="_blank">gráfica de barras</a></p>
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100" id="barras"><!--aquí dentro van los grupos con rectangulo y textos--></svg>
-                </div> 
+                    <svg viewBox="0 0 500 100" id="barras"></svg>
+                </div>
             </article>
+
         </main>
+
         <footer>
             <p><small>Revisar lo de Data-Ink Ratio en <a href="https://infovis-wiki.net/wiki/Data-Ink_Ratio" target="_blank">infovis</a></small></p>
         </footer>
+
         <script>
-            //PRIMERA GRÁFICA
+            // ── GRÁFICA 1: línea ──────────────────────────────────────────────
 
-            // Datos de https://es.wikipedia.org/wiki/Anexo:Crecimiento_poblacional_de_Santiago_de_Chile
-
-            const lineal = {
-                censos: [1820, 1854, 1865, 1888, 1920, 1940, 1952, 1960, 1982, 1992, 2002, 2012],
-                censados: [46000, 69018, 115337, 256000, 507296, 952075, 1350409, 1907378, 3899619, 4729118, 5428590, 7057491],
+            // Fuente: https://es.wikipedia.org/wiki/Anexo:Crecimiento_poblacional_de_Santiago_de_Chile
+            var lineal = {
+                censos:   [1820,  1854,   1865,   1888,   1920,   1940,   1952,    1960,    1982,    1992,    2002,    2012],
+                censados: [46000, 69018, 115337, 256000, 507296, 952075, 1350409, 1907378, 3899619, 4729118, 5428590, 7057491]
             };
 
-            const graficaLineas = document.querySelector("#lineas");
+            var coordenadas = ""; // acumulará los pares x,y de la polyline
+            var etiquetas   = ""; // acumulará los textos con los años
 
-            let coordenadas = "";
+            lineal.censados.forEach(function(poblacion, i) {
+                // x: cada censo se separa 50 unidades; sumamos 7 para centrar el texto
+                var x = (i * 50) + 7;
+                // y: escalamos la población para que quepa en el SVG (÷ 40000)
+                var y = Math.round(poblacion * 0.000025);
 
-            let momentos = ""
+                coordenadas += x + "," + y + " ";
+                etiquetas   += `<text x="${i * 50}" y="205" font-size="6">${lineal.censos[i]}</text>`;
+            });
 
-            // la manera de despliegue de las coordenadas del Eje Y nos exige un ajuste, que copiamos de https://stackoverflow.com/questions/39560206/change-0-0-from-svg
+            // Dibujamos la línea conectando todos los puntos
+            document.querySelector("#lineas").innerHTML =
+                `<polyline points="${coordenadas}" fill="none" stroke="black" stroke-width="0.5" />`;
 
-            lineal.censados.forEach((d, i) => {
-                coordenadas += ((i*50)+7) + "," + Math.round(d*0.000025) + " ";
-                momentos += `<text x="${i*50}" y="205" font-size="6">${lineal.censos[i]}</text> `;
-
-            })
-
-            console.log(coordenadas);
-
-            console.log(momentos);
-
-            graficaLineas.innerHTML += `<polyline points="${coordenadas}" fill="none" stroke="black" stroke-width="0.5"/>`;
-
-            document.querySelector("#years").innerHTML += momentos;
+            // Agregamos los años debajo de la línea
+            document.querySelector("#years").innerHTML = etiquetas;
 
 
-            // SEGUNDA GRÁFICA 
+            // ── GRÁFICA 2: barras ─────────────────────────────────────────────
 
-            // Datos de https://es.wikipedia.org/wiki/Anexo:Regiones_de_Chile_por_poblaci%C3%B3n
+            // Fuente: https://es.wikipedia.org/wiki/Anexo:Regiones_de_Chile_por_población
+            var regiones = [
+                { region: "Metropolitana",   numero: 8420729 },
+                { region: "Valparaíso",      numero: 2010849 },
+                { region: "Biobío",          numero: 1681225 },
+                { region: "Maule",           numero: 1171982 },
+                { region: "Araucanía",       numero: 1032064 },
+                { region: "O'Higgins",       numero: 1025586 },
+                { region: "Demás regiones",  numero: 4723998 }
+            ];
 
-            const barras = [
-                    {region:"Metropolitana", numero:8420729},
-                    {region:"Valparaíso", numero:2010849},
-                    {region:"Biobío", numero:1681225},
-                    {region:"Maule", numero:1171982 },
-                    {region:"Araucania", numero:1032064 },
-                    {region:"O'Higgins", numero:1025586},
-                    {region:"Demás regiones", numero:4723998}
-                ]
+            regiones.forEach(function(d, i) {
+                // El ancho de cada barra es proporcional a la población
+                var ancho = d.numero / 20000;
 
-            const graficaBarras = document.querySelector("#barras");
-
-            barras.forEach((d, i) => {
-                graficaBarras.innerHTML += `<g transform="translate(0,${i*15})">
-                    <rect x="0" y="0" width="${d.numero/20000}" height="10" />
-                    <text x="3" y="7" fill="white" font-size="5">${d.region}</text>
-                    <text x="${(d.numero/20000)+3}" y="7" font-size="6">${new Intl.NumberFormat("es-ES").format(d.numero)} habitantes</text>
-                </g>`
+                // Cada fila baja 15 unidades con translate
+                document.querySelector("#barras").innerHTML +=
+                    `<g transform="translate(0, ${i * 15})">
+                        <rect x="0" y="0" width="${ancho}" height="10" />
+                        <text x="3" y="7" fill="white" font-size="5">${d.region}</text>
+                        <text x="${ancho + 3}" y="7" font-size="6">${new Intl.NumberFormat("es-ES").format(d.numero)} habitantes</text>
+                    </g>`;
             });
         </script>
     </body>
