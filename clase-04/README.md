@@ -82,121 +82,127 @@ Partamos copiando lo que sigue en un documento nuevo, para luego guardarlo como 
 <html lang="es">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>TITANIC v/s ICEBERG</title>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
-            body{ font-family: "Roboto Condensed", sans-serif; font-weight:300; color:#333; background:#fcfeff; }
-            
-            div{ width:min(95%,700px); margin:0 auto;}
-            
-            a{color:#000;}
-
-            a:hover{color:#333;}
-            
-            header{text-align: center; }
-
-            header svg{ width: 75%; margin: 0 auto;}
-
-            @keyframes flota {
-                0% {transform: translateY(0);}
-                100% {transform: translateY(10px);}
+            body {
+                font-family: sans-serif;
+                color: #333;
+                background: #fcfeff;
             }
 
-            polygon#iceberg { animation: flota 3s ease infinite alternate; }
+            div {
+                width: min(95%, 700px);
+                margin: 0 auto;
+            }
 
-            line#mar { animation: flota 2s ease infinite alternate; }
+            header {
+                text-align: center;
+            }
 
-            h1 { font-size: calc(1rem + 3vw); line-height: 1; font-weight: 200;}
+            header svg {
+                width: 75%;
+            }
 
-            h1 > span {font-size: 90%; color: #111; font-weight: 200; display: inline-block; margin:0 0.5rem}
+            h1 {
+                font-size: 2rem;
+                font-weight: 200;
+            }
 
-            p {margin:0.9rem 0.3rem;}
+            p {
+                margin: 0.9rem 0.3rem;
+            }
 
-            footer{ border-top:1px solid #eee; margin-top:3rem; padding-bottom:3rem; }
-            
-            footer > p{ display:flex; justify-content: space-between; }
+            footer {
+                border-top: 1px solid #eee;
+                margin-top: 3rem;
+                padding-bottom: 3rem;
+            }
         </style>
     </head>
     <body>
         <div>
+
             <header>
-                
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" id="cabecera" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polygon points="200,20 250,100 300,150 250,350 200,380 125,275 90,200 100,125 180,25" id="iceberg" />
-                    <line x1="10" y1="100" x2="390" y2="100" id="mar" />
-                </svg> 
-                
-                <h1>TITANIC <span><sup>v</sup>/<small>s</small></span> ICEBERG</h1>
-            
-            </header>
-            <main>
-                
-                <p>Usaremos datos disponibles en línea, en <a href="https://github.com/datasciencedojo/datasets/blob/master/titanic.csv" target="_blank">esta tabla</a>. Con tales datos podremos visualizar el destino de las <span id="dato"></span> personas que iban a bordo del Titanic, divididas en tres clases:</p>
-
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 892 150">
-                    <g id="segmentos"></g>
+                <!-- Ícono SVG del iceberg -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#111" stroke-width="2">
+                    <polygon points="200,20 250,100 300,150 250,350 200,380 125,275 90,200 100,125 180,25" />
+                    <line x1="10" y1="100" x2="390" y2="100" />
                 </svg>
-                
-                <p>Aprovechando la ficción y algunas condiciones lógicas: Calculemos el número de personas como <a href="https://es.wikipedia.org/wiki/Rose_DeWitt_Bukater" target="_blank">Rose DeWitt Bukater</a> y <a href="https://es.wikipedia.org/wiki/Jack_Dawson" target="_blank">Jack Dawson</a>.</p>
 
+                <h1>TITANIC v/s ICEBERG</h1>
+            </header>
+
+            <main>
+                <!-- El número de pasajeros se escribe aquí con JavaScript -->
+                <p>Usaremos datos disponibles en línea. Con ellos visualizaremos el destino de las <span id="total"></span> personas a bordo del Titanic, divididas en tres clases:</p>
+
+                <!-- El gráfico de barras se dibuja aquí con JavaScript -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 892 150">
+                    <g id="grafico"></g>
+                </svg>
             </main>
+
             <footer>
-                
-                <p><a href="https://github.com/profesorfaco/opr/tree/main/clase-04">DNO097</a> <a href="#">Nombre Apellido</a></p>
-                
+                <p>DNO097 — Nombre Apellido</p>
             </footer>
+
         </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        
+        <!-- Librería para leer archivos CSV -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
         <script>
+            // Contadores para cada clase de pasajero
             var primera = 0;
             var segunda = 0;
             var tercera = 0;
-            const total = document.querySelector("#dato");
-            const clases = document.querySelector("#segmentos");
 
+            // Elementos del HTML donde escribiremos los resultados
+            var spanTotal = document.querySelector("#total");
+            var grafico   = document.querySelector("#grafico");
+
+            // Leemos el archivo CSV desde internet
             Papa.parse("https://raw.githubusercontent.com/datasciencedojo/datasets/refs/heads/master/titanic.csv", {
-                download: true,
-                header: true,
-                dynamicTyping: true,
-                
+                download: true,       // descarga el archivo
+                header: true,         // la primera fila son los nombres de columnas
+                dynamicTyping: true,  // convierte números automáticamente
+
                 complete: function (results) {
-                    console.log(results);
-                    total.innerHTML = results.data.length;
-                    
-                    //reviso los datos
 
-                    results.data.forEach(d => {
-                        if(d.Pclass == 1){
-                            primera = primera+1;
-                        } else if(d.Pclass == 2){
-                            segunda = segunda+1;
-                        }else{
-                            tercera = tercera+1;
+                    // Mostramos el total de pasajeros en el HTML
+                    spanTotal.innerHTML = results.data.length;
+
+                    // Revisamos cada fila y contamos por clase
+                    results.data.forEach(function(pasajero) {
+                        if (pasajero.Pclass == 1) {
+                            primera = primera + 1;
+                        } else if (pasajero.Pclass == 2) {
+                            segunda = segunda + 1;
+                        } else {
+                            tercera = tercera + 1;
                         }
-                    })
+                    });
 
-                    //trabajo con el resultado de la revisión
+                    // Dibujamos una barra por cada clase dentro del SVG
+                    grafico.innerHTML =
+                        // Primera clase (oscuro)
+                        `<rect x="0" y="0" width="${primera}" height="100" fill="#333"></rect>
+                        <text x="${primera / 2}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${primera}</text>
+                        <text x="${primera / 2}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#333">PRIMERA CLASE</text>` +
 
-                    clases.innerHTML = `<rect x="0" y="0" width="${primera}" height="100" fill="#333"></rect>
-                    <text x="${primera/2}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${primera}</text>
-                    <text x="${primera/2}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#333">PRIMERA CLASE</text>`
+                        // Segunda clase (gris medio)
+                        `<rect x="${primera}" y="0" width="${segunda}" height="100" fill="#666"></rect>
+                        <text x="${primera + segunda / 2}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${segunda}</text>
+                        <text x="${primera + segunda / 2}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#333">SEGUNDA CLASE</text>` +
 
-                    clases.innerHTML += `<rect x="${primera}" y="0" width="${segunda}" height="100" fill="#666"></rect>
-                    <text x="${primera+(segunda/2)}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${segunda}</text>
-                    <text x="${primera+(segunda/2)}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#333">SEGUNDA CLASE</text>`
+                        // Tercera clase (claro)
+                        `<rect x="${primera + segunda}" y="0" width="${tercera}" height="100" fill="#999"></rect>
+                        <text x="${primera + segunda + tercera / 2}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${tercera}</text>
+                        <text x="${primera + segunda + tercera / 2}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#333">TERCERA CLASE</text>`;
 
-                   clases.innerHTML += `<rect x="${primera+segunda}" y="0" width="${tercera}" height="100" fill="#999"></rect>
-                    <text x="${primera+segunda+(tercera/2)}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${tercera}</text>
-                    <text x="${primera+segunda+(tercera/2)}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#333">TERCERA CLASE</text>`
+                } // fin de complete
 
-                } // cierra lo abierto después de complete: function…
-
-            }); // cierra lo abierto después de Papa.parse("https…
-
+            }); // fin de Papa.parse
         </script>
     </body>
 </html>
