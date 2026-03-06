@@ -1,4 +1,4 @@
-### Optativo de Profundización: Desarrollo Web y Diseño Visual de Información → Clase 02 → 13/03/2026
+### Optativo de Profundización: [Desarrollo Web y Diseño Visual de Información](https://github.com/profesorfaco/opr/?tab=readme-ov-file#readme) → Clase 02 → 13/03/2026
 
 # Los datos y la información en gráficas (clase 1 de 2)
 
