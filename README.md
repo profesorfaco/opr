@@ -49,7 +49,7 @@ Cada estudiante en este OPR debe disponer de:
 
 Según [Calendario de Actividades Académicas y Estudiantiles 2026](https://registrosacademicos.uc.cl/wp-content/uploads/2026/11/Calendario-de-Actividades-Academicas-y-Estudiantiles-2026.pdf), para el miércoles 4 de marzo está programado el **INICIO DE CLASES DEL PRIMER SEMESTRE ESTUDIANTES NUEVOS Y ANTIGUOS**, y al viernes 26 de junio corresponde la **Finalización de clases del primer período académico**.
 
-[Clase 01](https://github.com/profesorfaco/opr/tree/main/clase-01) → 06/03/2026 → Presentación de un curso entre datos, información y conocimiento.
+[Clase 01](https://github.com/profesorfaco/opr/tree/main/clase-01) → 06/03/2026 → Presentación de un curso entre datos e información
 
 [Clase 02](https://github.com/profesorfaco/opr/tree/main/clase-02) → 13/03/2026 → Los datos y la información en gráficas (clase 1 de 2)
 
