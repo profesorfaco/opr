@@ -1,4 +1,4 @@
-### Optativo de Profundización: Desarrollo Web y Diseño Visual de Información → 12/06/2026
+### Optativo de Profundización: [Desarrollo Web y Diseño Visual de Información](https://github.com/profesorfaco/opr/?tab=readme-ov-file#readme) → 12/06/2026
 
 # Diseño y programación: Desarrollo de la propuesta
 
