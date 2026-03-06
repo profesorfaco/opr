@@ -1,4 +1,4 @@
-### Optativo de Profundización: Desarrollo Web y Diseño Visual de Información → Clase 11 → 15/05/2026
+### Optativo de Profundización: [Desarrollo Web y Diseño Visual de Información](https://github.com/profesorfaco/opr/?tab=readme-ov-file#readme) → Clase 11 → 15/05/2026
 
 # Diseño y programación: Definición de la propuesta
 
