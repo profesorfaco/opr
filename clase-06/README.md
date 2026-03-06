@@ -1,4 +1,4 @@
-### Optativo de Profundización: Desarrollo Web y Diseño Visual de Información → Clase 05 → 10/04/2026
+### Optativo de Profundización: [Desarrollo Web y Diseño Visual de Información](https://github.com/profesorfaco/opr/?tab=readme-ov-file#readme) → Clase 05 → 10/04/2026
 
 # Formatos ligeros de intercambios de datos (clase 2 de 2)
 
