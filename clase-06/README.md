@@ -1,0 +1,17 @@
+### Optativo de Profundización: Desarrollo Web y Diseño Visual de Información → Clase 05 → 10/04/2026
+
+# Formatos ligeros de intercambios de datos (clase 2 de 2)
+
+### Teoría (para la casa)
+
+Pendiente (corresponde ajustarlo según su avance).
+
+- - - - - - - - - - - - - - 
+
+### Práctica (para la clase)
+
+Pendiente (corresponde ajustarlo según su avance).
+
+- - - - - - - 
+
+###### [← CLASE PREVIA](https://github.com/profesorfaco/opr/tree/main/clase-04) • [SIGUIENTE CLASE →](https://github.com/profesorfaco/opr/tree/main/clase-07)
