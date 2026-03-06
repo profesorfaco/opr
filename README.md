@@ -69,7 +69,7 @@ Clase 09  →  01/05/2026 → Feriado (Día del Trabajo)
 
 [Clase 10](https://github.com/profesorfaco/opr/tree/main/clase-10)  →  08/05/2026 → Gráficas y datos en diseño web responsive: SVG, HTML y JavaScript (clase 1 de 2)
 
-[Clase 11](https://github.com/profesorfaco/opr/tree/main/clase-11)  → 15/05/2026 → Diseño y programación: Definición de la propuesta
+[Clase 11](https://github.com/profesorfaco/opr/tree/main/clase-11)  → 15/05/2026 → Gráficas y datos en diseño web responsive: SVG, HTML y JavaScript (clase 2 de 2)
 
 Receso de docencia. Entre Lunes 18 de mayo y sábado 23 de mayo se suspenden las clases. Las evaluaciones académicas quedarán suspendidas entre el lunes 18 y el lunes 25 de mayo inclusive. 
 
