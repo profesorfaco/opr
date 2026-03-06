@@ -63,74 +63,88 @@ Partamos con el siguiente código en un `index.html`:
 <html lang="es">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Datos e información en gráficas</title>
         <style>
             body {
                 font-family: Helvetica, Arial, sans-serif;
                 text-align: center;
             }
+
             div {
-                margin: 2vh 25vw 5vh 25vw;
+                width: min(95%, 500px);
+                margin: 2vh auto 5vh auto;
             }
 
-            @media (orientation: portrait) {
-                div {
-                    margin: 2vh 2vw 3vh 2vw;
-                }
-            }
-
-            div > svg {
+            svg {
                 margin: 1rem;
             }
 
-            div > p {
+            p {
                 margin: 1rem;
             }
         </style>
     </head>
     <body>
         <div>
+
+            <!-- GRÁFICA 1: ícono recortado con imagen de fondo -->
             <svg viewBox="0 0 100 100">
                 <defs>
-                    <clipPath id="clipping">
-                        <path
-                            d="M94.53,5.54V94.46H73.74l-1.85-6.15H88.38V11.69H49.75V29.4c-10.94,0-16.6,5-19.55,16.6l-1.73,6.64c-1.1,4.43,1.36,8.25,6.15,8.25H37l-1.47,6H30.44c-4.06,0-6.39,1.36-7.62,5l-3,8.85H46.31l3.44-3.32v17H5.47V5.54ZM66.36,88.31l1.84,6.15H59.35l-1.72-6.15L50,62.61H48.52L46.31,74.17l-3.44,3H25.28l1.23-3.81A3.87,3.87,0,0,1,30.2,70.6h8.11l7-29.76c-2.83.73-4.31,2.83-5.29,7l-1.73,7A3.26,3.26,0,0,1,35,57.69a3.1,3.1,0,0,1-2.83-4.06l1.73-6.77c2.58-10.08,7.25-13.77,17.22-13.77,7.75,0,11.81,3.32,10.08,11.19L57.75,59.9Zm-2.09-67.4c0,2.95,0,7.63-.86,9-.37.61-1.85,1.6-4.55,1.6-2.46,0-4.06-1-4.43-1.6-.86-1.48-1.11-6.27-1.11-9.23a3.11,3.11,0,0,1,.74-2.46,6.57,6.57,0,0,1,4.8-1.84,7.32,7.32,0,0,1,4.79,1.84C64.27,18.7,64.27,19.56,64.27,20.91Zm6.89,39a9.47,9.47,0,0,1-2.59-.49l-6.89-2L63,50.92l8.61,2.34a3.37,3.37,0,0,1-.49,6.64Z"
-                        />
+                    <!-- clipPath define la silueta que recorta la imagen -->
+                    <clipPath id="recorte">
+                        <path d="M94.53,5.54V94.46H73.74l-1.85-6.15H88.38V11.69H49.75V29.4c-10.94,0-16.6,5-19.55,16.6l-1.73,6.64c-1.1,4.43,1.36,8.25,6.15,8.25H37l-1.47,6H30.44c-4.06,0-6.39,1.36-7.62,5l-3,8.85H46.31l3.44-3.32v17H5.47V5.54ZM66.36,88.31l1.84,6.15H59.35l-1.72-6.15L50,62.61H48.52L46.31,74.17l-3.44,3H25.28l1.23-3.81A3.87,3.87,0,0,1,30.2,70.6h8.11l7-29.76c-2.83.73-4.31,2.83-5.29,7l-1.73,7A3.26,3.26,0,0,1,35,57.69a3.1,3.1,0,0,1-2.83-4.06l1.73-6.77c2.58-10.08,7.25-13.77,17.22-13.77,7.75,0,11.81,3.32,10.08,11.19L57.75,59.9Zm-2.09-67.4c0,2.95,0,7.63-.86,9-.37.61-1.85,1.6-4.55,1.6-2.46,0-4.06-1-4.43-1.6-.86-1.48-1.11-6.27-1.11-9.23a3.11,3.11,0,0,1,.74-2.46,6.57,6.57,0,0,1,4.8-1.84,7.32,7.32,0,0,1,4.79,1.84C64.27,18.7,64.27,19.56,64.27,20.91Zm6.89,39a9.47,9.47,0,0,1-2.59-.49l-6.89-2L63,50.92l8.61,2.34a3.37,3.37,0,0,1-.49,6.64Z" />
                     </clipPath>
                 </defs>
-                <image height="100%" width="100%" preserveAspectRatio="xMinYMin slice" xlink:href="https://www.guemil.info/wp-content/themes/guemil_fondart/img/bg-1.png" clip-path="url(#clipping)" />
+                <!-- La imagen se muestra recortada con la forma del path -->
+                <image height="100%" width="100%" href="https://www.guemil.info/wp-content/themes/guemil_fondart/img/bg-1.png" clip-path="url(#recorte)" />
             </svg>
 
             <p>
-                Usando <a href="https://www.guemil.info/" target="_blank">Guemil</a> para una doble representación; el <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths" target="_blank">path</a> que recorta es una
-                representación y la <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image" target="_blank">image</a> recortada es otra.
+                Usando <a href="https://www.guemil.info/" target="_blank">Guemil</a> para una doble representación:
+                el <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths" target="_blank">path</a> que recorta es una representación,
+                y la <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image" target="_blank">image</a> recortada es otra.
             </p>
 
+            <!-- GRÁFICA 2: gráfico de dona (donut chart) -->
             <svg viewBox="0 0 42 42">
-                <circle cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
-                <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ddd" stroke-width="2"></circle>
-                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#FE4300" stroke-width="2" stroke-dasharray="79 21" stroke-dashoffset="25"></circle>
+                <!-- Círculo de fondo (gris) -->
+                <circle cx="21" cy="21" r="15.9" fill="#fff" stroke="#ddd" stroke-width="2"></circle>
+
+                <!-- Arco naranja que representa el 79% -->
+                <!-- stroke-dasharray="79 21" significa: 79 partes rellenas, 21 vacías -->
+                <!-- stroke-dashoffset="25" rota el arco para que parta desde arriba -->
+                <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#FE4300" stroke-width="2" stroke-dasharray="79 21" stroke-dashoffset="25"></circle>
+
+                <!-- Texto del porcentaje -->
                 <text x="50%" y="29" dominant-baseline="middle" text-anchor="middle" font-size="6" fill="#FE4300">79%</text>
-                <image x="15" y="10" width="12" height="12" xlink:href="https://raw.githubusercontent.com/Guemil/Guemil_Icons_v15_2020/main/svg/09_Emergency_exit_v15.svg"></image>
+
+                <!-- Ícono de salida de emergencia (Guemil) -->
+                <image x="15" y="10" width="12" height="12" href="https://raw.githubusercontent.com/Guemil/Guemil_Icons_v15_2020/main/svg/09_Emergency_exit_v15.svg" />
             </svg>
 
             <p>
-                Entre las personas consultadas, un 79% refiere a la semejanza de lo visto con una salida de emergencia ya vista (lo que se está representando). El dato de éxito de la referencia también se podría presentar, si se aproxima a
-                8 en 10, como sigue:
+                Entre las personas consultadas, un 79% reconoció el ícono como una salida de emergencia.
+                Si se aproxima a 8 de cada 10, el dato también se puede mostrar así:
             </p>
 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 16" id="personas"></svg>
+            <!-- GRÁFICA 3: gráfico de pictogramas (se dibuja con JavaScript) -->
+            <svg viewBox="0 0 160 16" id="personas"></svg>
 
-            <p>En la presentación gráfica del dato de 8 en 10 se utilizó un <a href="https://datavizcatalogue.com/ES/metodos/grafico_de_pictogramas.html" target="_blank">Gráfico de pictogramas</a></p>
+            <p>En la presentación anterior se usó un <a href="https://datavizcatalogue.com/ES/metodos/grafico_de_pictogramas.html" target="_blank">gráfico de pictogramas</a>.</p>
+
         </div>
+
         <script>
-            for (let x = 0; x < 10; x++) {
-                if (x < 8) {
-                    document.querySelector("#personas").innerHTML += `<path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" fill="#FE4300" transform ="translate(${x * 16} 0)"/>`;
-                } else {
-                    document.querySelector("#personas").innerHTML += `<path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" fill="#ddd" transform ="translate(${x * 16} 0)"/>`;
-                }
+            // Dibujamos 10 íconos de persona, uno por cada unidad
+            for (var i = 0; i < 10; i++) {
+
+                // Los primeros 8 van en naranja (representan el 79% ≈ 8 de 10)
+                // Los últimos 2 van en gris
+                var color = (i < 8) ? "#FE4300" : "#ddd";
+
+                // Cada ícono se desplaza hacia la derecha con translate
+                document.querySelector("#personas").innerHTML +=
+                    `<path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" fill="${color}" transform="translate(${i * 16} 0)" />`;
             }
         </script>
     </body>
