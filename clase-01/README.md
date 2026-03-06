@@ -64,7 +64,7 @@ La lectura de cualquiera de tales artículo le servirá a cada estudiante para c
 
 Generemos 4 Gráficos de Dónut en una página web, donde se comparen la distribución del un 100% entre dos grupos. 
 
-Tomemos números del INE (Instituto Nacional de Estadísticas). Podríamos aprovechar sus [Estadísticas > Demografía y vitales > Estadísticas vitales](https://www.ine.gob.cl/estadisticas/sociales/demografia-y-vitales/nacimientos-matrimonios-y-defunciones) > Cuadros estadísticos > 2024 > Estadísticas vitales cifras coyunturales diciembre 2024.
+Tomemos números del INE (Instituto Nacional de Estadísticas). Podríamos aprovechar sus [Estadísticas > Demografía y vitales > Estadísticas vitales](https://www.ine.gob.cl/estadisticas/sociales/demografia-y-vitales/nacimientos-matrimonios-y-defunciones) > Cuadros estadísticos > 2025 > Estadísticas vitales cifras coyunturales noviembre 2025.
 
 De allí se pueden tomar 4 pares de datos, donde ambos sumen 100, para luego aprovechar el siguiente código:
 
@@ -80,9 +80,9 @@ Tal código se encuentra en el *post*: [Scratch-made SVG Donut & Pie Charts in H
 
 A tal referencia, conviene sumar: 
 
-- https://datavizcatalogue.com/ES/metodos/grafico_de_donut.html
+- siempre https://claude.ai/ (no usar otra IA)
 
-- https://cssgridgenerator.io/
+- https://datavizcatalogue.com/ES/metodos/grafico_de_donut.html
 
 - https://mozilladevelopers.github.io/playground/css-grid/04-fr-unit/
 
