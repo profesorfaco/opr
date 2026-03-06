@@ -1,6 +1,6 @@
 ### Optativo de Profundización: Desarrollo Web y Diseño Visual de Información → Clase 01 → 05/03/2025
 
-# Datos e información
+# Presentación de un curso entre datos e información
 
 ### Teoría (para la casa)
 
