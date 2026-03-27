@@ -4,7 +4,7 @@
 
 ### Teoría (para la casa)
 
-Pendiente (corresponde ajustarlo según su avance).
+JSON. Por confirmar según resultados en el foro. 
 
 - - - - - - - - - - - - - - 
 
