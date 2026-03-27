@@ -143,7 +143,7 @@ Partamos copiando lo que sigue en un documento nuevo, para luego guardarlo como 
             </main>
 
             <footer>
-                <p>DNO097 — Nombre Apellido</p>
+                <p>OPR — Nombre Apellido</p>
             </footer>
 
         </div>
