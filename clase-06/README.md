@@ -45,7 +45,110 @@ Y aprovechando [la misma referencia de MDN](https://developer.mozilla.org/es/doc
 
 ### Práctica (para la clase)
 
-Pendiente (corresponde ajustarlo según su avance).
+Para partir, vamos a utilizar:
+
+- https://github.com/profesorfaco/opr/blob/main/clase-06/registros.csv
+
+- https://csvjson.com/csv2json
+
+Lo que nos dará por resultado:
+
+```
+[
+  {
+    "id": 1,
+    "nombre": "María Jesús Alegría Cotoras",
+    "cuenta": "https://github.com/mjcotoras",
+    "uno": "https://mjcotoras.github.io/dno002-01/",
+    "dos": "https://mjcotoras.github.io/dn002-02/",
+    "tres": "https://mjcotoras.github.io/dno002-03/",
+    "cuatro": ""
+  },
+  {
+    "id": 2,
+    "nombre": "Florencia Catalina Benavente Mena",
+    "cuenta": "",
+    "uno": "",
+    "dos": "",
+    "tres": "",
+    "cuatro": ""
+  },
+  {
+    "id": 3,
+    "nombre": "Rosario Sofia Fuentes Carrizo",
+    "cuenta": "https://github.com/rosi2701",
+    "uno": "https://rosi2701.github.io/webclase1/",
+    "dos": "https://rosi2701.github.io/webclase2/",
+    "tres": "https://rosi2701.github.io/webclase3/",
+    "cuatro": "https://rosi2701.github.io/webclase4/"
+  },
+  {
+    "id": 4,
+    "nombre": "Florencia Asunción García Pardo",
+    "cuenta": "https://github.com/FloAGarciaP",
+    "uno": "",
+    "dos": "https://floagarciap.github.io/DNO002-01/",
+    "tres": "https://floagarciap.github.io/DNO002-3/",
+    "cuatro": "https://floagarciap.github.io/DNO002-4/"
+  },
+  {
+    "id": 5,
+    "nombre": "Paz Ignacia Lienlaf Vargas",
+    "cuenta": "https://github.com/jjugodemango",
+    "uno": "https://jjugodemango.github.io/DNO-WEB-clase1/",
+    "dos": "https://jjugodemango.github.io/DNO-WEB-clase2/",
+    "tres": "https://jjugodemango.github.io/DNO-WEB-clase3/",
+    "cuatro": "https://jjugodemango.github.io/DNO-WEB-clase4/"
+  },
+  {
+    "id": 6,
+    "nombre": "Pedro Montes Silveira",
+    "cuenta": "https://github.com/PedroMS7002",
+    "uno": "https://pedroms7002.github.io/clase01-web/",
+    "dos": "",
+    "tres": "",
+    "cuatro": ""
+  },
+  {
+    "id": 7,
+    "nombre": "Matias Pablo Reyes Sánchez",
+    "cuenta": "https://github.com/MrMathew18",
+    "uno": "",
+    "dos": "https://mrmathew18.github.io/viz-clase2/",
+    "tres": "https://mrmathew18.github.io/viz-clase3/",
+    "cuatro": "https://mrmathew18.github.io/opr4/"
+  },
+  {
+    "id": 8,
+    "nombre": "Antonia Belen Rojas Farias",
+    "cuenta": "https://github.com/AntoRojasf",
+    "uno": "https://antorojasf.github.io/Desarrollo-web-2026/index.html",
+    "dos": "https://antorojasf.github.io/Clase2/",
+    "tres": "https://antorojasf.github.io/clase-3/",
+    "cuatro": "https://antorojasf.github.io/clase-4-/"
+  },
+  {
+    "id": 9,
+    "nombre": "Valentina Luz Sarrat Tornero",
+    "cuenta": "https://github.com/valentinasarrat",
+    "uno": "",
+    "dos": "https://valentinasarrat.github.io/opr02/",
+    "tres": "https://valentinasarrat.github.io/opr03/",
+    "cuatro": "https://valentinasarrat.github.io/opr04/"
+  },
+  {
+    "id": 10,
+    "nombre": "Florencia Maria Verdier Fernández",
+    "cuenta": "https://github.com/florenciaverdier",
+    "uno": "",
+    "dos": "https://florenciaverdier.github.io/Clase-2/",
+    "tres": "https://florenciaverdier.github.io/Clase-3/",
+    "cuatro": "https://florenciaverdier.github.io/Clase-4/"
+  }
+]
+```
+
+
 
 - - - - - - - 
 
