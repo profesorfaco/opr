@@ -4,7 +4,30 @@
 
 ### Teoría (para la casa)
 
-JSON. Por confirmar según resultados en el foro. 
+JSON (JavaScript Object Notation): Formato ligero de intercambio de datos, fácil de leer y escribir para los humanos y fácil de analizar y generar para las máquinas. Su bloque constructivo básico es el par "clave": valor, organizado dentro de llaves `{...}` para objetos o corchetes `[...]` para arreglos.
+
+Para profundizar: [Trabajando con JSON en MDN](https://developer.mozilla.org/es/docs/Learn_web_development/Core/Scripting/JSON).
+
+Desde tal recomendación de profundización, podemos obtener este ejemplo:
+
+```
+[
+  {
+    "name": "Molecule Man",
+    "age": 29,
+    "secretIdentity": "Dan Jukes",
+    "powers": ["Radiation resistance", "Turning tiny", "Radiation blast"]
+  },
+  {
+    "name": "Madame Uppercut",
+    "age": 39,
+    "secretIdentity": "Jane Wilson",
+    "powers": ["Million tonne punch","Damage resistance","Superhuman reflexes"]
+  }
+]
+```
+
+En este intercambio de datos tenemos un arreglo, que en su primera `[0]` y segunda posición `[1]` nos ofrece objetos `{…}`, y dentro de cada objeto podemos encontrar claves que contienen cadenas de caracteres entre comillas, números (sin comillas) y arreglos.
 
 - - - - - - - - - - - - - - 
 
