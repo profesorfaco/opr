@@ -8,7 +8,7 @@ JSON (JavaScript Object Notation): Formato ligero de intercambio de datos, fáci
 
 Para profundizar: [Trabajando con JSON en MDN](https://developer.mozilla.org/es/docs/Learn_web_development/Core/Scripting/JSON).
 
-Desde tal recomendación de profundización, podemos obtener este ejemplo:
+Desde tal referencia para profundizar, podemos obtener este ejemplo:
 
 ```
 [
@@ -27,7 +27,19 @@ Desde tal recomendación de profundización, podemos obtener este ejemplo:
 ]
 ```
 
-En este intercambio de datos tenemos un arreglo, que en su primera `[0]` y segunda posición `[1]` nos ofrece objetos `{…}`, y dentro de cada objeto podemos encontrar claves que contienen cadenas de caracteres entre comillas, números (sin comillas) y arreglos.
+En el ejemplo tenemos un arreglo, que en su primera `[0]` y segunda posición `[1]` nos ofrece objetos `{…}`, y dentro de cada objeto podemos encontrar claves que contienen cadenas de caracteres entre comillas, números (sin comillas) y arreglos.
+
+Y aprovechando [la misma referencia de MDN](https://developer.mozilla.org/es/docs/Learn_web_development/Core/Scripting/JSON), podemos agregar: 
+
+- JSON es sólo un formato de datos — contiene sólo propiedades, no métodos.
+
+- JSON requiere usar comillas dobles para las cadenas y los nombres de propiedades. Las comillas simples no son válidas.
+
+- Una coma o dos puntos mal ubicados pueden producir que un archivo JSON no funcione. Se debe ser cuidadoso para validar cualquier dato que se quiera utilizar (aunque los JSON generados por computador tienen menos probabilidades de tener errores, mientras el programa generador trabaje adecuadamente). Es posible validar JSON utilizando una aplicación como [JSONLint](https://jsonlint.com/).
+
+- JSON puede tomar la forma de cualquier tipo de datos que sea válido para ser incluido en un JSON, no sólo arreglos u objetos. Así, por ejemplo, una cadena o un número único podrían ser objetos JSON válidos.
+
+- A diferencia del código JavaScript en que las propiedades del objeto pueden no estar entre comillas, en JSON, sólo las cadenas entre comillas pueden ser utilizadas como propiedades.
 
 - - - - - - - - - - - - - - 
 
