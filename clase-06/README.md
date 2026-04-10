@@ -159,43 +159,102 @@ Y si queda bien publicado, luego podemos trabajar con:
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Un fetch</title>
+        <style>
+            body {
+                font-family: Helvetica, Arial, sans-serif;
+            }
+        </style>
     </head>
     <body>
         <h1>Hola mundo</h1>
+        <ol id="estudiantes"></ol>
 
         <script>
-            // 1. Definimos la URL de la API que queremos consultar
             const URL = "https://api.myjson.online/v1/records/a5902166-9172-4f15-a4cc-c404b1372dc7";
-
-            // 2. Usamos fetch() — es una función nativa del navegador
-            //    que realiza peticiones HTTP de forma asíncrona
             fetch(URL)
-                // 3. fetch() devuelve una "promesa"
-                //    .then() se ejecuta cuando la respuesta llega
                 .then((respuesta) => {
-                    // 4. Verificamos que el servidor respondió con éxito (código 200-299)
                     if (!respuesta.ok) {
                         throw new Error("Error HTTP: " + respuesta.status);
                     }
-
-                    // 5. Convertimos el cuerpo de la respuesta de texto JSON
-                    //    a un objeto JavaScript. Esto también es asíncrono.
                     return respuesta.json();
                 })
 
-                // 6. Ahora "datos" es el objeto JavaScript listo para usar
                 .then((datos) => {
-                    console.log("Datos recibidos:", datos);
+                    var trabajo = datos.data;
+                    console.log("Datos recibidos:", trabajo);
+                    const donde = document.getElementById("estudiantes");
+
+                    //simple e inseguro
+                    trabajo.forEach((x) => {
+                        var cuantos = [];
+                        if (x.uno != "") {
+                            cuantos.push(x.uno);
+                        }
+                        if (x.dos != "") {
+                            cuantos.push(x.dos);
+                        }
+                        if (x.tres != "") {
+                            cuantos.push(x.tres);
+                        }
+                        if (x.cuatro != "") {
+                            cuantos.push(x.cuatro);
+                        }
+
+                        donde.innerHTML += `<li><a href="${x.cuenta}">${x.nombre}</a> ${pelotitas(cuantos)}</li>`;
+                    });
+
+                    function pelotitas(n) {
+                        var armado = "";
+                        n.forEach((e) => {
+                            armado += `<a href="${e}" target="_blank">◉</a> `;
+                        });
+                        return armado;
+                    }
+
+                    /*
+                    // Esta otra es la format súper pro, recomendada por Claude.ia 
+                    // Demasiado trabajosa para no programadores
+
+                    trabajo.forEach((x) => {
+                    // Validar que x sea un objeto válido
+                    if (!x || typeof x !== "object") return;
+
+                    // Contar propiedades de forma segura
+                    const campos = ["uno", "dos", "tres", "cuatro"];
+                    const cuantos = campos.filter(
+                        (campo) => x[campo] != null && String(x[campo]).trim() !== ""
+                    ).length;
+
+                    // Crear elementos del DOM en lugar de usar innerHTML
+                    const li = document.createElement("li");
+                    const a = document.createElement("a");
+
+                    // Validar que la URL sea segura (solo http/https)
+                    const urlSegura =
+                        typeof x.cuenta === "string" && /^https?:\/\//i.test(x.cuenta)
+                            ? x.cuenta
+                            : "#";
+
+                    a.href = urlSegura;
+                    a.target = "_blank";
+                    a.rel = "noopener noreferrer"; // Protege contra tabnapping
+                    a.textContent = x.nombre ?? "Sin nombre"; // textContent escapa HTML automáticamente
+
+                    li.appendChild(a);
+                    li.appendChild(document.createTextNode(` (${cuantos})`));
+                    ul.appendChild(li);
+                    });
+
+                    */
                 })
 
-                // 7. Si algo falló (red caída, error del servidor, etc.)
-                //    este bloque lo captura
                 .catch((error) => {
                     console.error("Algo salió mal:", error);
                 });
         </script>
     </body>
 </html>
+
 ```
 
 
