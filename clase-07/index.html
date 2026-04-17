@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Un fetch</title>
+        <style>
+            body {
+                font-family: Helvetica, Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hola mundo</h1>
+        <ol id="estudiantes"></ol>
+
+        <script>
+            const URL = "https://api.myjson.online/v1/records/a5902166-9172-4f15-a4cc-c404b1372dc7";
+            fetch(URL)
+                .then((respuesta) => {
+                    if (!respuesta.ok) {
+                        throw new Error("Error HTTP: " + respuesta.status);
+                    }
+                    return respuesta.json();
+                })
+
+                .then((datos) => {
+                    var trabajo = datos.data;
+                    console.log("Datos recibidos:", trabajo);
+                    const donde = document.getElementById("estudiantes");
+
+                    //simple e inseguro
+                    trabajo.forEach((x) => {
+                        var cuantos = [];
+                        if (x.uno != "") {
+                            cuantos.push(x.uno);
+                        }
+                        if (x.dos != "") {
+                            cuantos.push(x.dos);
+                        }
+                        if (x.tres != "") {
+                            cuantos.push(x.tres);
+                        }
+                        if (x.cuatro != "") {
+                            cuantos.push(x.cuatro);
+                        }
+
+                        donde.innerHTML += `<li><a href="${x.cuenta}">${x.nombre}</a> ${pelotitas(cuantos)}</li>`;
+                    });
+
+                    function pelotitas(n) {
+                        var armado = "";
+                        n.forEach((e) => {
+                            armado += `<a href="${e}" target="_blank">◉</a> `;
+                        });
+                        return armado;
+                    }
+                })
+
+                .catch((error) => {
+                    console.error("Algo salió mal:", error);
+                });
+        </script>
+    </body>
+</html>
