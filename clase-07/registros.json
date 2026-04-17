@@ -1,52 +1,112 @@
 [
-    {
-        "id": 10,
-        "nombre": "Florencia Maria Verdier Fernández",
-        "cuenta": "https://github.com/florenciaverdier",
-        "uno": ["https://florenciaverdier.github.io/Clase-1/", true],
-        "dos": ["https://florenciaverdier.github.io/Clase-2/", false],
-        "tres": ["https://florenciaverdier.github.io/Clase-3/", true],
-        "cuatro": ["https://florenciaverdier.github.io/Clase-4/", false],
-        "seis": ["https://florenciaverdier.github.io/Clase6/", true]
-    },
-    {
-        "id": 10,
-        "nombre": "Florencia Maria Verdier Fernández",
-        "cuenta": "https://github.com/florenciaverdier",
-        "uno": ["https://florenciaverdier.github.io/Clase-1/", true],
-        "dos": ["https://florenciaverdier.github.io/Clase-2/", false],
-        "tres": ["https://florenciaverdier.github.io/Clase-3/", true],
-        "cuatro": ["https://florenciaverdier.github.io/Clase-4/", false],
-        "seis": ["https://florenciaverdier.github.io/Clase6/", true]
-    },
-    {
-        "id": 10,
-        "nombre": "Florencia Maria Verdier Fernández",
-        "cuenta": "https://github.com/florenciaverdier",
-        "uno": ["https://florenciaverdier.github.io/Clase-1/", true],
-        "dos": ["https://florenciaverdier.github.io/Clase-2/", false],
-        "tres": ["https://florenciaverdier.github.io/Clase-3/", true],
-        "cuatro": ["https://florenciaverdier.github.io/Clase-4/", false],
-        "seis": ["https://florenciaverdier.github.io/Clase6/", true]
-    },
-    {
-        "id": 10,
-        "nombre": "Florencia Maria Verdier Fernández",
-        "cuenta": "https://github.com/florenciaverdier",
-        "uno": ["https://florenciaverdier.github.io/Clase-1/", true],
-        "dos": ["https://florenciaverdier.github.io/Clase-2/", false],
-        "tres": ["https://florenciaverdier.github.io/Clase-3/", true],
-        "cuatro": ["https://florenciaverdier.github.io/Clase-4/", false],
-        "seis": ["https://florenciaverdier.github.io/Clase6/", true]
-    },
-    {
-        "id": 10,
-        "nombre": "Florencia Maria Verdier Fernández",
-        "cuenta": "https://github.com/florenciaverdier",
-        "uno": ["https://florenciaverdier.github.io/Clase-1/", true],
-        "dos": ["https://florenciaverdier.github.io/Clase-2/", false],
-        "tres": ["https://florenciaverdier.github.io/Clase-3/", true],
-        "cuatro": ["https://florenciaverdier.github.io/Clase-4/", false],
-        "seis": ["https://florenciaverdier.github.io/Clase6/", true]
-    }
+  {
+    "id": 1,
+    "nombre": "María Jesús Alegría Cotoras",
+    "cuenta": "https://github.com/mjcotoras",
+    "uno": ["https://mjcotoras.github.io/dno002-01/", false],
+    "dos": ["https://mjcotoras.github.io/dn002-02/", true],
+    "tres": ["https://mjcotoras.github.io/dno002-03/", false],
+    "cuatro": "",
+    "seis": "",
+    "siete": ""
+  },
+  {
+    "id": 2,
+    "nombre": "Florencia Catalina Benavente Mena",
+    "cuenta": "",
+    "uno": "",
+    "dos": "",
+    "tres": "",
+    "cuatro": "",
+    "seis": "",
+    "siete": ""
+  },
+  {
+    "id": 3,
+    "nombre": "Rosario Sofia Fuentes Carrizo",
+    "cuenta": "https://github.com/rosi2701",
+    "uno": ["https://rosi2701.github.io/webclase1/", true],
+    "dos": ["https://rosi2701.github.io/webclase2/", true],
+    "tres": ["https://rosi2701.github.io/webclase3/", true],
+    "cuatro": ["https://rosi2701.github.io/webclase4/", true],
+    "seis": ["https://rosi2701.github.io/webclase6/", true],
+    "siete": ""
+  },
+  {
+    "id": 4,
+    "nombre": "Florencia Asunción García Pardo",
+    "cuenta": "https://github.com/FloAGarciaP",
+    "uno": ["https://floagarciap.github.io/DNO002-01/", false],
+    "dos": ["https://floagarciap.github.io/DNO002-02/", true],
+    "tres": ["https://floagarciap.github.io/DNO002-3/", true],
+    "cuatro": ["https://floagarciap.github.io/DNO002-4/", true],
+    "seis": ["https://floagarciap.github.io/DNO002-06/", true],
+    "siete": ""
+  },
+  {
+    "id": 5,
+    "nombre": "Paz Ignacia Lienlaf Vargas",
+    "cuenta": "https://github.com/jjugodemango",
+    "uno": ["https://jjugodemango.github.io/DNO-WEB-clase1/", false],
+    "dos": ["https://jjugodemango.github.io/DNO-WEB-clase2/", true],
+    "tres": ["https://jjugodemango.github.io/DNO-WEB-clase3/", true],
+    "cuatro": ["https://jjugodemango.github.io/DNO-WEB-clase4/", true],
+    "seis": ["https://jjugodemango.github.io/DNO-WEB-clase6/", true],
+    "siete": ""
+  },
+  {
+    "id": 6,
+    "nombre": "Pedro Montes Silveira",
+    "cuenta": "https://github.com/PedroMS7002",
+    "uno": ["https://pedroms7002.github.io/clase01-web/", true],
+    "dos": ["https://pedroms7002.github.io/clase02-web/", false],
+    "tres": ["https://pedroms7002.github.io/clase03-web/", true],
+    "cuatro": "",
+    "seis": ["https://pedroms7002.github.io/clase06-web/", true],
+    "siete": ""
+  },
+  {
+    "id": 7,
+    "nombre": "Matias Pablo Reyes Sánchez",
+    "cuenta": "https://github.com/MrMathew18",
+    "uno": ["https://mrmathew18.github.io/Viz-clase1/", true],
+    "dos": ["https://mrmathew18.github.io/viz-clase2/", true],
+    "tres": ["https://mrmathew18.github.io/viz-clase3/", true],
+    "cuatro": ["https://mrmathew18.github.io/opr4/", true],
+    "seis": ["https://mrmathew18.github.io/opr6/", true],
+    "siete": ""
+  },
+  {
+    "id": 8,
+    "nombre": "Antonia Belen Rojas Farias",
+    "cuenta": "https://github.com/AntoRojasf",
+    "uno": ["https://antorojasf.github.io/clase-1/", true],
+    "dos": ["https://antorojasf.github.io/Clase2/", true],
+    "tres": ["https://antorojasf.github.io/clase-3/", true],
+    "cuatro": ["https://antorojasf.github.io/clase-4-/", false],
+    "seis": ["https://antorojasf.github.io/clase-5/", true],
+    "siete": ""
+  },
+  {
+    "id": 9,
+    "nombre": "Valentina Luz Sarrat Tornero",
+    "cuenta": "https://github.com/valentinasarrat",
+    "uno": "",
+    "dos": ["https://valentinasarrat.github.io/opr02/", false],
+    "tres": ["https://valentinasarrat.github.io/opr03/", true],
+    "cuatro": ["https://valentinasarrat.github.io/opr04/", true],
+    "seis": ["https://valentinasarrat.github.io/opr06/", true],
+    "siete": ""
+  },
+  {
+    "id": 10,
+    "nombre": "Florencia Maria Verdier Fernández",
+    "cuenta": "https://github.com/florenciaverdier",
+    "uno": ["https://florenciaverdier.github.io/Clase-1/", true],
+    "dos": ["https://florenciaverdier.github.io/Clase-2/", true],
+    "tres": ["https://florenciaverdier.github.io/Clase-3/", true],
+    "cuatro": ["https://florenciaverdier.github.io/Clase-4/", true],
+    "seis": ["https://florenciaverdier.github.io/Clase6/", true],
+    "siete": ""
+  }
 ]
