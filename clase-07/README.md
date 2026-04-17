@@ -4,7 +4,17 @@
 
 ### Teoría (para la casa)
 
-Pendiente (corresponde ajustarlo según su avance).
+Vamos a usar `<symbol></symbol>`: 
+
+https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/symbol
+
+También vamos a usar el `display:none;` bajo cierta [condición de pantalla](https://www.w3schools.com/CSSref/atrule_media.php). Por ejemplo:
+
+```
+@media screen and (max-width: 600px) {
+  svg#grande { display: none; }
+}
+```
 
 - - - - - - - - - - - - - - 
 
