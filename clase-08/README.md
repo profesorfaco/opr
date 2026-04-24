@@ -51,7 +51,7 @@ Luego, mediante `CSS` muestro o escondo otra.
 
 ### Práctica (para la clase)
 
-´´´
+```
 <!doctype html>
 <html lang="es">
     <head>
@@ -270,7 +270,7 @@ Luego, mediante `CSS` muestro o escondo otra.
         </script>
     </body>
 </html>
-´´´
+```
 
 - - - - - - - 
 
