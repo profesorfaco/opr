@@ -19,7 +19,7 @@
     "tres": "",
     "cuatro": "",
     "seis": "",
-    "siete": ""
+    "siete": ["https://f19rencia.github.io/Clase-7/",true]
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "tres": ["https://rosi2701.github.io/webclase3/", true],
     "cuatro": ["https://rosi2701.github.io/webclase4/", true],
     "seis": ["https://rosi2701.github.io/webclase6/", true],
-    "siete": ""
+    "siete": ["https://rosi2701.github.io/webclase7/", true]
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "tres": ["https://floagarciap.github.io/DNO002-3/", true],
     "cuatro": ["https://floagarciap.github.io/DNO002-4/", true],
     "seis": ["https://floagarciap.github.io/DNO002-06/", true],
-    "siete": ""
+    "siete": ["https://floagarciap.github.io/DNO002-07/",true]
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "tres": ["https://jjugodemango.github.io/DNO-WEB-clase3/", true],
     "cuatro": ["https://jjugodemango.github.io/DNO-WEB-clase4/", true],
     "seis": ["https://jjugodemango.github.io/DNO-WEB-clase6/", true],
-    "siete": ""
+    "siete": ["https://jjugodemango.github.io/DNO-WEB-clase7/",true]
   },
   {
     "id": 6,
@@ -74,7 +74,7 @@
     "tres": ["https://mrmathew18.github.io/viz-clase3/", true],
     "cuatro": ["https://mrmathew18.github.io/opr4/", true],
     "seis": ["https://mrmathew18.github.io/opr6/", true],
-    "siete": ""
+    "siete": ["https://mrmathew18.github.io/opr-clase7/",true]
   },
   {
     "id": 8,
@@ -85,7 +85,7 @@
     "tres": ["https://antorojasf.github.io/clase-3/", true],
     "cuatro": ["https://antorojasf.github.io/clase-4-/", false],
     "seis": ["https://antorojasf.github.io/clase-5/", true],
-    "siete": ""
+    "siete": ["https://antorojasf.github.io/clase-7/",false]
   },
   {
     "id": 9,
@@ -96,7 +96,7 @@
     "tres": ["https://valentinasarrat.github.io/opr03/", true],
     "cuatro": ["https://valentinasarrat.github.io/opr04/", true],
     "seis": ["https://valentinasarrat.github.io/opr06/", true],
-    "siete": ""
+    "siete": ["https://valentinasarrat.github.io/opr07/", false]
   },
   {
     "id": 10,
@@ -107,6 +107,6 @@
     "tres": ["https://florenciaverdier.github.io/Clase-3/", true],
     "cuatro": ["https://florenciaverdier.github.io/Clase-4/", true],
     "seis": ["https://florenciaverdier.github.io/Clase6/", true],
-    "siete": ""
+    "siete": ["https://florenciaverdier.github.io/Clase-7/",true]
   }
 ]
