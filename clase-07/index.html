@@ -51,6 +51,12 @@
                         if (x.cuatro != "") {
                             cuantos.push(x.cuatro);
                         }
+                        if (x.seis != "") {
+                            cuantos.push(x.seis);
+                        }
+                        if (x.siete != "") {
+                            cuantos.push(x.siete);
+                        }                        
                         donde.innerHTML += `<li><a href="${x.cuenta}">${x.nombre}</a> ${pelotitas(cuantos)}</li>`;
                     });
                     function pelotitas(n) {
