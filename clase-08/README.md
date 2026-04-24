@@ -5,7 +5,7 @@
 ### Teoría (para la casa)
 
 
-En HTML puedo tener dos versiones de la misma gráfica, La misma gráfica, una angosta y otra ancha.
+En HTML puedo tener dos versiones de la misma gráfica, una angosta y otra ancha.
 
 ```
 <figure id="first">
