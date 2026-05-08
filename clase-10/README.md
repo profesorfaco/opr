@@ -16,6 +16,234 @@ Busquemos qué consultar, aprovechando lo ya trabajado en clases previas y suman
 
 Una alternativa podría ser llegar a desarrollar algo como: https://aves.ninjas.cl/
 
+
+```
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Un fetch</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            :root {
+                --texto: #000;
+                --fondo: #eee;
+                --blanco: #fff;
+                --fuente: "Inconsolata", monospace;
+                --otrafuente: "Roboto", sans-serif;
+            }
+
+            body {
+                font-family: var(--fuente);
+                background: var(--fondo);
+            }
+            svg#escondido {
+                display: none;
+            }
+
+            div#contenedor {
+                width: 90%;
+                max-width: 780px;
+                margin: 1rem auto;
+                box-shadow: 0 0 3px rgba(200, 200, 200, 0.5);
+                padding: 1rem;
+                background: var(--blanco);
+            }
+
+            h1 {
+                font-family: var(--otrafuente);
+                text-align: left;
+                font-size: calc(1rem + 2vw + 2vh);
+                margin: 3vw auto;
+
+                /*line-height: 2vw;*/
+            }
+
+            ol,
+            ul {
+                list-style-position: inside;
+                list-style: none;
+                width: 100%;
+                margin: 1rem 0;
+                border-top: 1px solid silver;
+            }
+
+            ol li {
+                border-bottom: 1px solid silver;
+                padding: 0.5rem 0;
+            }
+
+            ol li:last-child {
+                border-bottom: 3px solid silver;
+            }
+
+            ol li a {
+                text-decoration: none;
+                color: var(--texto);
+                transition: all ease 0.5s;
+            }
+
+            ol li a:hover {
+                letter-spacing: 0.1rem;
+                transition: all ease 0.5s;
+            }
+
+            ol li a:nth-child(1) {
+                display: inline-block;
+                width: 50%;
+            }
+
+            ol li a[target="_blank"] {
+                margin-left: 1rem;
+            }
+
+            figure {
+                width: 80%;
+                margin: 10% auto;
+            }
+
+            @keyframes nombre {
+                0% {
+                    fill: #00a;
+                    transform: rotate(359deg);
+                }
+                100% {
+                    fill: #a00;
+                }
+            }
+
+            figure svg use[href="#bien"] {
+                animation: nombre 2s infinite alternate;
+                transform-origin: center 25%;
+            }
+            figure svg use[href="#mal"] {
+                animation: nombre 4s infinite alternate;
+                transform-origin: center 75%;
+            }
+
+            /* Móvil: se muestra #first, se oculta #second */
+            #first {
+                display: block;
+            }
+
+            #second {
+                display: none;
+            }
+
+            /* Pantallas desde 600px: se oculta #first, se muestra #second */
+            @media screen and (min-width: 600px) {
+                #first {
+                    display: none;
+                }
+
+                #second {
+                    display: block;
+                }
+
+                figure svg use[href="#bien"] {
+                    transform-origin: 25% center;
+                }
+
+                figure svg use[href="#mal"] {
+                    transform-origin: 75% center;
+                }
+            }
+
+            li {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .tiny {
+                width: 2rem;
+                height: auto;
+                border-radius: 50% 50%;
+                margin-right: 0.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="escondido">
+            <symbol id="bien" width="16" height="16" viewBox="0 0 16 16">
+                <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8"
+                />
+            </symbol>
+            <symbol id="mal" width="16" height="16" viewBox="0 0 16 16">
+                <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m-2.715 5.933a.5.5 0 0 1-.183-.683A4.5 4.5 0 0 1 8 9.5a4.5 4.5 0 0 1 3.898 2.25.5.5 0 0 1-.866.5A3.5 3.5 0 0 0 8 10.5a3.5 3.5 0 0 0-3.032 1.75.5.5 0 0 1-.683.183M10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8"
+                />
+            </symbol>
+        </svg>
+        <div id="contenedor">
+            <h1>Orden</h1>
+            
+            <h2>Strigiformes</h2>
+            <p>Los estrigiformes son las aves rapaces nocturnas, que incluye búhos…
+            
+            <ol id="uno"></ol>
+            
+            <h2>Charadriiformes</h2>
+            
+            <ol id="dos"></ol>
+
+            <h2>Passeriformes</h2>
+
+            <p>Los paseriformes se conocen comúnmente como pájaros y a veces aves cantoras o pájaros cantores</p>
+            
+            <ol id="tres"></ol>
+        </div>
+        <script>
+            fetch("https://api.myjson.online/v1/records/b4cc6491-a885-4cf0-8760-c06ccd90e3ce")
+                .then((respuesta) => {
+                    if (!respuesta.ok) {
+                        throw new Error("Error HTTP: " + respuesta.status);
+                    }
+                    return respuesta.json();
+                })
+                .then((datos) => {
+                    var pajaretes = datos.data;
+                    console.log("Datos recibidos:", pajaretes);
+                    const primero = document.getElementById("uno");
+                    const segundo = document.getElementById("dos");
+                    const tercero = document.getElementById("tres");
+
+                    //Passeriformes
+                    //Charadriiformes
+                    //Strigiformes
+
+                    pajaretes.forEach((x) => {
+                        if (x.info.order.value.includes("Strigiformes")) {
+                            primero.innerHTML += `<li><img src="${x.image.url}" class="tiny"/>${x.names.spanish}</li>`;
+                        }
+                        if (x.info.order.value.includes("Charadriiformes")) {
+                            segundo.innerHTML += `<li><img src="${x.image.url}" class="tiny"/>${x.names.spanish}</li>`;
+                        }
+                        if (x.info.order.value.includes("Passeriformes")) {
+                            tercero.innerHTML += `<li><img src="${x.image.url}" class="tiny"/>${x.names.spanish}</li>`;
+                        }
+
+                    });
+                })
+                .catch((error) => {
+                    console.error("Algo salió mal:", error);
+                });
+        </script>
+    </body>
+</html>
+```
+
 - - - - - - - 
 
 ###### [← CLASE PREVIA](https://github.com/profesorfaco/opr/tree/main/clase-08) • [SIGUIENTE CLASE →](https://github.com/profesorfaco/opr/tree/main/clase-11)
