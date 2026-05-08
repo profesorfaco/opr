@@ -4,13 +4,15 @@
 
 ### Teoría (para la casa)
 
-Pendiente (corresponde ajustarlo según su avance).
+Trabajemos con aves chilenas, aprovechando el trabajo de los [Ninjas.cl](https://github.com/NinjasCL/chileanbirds-dataset), pero tomándolo desde otro lado: 
+
+https://api.myjson.online/v1/records/b4cc6491-a885-4cf0-8760-c06ccd90e3ce
 
 - - - - - - - 
 
 ### Práctica (para la clase)
 
-Pendiente (corresponde ajustarlo según su avance).
+Busquemos qué consultar, aprovechando lo ya trabajado en clases previas y sumando algunas cositas.
 
 - - - - - - - 
 
