@@ -14,6 +14,8 @@ https://api.myjson.online/v1/records/b4cc6491-a885-4cf0-8760-c06ccd90e3ce
 
 Busquemos qué consultar, aprovechando lo ya trabajado en clases previas y sumando algunas cositas.
 
+Una alternativa podría ser llegar a desarrollar algo como: https://aves.ninjas.cl/
+
 - - - - - - - 
 
 ###### [← CLASE PREVIA](https://github.com/profesorfaco/opr/tree/main/clase-08) • [SIGUIENTE CLASE →](https://github.com/profesorfaco/opr/tree/main/clase-11)
