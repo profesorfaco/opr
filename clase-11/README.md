@@ -4,7 +4,9 @@
 
 ### Teoría (para la casa)
 
-Aprovechando lo ingresado en el foro hasta el miércoles, podemos partir con el siguiente código:
+Aprovechando lo ingresado en el foro hasta el miércoles, podemos partir con el siguiente código. Es fundamental notar, al final del script, el uso de `document.getElementById("filtro-especie").addEventListener("change", function () {…}`.
+
+Este método permite que la página "reaccione" inmediatamente cuando el usuario selecciona una opción distinta en el menú desplegable.
 
 ```
 
@@ -240,13 +242,205 @@ Aprovechando lo ingresado en el foro hasta el miércoles, podemos partir con el 
 </html>
 ```
 
+Tal como se indica en [MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener), el `addEventListener()` escucha un evento específico (en este caso, `change`) sobre un objeto determinado (el `select`).
+
+**Importante**: En este primer ejemplo, el JavaScript actúa como un "interruptor". Todas las aves ya están cargadas en el HTML, y el script solo decide qué "caja" (`div`) mostrar u ocultar aplicando o quitando la clase `.visible`.
+ 
+- - - - 
+
+#### Avanzando hacia una estructura dinámica
+
+Podemos mejorar este proceso sin depender de elementos ocultos en el CSS. JavaScript puede ayudarnos a **generar contenido sobre la marcha** directamente en el [DOM](https://www.youtube.com/watch?v=4ILE0y58J00&t=101s). Esto es mucho más eficiente cuando trabajamos con grandes volúmenes de datos.
+
+Observa cómo en este segundo ejemplo, el menú de selección no está escrito a mano, sino que se crea automáticamente analizando los datos de la API:
+
+```
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Un fetch</title>
+        <style>
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            :root {
+                --texto: #000;
+                --fondo: #eee;
+                --blanco: #fff;
+                --fuente: Helvetica, Arial, sans-serif;
+            }
+
+            body {
+                font-family: var(--fuente);
+                background: var(--fondo);
+            }
+            svg#escondido {
+                display: none;
+            }
+
+            div#contenedor {
+                width: 90%;
+                max-width: 480px;
+                margin: 1rem auto;
+                box-shadow: 0 0 3px rgba(200, 200, 200, 0.5);
+                padding: 1rem;
+                background: var(--blanco);
+            }
+
+            h1 {
+                text-align: left;
+                font-size: calc(1rem + 2vw + 2vh);
+                margin: 2vw auto;
+            }
+
+            h2 {
+                margin: 3rem 0 1rem 0;
+            }
+
+            ol,
+            ul {
+                /* Quitamos el marcador nativo porque display:flex en los <li>
+                   lo hace desaparecer. Los números los generamos nosotros con CSS. */
+                list-style: none;
+                counter-reset: numeracion-aves;
+                width: 100%;
+                margin: 1rem 0;
+                border-top: 1px solid silver;
+            }
+
+            ol li {
+                border-bottom: 1px solid silver;
+                padding: 0.5rem 0;
+            }
+
+            ol li:last-child {
+                border-bottom: 3px solid silver;
+            }
+
+            li {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            /* Cada <li> genera su propio número mediante un contador CSS */
+            ol li::before {
+                counter-increment: numeracion-aves;
+                content: counter(numeracion-aves) ".";
+                min-width: 2rem;
+                font-weight: bold;
+            }
+
+            .tiny {
+                width: 2rem;
+                height: auto;
+                border-radius: 50% 50%;
+                margin-right: 0.5rem;
+            }
+
+            .filtro-wrapper{
+                margin-top:1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="contenedor">
+            <h1>Aves de Chile</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada mauris felis, sit amet ultrices felis finibus id. Praesent nec est venenatis, gravida lorem non, molestie odio. Sed a volutpat eros. Mauris at eros ultricies, pretium felis eget, bibendum ligula. Suspendisse vitae egestas risus. Vestibulum consectetur justo quis aliquet tincidunt.</p>
+
+            <div class="filtro-wrapper">
+                <label for="filtro-especie">Mostrar aves:</label>
+                <select id="filtro-especie">
+                    <option value="">— Selecciona un grupo —</option>
+                </select>
+            </div>
+
+            <div id="resultado"></div>
+
+        </div>
+
+        <script>
+            // Par de variables globales. Están encima de las funciones para que cualquiera de ellas pueda accederlas.
+            let todasLasAves = [];
+            const select = document.getElementById("filtro-especie");
+
+
+            fetch("https://api.myjson.online/v1/records/b4cc6491-a885-4cf0-8760-c06ccd90e3ce")
+                .then((respuesta) => {
+                    if (!respuesta.ok) {
+                        throw new Error("Error HTTP: " + respuesta.status);
+                    }
+                    return respuesta.json();
+                })
+                .then((datos) => {
+                    todasLasAves = datos.data;
+                    // Con lo que sigue, de cada ave extraemos el "value" del "order" en la "info".
+                    // Con lo extraído, Set() elimina duplicados, y sort() los ordena alfabéticamente.
+                    const ordenes = [...new Set(todasLasAves.map(x => x.info.order.value))].sort();
+                    // Con cada valor único creamos un <option> y lo agregamos al <select>.
+                    ordenes.forEach((o) => {
+                        const option = document.createElement("option");
+                        option.value = o;
+                        option.textContent = o;
+                        select.appendChild(option);
+                    });
+                })
+                .catch((error) => {
+                    console.error("Algo salió mal:", error);
+                });
+
+            // Esta función se llama cada vez que el usuario elige una opción del select; se recibe el valor seleccionado y se reconstruye el DOM desde cero.
+            function renderizarAves(ordenSeleccionado) {
+                const resultado = document.getElementById("resultado");
+                // Limpiamos el contenedor antes de escribir el nuevo grupo. Sin limpiar, los resultados se acumularían uno tras otro.
+                resultado.innerHTML = "";
+
+                // Con opción vacía inicial, no hacemos nada más.
+                if (!ordenSeleccionado) return;
+
+                // El filter() recorre el arreglo completo y devuelve solo los elementos cuyo campo "order" coincide con la selección.
+                const filtradas = todasLasAves.filter(x => x.info.order.value === ordenSeleccionado);
+
+                // Insertamos el título y la lista vacía en el contenedor.
+                resultado.innerHTML += `<h2>${ordenSeleccionado}</h2>`;
+                resultado.innerHTML += `<ol id="lista-aves"></ol>`;
+
+                // Recorremos el subarreglo filtrado y añadimos un <li> por cada ave.
+                filtradas.forEach((x) => {
+                    document.getElementById("lista-aves").innerHTML += `<li><img src="${x.image.url}" class="tiny"/>${x.names.spanish}</li>`;
+                });
+            }
+
+            // Quedamos pendientes del "change" en el select. Si hay "change", le pasamos el valor elegido a renderizarAves().
+            select.addEventListener("change", function () {
+                renderizarAves(this.value);
+            });
+        </script>
+    </body>
+</html>
+```
+
 - - - - - - - 
+
+#### ¿Qué cambió aquí?
+
+1. **Limpieza del HTML:** Ya no tenemos contenedores vacíos u ocultos esperando ser llenados. El HTML está limpio.
+2. **Uso de `filter()`:** En lugar de recorrer todos los datos y preguntar con un `if` dentro del bucle, creamos un nuevo arreglo que solo contiene lo que el usuario quiere ver.
+3. **Generación de Opciones:** El menú `select` se adapta solo. Si la API agrega un nuevo orden de aves mañana, el código lo incluirá automáticamente sin que toques el HTML.
+
+- - - - - - - 
+
 
 ### Práctica (para la clase)
 
-Pendiente (corresponde ajustarlo según su avance).
+**El desafío:** Modifiquemos el comportamiento del "select" actual. Intentemos que, en lugar de filtrar por "Orden", el filtro funcione por otra categoría de la data (por ejemplo, por familia o estado de conservación) con la menor cantidad de cambios posibles al código recién presentado.
 
-
-- - - - - - - 
 
 ###### [← CLASE PREVIA](https://github.com/profesorfaco/opr/tree/main/clase-10) • [SIGUIENTE CLASE →](https://github.com/profesorfaco/opr/tree/main/clase-12)
