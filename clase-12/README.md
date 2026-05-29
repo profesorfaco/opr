@@ -8,6 +8,17 @@ Pendiente (corresponde ajustarlo según su avance). Lo más probable es que en e
 
 ### Práctica (para la clase)
 
+**Primero, para quién:**
+
+Nombre ficticio y Rol: Dale una identidad y define su ocupación (ej. Ana, la Diseñadora Freelance).
+
+Datos demográficos básicos: Edad, ubicación, nivel de ingresos o contexto laboral.
+
+Objetivos y Motivaciones: ¿Qué valor busca obtener de una visualización de datos? ¿Qué intenta aprender? 
+
+Puntos de dolor (_Pain points_): ¿Cuáles son sus principales frustraciones, problemas o barreras actuales?
+
+
 Pendiente (corresponde ajustarlo según su avance).
 
 - - - - - - 
