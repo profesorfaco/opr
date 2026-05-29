@@ -20,6 +20,10 @@ Puntos de dolor (_Pain points_): ¿Cuáles son sus principales frustraciones, pr
 
 Definamos 3, en atención a: https://www.designkit.org/methods/extremes-and-mainstreams.html
 
+**Se les recomienda usar esta plantilla**
+
+https://github.com/profesorfaco/final-final/
+
 - - - - - - 
 
 ###### [← CLASE PREVIA](https://github.com/profesorfaco/opr/tree/main/clase-11) • [SIGUIENTE CLASE →](https://github.com/profesorfaco/opr/tree/main/clase-13)
