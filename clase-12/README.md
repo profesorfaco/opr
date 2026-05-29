@@ -18,8 +18,7 @@ Objetivos y Motivaciones: ¿Qué valor busca obtener de una visualización de da
 
 Puntos de dolor (_Pain points_): ¿Cuáles son sus principales frustraciones, problemas o barreras actuales?
 
-
-Pendiente (corresponde ajustarlo según su avance).
+Definamos 3, en atención a: https://www.designkit.org/methods/extremes-and-mainstreams.html
 
 - - - - - - 
 
